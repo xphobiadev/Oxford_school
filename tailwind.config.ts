@@ -77,9 +77,9 @@ export default <Config>{
         }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Playfair Display', 'serif'],
-        display: ['Cinzel', 'serif'],
+        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', 'serif'],
+        display: ['Outfit', 'sans-serif'],
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',
