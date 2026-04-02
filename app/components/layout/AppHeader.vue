@@ -50,7 +50,7 @@
         <li class="ml-4 flex items-center gap-4">
           <ThemeToggle />
           <NuxtLink
-            to="/#contact"
+            to="/contact"
             class="btn-gold text-sm py-2.5 px-5 flex items-center gap-2 shadow-lg hover:shadow-xl"
           >
             <i class="fas fa-paper-plane"></i>
@@ -103,7 +103,7 @@
           </li>
           <li class="pt-4">
             <NuxtLink
-              to="/#contact"
+              to="/contact"
               class="btn-gold w-full text-center py-4 block"
               @click="isMobileMenuOpen = false"
             >
@@ -126,6 +126,7 @@ const menuItems = [
   { label: 'Our Schools', path: '/#schools', icon: 'fas fa-graduation-cap' },
   { label: 'Testimonials', path: '/#testimonials', icon: 'fas fa-star' },
   { label: 'Careers', path: '/jobs', icon: 'fas fa-briefcase' },
+  { label: 'About Us', path: '/about', icon: 'fas fa-info-circle' },
 ]
 
 const handleScroll = () => {

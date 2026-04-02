@@ -147,11 +147,12 @@
 <script setup lang="ts">
 const quickLinks = [
   { label: 'Home', path: '/' },
+  { label: 'About Us', path: '/about' },
   { label: 'Our Schools', path: '/#schools' },
   { label: 'Testimonials', path: '/#testimonials' },
   { label: 'Our Partners', path: '/#partners' },
   { label: 'Careers', path: '/jobs' },
-  { label: 'Contact Us', path: '/#contact' },
+  { label: 'Contact Us', path: '/contact' },
 ]
 
 const socialLinks = [
