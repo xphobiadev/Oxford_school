@@ -19,7 +19,7 @@
             <div v-if="currentView === 'languages'" key="languages">
               <div class="text-center mb-16">
                 <h2 class="font-display text-4xl md:text-5xl font-bold bg-gradient-to-r from-navy-800 via-gold-600 to-navy-800 dark:from-gold-300 dark:via-gold-500 dark:to-gold-300 bg-clip-text text-transparent inline-flex items-center gap-4 drop-shadow-sm">
-                  <i class="fas fa-language text-3xl text-gold-500/50"></i>
+                  <i class="ph-fill ph-language text-3xl text-gold-500/50"></i>
                   Available Languages
                 </h2>
                 <div class="mt-6 w-24 h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent mx-auto rounded-full"></div>
@@ -58,7 +58,7 @@
               <button @click="goBack('languages')"
                       class="mb-12 text-gold-600 dark:text-gold-500 hover:text-navy-900 dark:hover:text-gold-400 font-medium tracking-wide
                              flex items-center gap-3 transition-all hover:-translate-x-2 bg-white/80 dark:bg-navy-900/50 px-6 py-3 rounded-full border border-gray-200 dark:border-navy-700 hover:border-gold-500/30 dark:hover:border-gold-500/30 w-fit focus:outline-none backdrop-blur-md shadow-sm">
-                <i class="fas fa-arrow-left"></i>
+                <i class="ph-fill ph-arrow-left"></i>
                 Back to Languages
               </button>
 
@@ -94,7 +94,7 @@
                   <div class="pt-16 pb-8 px-6 text-center">
                     <h3 class="font-display font-semibold text-2xl text-navy-900 dark:text-white mb-2 group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors">{{ teacher.name }}</h3>
                     <p class="text-navy-600 dark:text-gold-400/80 text-sm mb-5 font-semibold tracking-wide uppercase">
-                      <i class="fas fa-star mr-1 text-gold-500/70"></i> {{ teacher.experience_years }} Years Excellence
+                      <i class="ph-fill ph-star mr-1 text-gold-500/70"></i> {{ teacher.experience_years }} Years Excellence
                     </p>
                     <div class="flex flex-wrap justify-center gap-2">
                        <span
@@ -118,7 +118,7 @@
               <button @click="goBack('teachers')"
                       class="mb-10 text-gold-600 dark:text-gold-500 hover:text-navy-900 dark:hover:text-gold-400 font-medium tracking-wide
                              flex items-center gap-3 transition-all hover:-translate-x-2 bg-white/80 dark:bg-navy-900/50 px-6 py-3 rounded-full border border-gray-200 dark:border-navy-700 hover:border-gold-500/30 dark:hover:border-gold-500/30 w-fit focus:outline-none backdrop-blur-md shadow-sm">
-                <i class="fas fa-arrow-left"></i>
+                <i class="ph-fill ph-arrow-left"></i>
                 Back to Teachers
               </button>
 
@@ -154,7 +154,7 @@
     <!-- School Not Found -->
     <div v-else class="min-h-screen flex items-center justify-center pt-20 bg-gray-50 dark:bg-navy-950 transition-colors duration-500">
       <div class="text-center">
-        <i class="fas fa-school text-6xl text-gray-300 dark:text-gold-500/50 mb-6 drop-shadow-sm dark:drop-shadow-lg"></i>
+        <i class="ph-fill ph-school text-6xl text-gray-300 dark:text-gold-500/50 mb-6 drop-shadow-sm dark:drop-shadow-lg"></i>
         <h2 class="font-display text-4xl font-bold text-navy-900 dark:text-white mb-4">School Not Found</h2>
         <NuxtLink to="/" class="mt-6 inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-navy-900 text-white dark:bg-gold-500 dark:text-navy-950 font-bold transition-all hover:-translate-y-1 hover:shadow-xl shadow-lg shadow-black/10 dark:shadow-gold-500/20">Back to Legacy</NuxtLink>
       </div>

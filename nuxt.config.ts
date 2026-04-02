@@ -20,6 +20,8 @@ export default defineNuxtConfig({
   ],
 
   app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
       title: 'Universal Oxford Groupe',
       htmlAttrs: {
@@ -34,11 +36,10 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@300..900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap'
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css'
         }
+      ],
+      script: [
+        { src: 'https://unpkg.com/@phosphor-icons/web' }
       ]
     }
   },

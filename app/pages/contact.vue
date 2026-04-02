@@ -5,7 +5,7 @@
       <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>
       <div class="container mx-auto px-4 text-center text-white relative z-10">
         <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">
-          <i class="fas fa-envelope text-gold-500 mr-3"></i>
+          <i class="ph-fill ph-envelope text-gold-500 mr-3"></i>
           Contact Us
         </h1>
         <p class="text-xl text-gray-300 dark:text-gray-400">اتصل بنا</p>
@@ -29,7 +29,7 @@
             <div class="space-y-6">
               <a href="tel:+2125XXXXXXXX" class="flex items-center gap-6 p-4 rounded-2xl bg-white dark:bg-navy-900/50 hover:shadow-lg transition-all group border border-transparent dark:border-navy-700/80">
                 <div class="w-14 h-14 rounded-full bg-gold-500/10 flex items-center justify-center group-hover:bg-gold-500 transition-colors">
-                  <i class="fas fa-phone text-xl text-gold-500 group-hover:text-white transition-colors"></i>
+                  <i class="ph-fill ph-phone text-xl text-gold-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <div>
                   <h4 class="text-navy-900 dark:text-white font-semibold mb-1">Phone</h4>
@@ -39,7 +39,7 @@
               
               <a href="https://wa.me/2126XXXXXXXX" target="_blank" class="flex items-center gap-6 p-4 rounded-2xl bg-white dark:bg-navy-900/50 hover:shadow-lg transition-all group border border-transparent dark:border-navy-700/80">
                 <div class="w-14 h-14 rounded-full bg-green-500/10 flex items-center justify-center group-hover:bg-green-500 transition-colors">
-                  <i class="fab fa-whatsapp text-xl text-green-500 group-hover:text-white transition-colors"></i>
+                  <i class="ph-fill ph-whatsapp-logo text-xl text-green-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <div>
                   <h4 class="text-navy-900 dark:text-white font-semibold mb-1">WhatsApp</h4>
@@ -49,7 +49,7 @@
 
               <a href="mailto:contact@universaloxford.com" class="flex items-center gap-6 p-4 rounded-2xl bg-white dark:bg-navy-900/50 hover:shadow-lg transition-all group border border-transparent dark:border-navy-700/80">
                 <div class="w-14 h-14 rounded-full bg-blue-500/10 flex items-center justify-center group-hover:bg-blue-500 transition-colors">
-                  <i class="fas fa-envelope text-xl text-blue-500 group-hover:text-white transition-colors"></i>
+                  <i class="ph-fill ph-envelope text-xl text-blue-500 group-hover:text-white transition-colors"></i>
                 </div>
                 <div>
                   <h4 class="text-navy-900 dark:text-white font-semibold mb-1">Email</h4>
@@ -59,7 +59,7 @@
 
               <div class="flex items-center gap-6 p-4 rounded-2xl bg-white dark:bg-navy-900/50 border border-transparent dark:border-navy-700/80">
                 <div class="w-14 h-14 rounded-full bg-red-500/10 flex items-center justify-center">
-                  <i class="fas fa-location-dot text-xl text-red-500"></i>
+                  <i class="ph-fill ph-map-pin text-xl text-red-500"></i>
                 </div>
                 <div>
                   <h4 class="text-navy-900 dark:text-white font-semibold mb-1">Location</h4>
@@ -98,7 +98,7 @@
                       class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-400 hover:to-gold-500 
                              text-navy-950 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3 
                              transition-all shadow-lg hover:shadow-xl">
-                <i class="fas fa-paper-plane"></i>
+                <i class="ph-fill ph-paper-plane-right"></i>
                 Send Message
               </button>
             </form>

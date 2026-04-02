@@ -7,7 +7,7 @@
     <div class="relative container mx-auto px-6">
       <div class="text-center mb-16">
         <div class="badge-gold mx-auto mb-6">
-          <i class="fas fa-map-marker-alt"></i>
+          <i class="ph-fill ph-map-pin"></i>
           Find Us
         </div>
         <h2 class="section-title">Visit Our Campus</h2>
@@ -62,7 +62,7 @@
                        group-hover:bg-navy-800 transition-all duration-300 flex-shrink-0
                        group-hover:shadow-navy"
               >
-                <i class="fas fa-phone text-navy-600 group-hover:text-gold-500
+                <i class="ph-fill ph-phone text-navy-600 group-hover:text-gold-500
                           transition-colors text-lg"></i>
               </div>
               <div>
@@ -83,7 +83,7 @@
                        group-hover:bg-green-500 transition-all duration-300 flex-shrink-0
                        group-hover:shadow-lg"
               >
-                <i class="fab fa-whatsapp text-green-600 group-hover:text-white
+                <i class="ph-fill ph-whatsapp-logo text-green-600 group-hover:text-white
                           transition-colors text-2xl"></i>
               </div>
               <div>
@@ -103,7 +103,7 @@
                        group-hover:bg-blue-500 transition-all duration-300 flex-shrink-0
                        group-hover:shadow-lg"
               >
-                <i class="fas fa-envelope text-blue-600 group-hover:text-white
+                <i class="ph-fill ph-envelope text-blue-600 group-hover:text-white
                           transition-colors text-lg"></i>
               </div>
               <div>
@@ -118,7 +118,7 @@
                 class="w-14 h-14 rounded-2xl bg-gold-100 flex items-center justify-center
                        flex-shrink-0"
               >
-                <i class="fas fa-location-dot text-gold-600 text-lg"></i>
+                <i class="ph-fill ph-map-pin text-gold-600 text-lg"></i>
               </div>
               <div>
                 <p class="text-xs text-gray-400 mb-0.5 uppercase tracking-wider">Address</p>

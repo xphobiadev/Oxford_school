@@ -8,7 +8,7 @@
       <!-- Header -->
       <div class="text-center mb-16">
         <div class="badge-gold mx-auto mb-6">
-          <i class="fas fa-star"></i>
+          <i class="ph-fill ph-star"></i>
           Student Reviews
         </div>
         <h2 class="section-title">What Our Students Say</h2>
@@ -41,7 +41,7 @@
               >
                 <!-- Quote Icon -->
                 <div class="text-gold-500/20 mb-4">
-                  <i class="fas fa-quote-left text-4xl"></i>
+                  <i class="ph-fill ph-quotes text-4xl"></i>
                 </div>
 
                 <!-- Stars -->
@@ -49,7 +49,7 @@
                   <i
                     v-for="star in 5"
                     :key="star"
-                    class="fas fa-star text-lg"
+                    class="ph-fill ph-star text-lg"
                     :class="star <= testimonial.rating ? 'star-gold' : 'star-empty'"
                   ></i>
                 </div>
@@ -90,7 +90,7 @@
                  hover:bg-gold-500 hover:text-navy-900 hover:border-gold-500
                  transition-all shadow-lg hover:shadow-gold z-10"
         >
-          <i class="fas fa-chevron-left"></i>
+          <i class="ph-fill ph-caret-left"></i>
         </button>
         <button
           @click="nextSlide"
@@ -100,7 +100,7 @@
                  hover:bg-gold-500 hover:text-navy-900 hover:border-gold-500
                  transition-all shadow-lg hover:shadow-gold z-10"
         >
-          <i class="fas fa-chevron-right"></i>
+          <i class="ph-fill ph-caret-right"></i>
         </button>
       </div>
 

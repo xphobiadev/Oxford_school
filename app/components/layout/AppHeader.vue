@@ -53,7 +53,7 @@
             to="/contact"
             class="btn-gold text-sm py-2.5 px-5 flex items-center gap-2 shadow-lg hover:shadow-xl"
           >
-            <i class="fas fa-paper-plane"></i>
+            <i class="ph-fill ph-paper-plane-right"></i>
             Contact Us
           </NuxtLink>
         </li>
@@ -69,7 +69,7 @@
                  hover:border-gold-500/50 hover:bg-black/5 dark:hover:bg-white/5"
           :class="isScrolled ? 'text-navy-900 dark:text-white' : 'text-navy-900 dark:text-white'"
         >
-          <i :class="isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'" class="text-xl"></i>
+          <i :class="isMobileMenuOpen ? 'ph-fill ph-x' : 'ph-fill ph-list'" class="text-xl"></i>
         </button>
       </div>
     </nav>
@@ -107,7 +107,7 @@
               class="btn-gold w-full text-center py-4 block"
               @click="isMobileMenuOpen = false"
             >
-              <i class="fas fa-paper-plane mr-2"></i>
+              <i class="ph-fill ph-paper-plane-right mr-2"></i>
               Contact Us
             </NuxtLink>
           </li>
@@ -122,11 +122,11 @@ const isScrolled = ref(false)
 const isMobileMenuOpen = ref(false)
 
 const menuItems = [
-  { label: 'Home', path: '/', icon: 'fas fa-home' },
-  { label: 'Our Schools', path: '/#schools', icon: 'fas fa-graduation-cap' },
-  { label: 'Testimonials', path: '/#testimonials', icon: 'fas fa-star' },
-  { label: 'Careers', path: '/jobs', icon: 'fas fa-briefcase' },
-  { label: 'About Us', path: '/about', icon: 'fas fa-info-circle' },
+  { label: 'Home', path: '/', icon: 'ph-fill ph-house' },
+  { label: 'Our Schools', path: '/#schools', icon: 'ph-fill ph-graduation-cap' },
+  { label: 'Testimonials', path: '/#testimonials', icon: 'ph-fill ph-star' },
+  { label: 'Careers', path: '/jobs', icon: 'ph-fill ph-briefcase' },
+  { label: 'About Us', path: '/about', icon: 'ph-fill ph-info' },
 ]
 
 const handleScroll = () => {

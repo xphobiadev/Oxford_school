@@ -10,11 +10,11 @@
       <Transition name="spin-fade" mode="out-in">
         <i
           v-if="$colorMode.value === 'dark'"
-          class="fas fa-sun text-gold-400 absolute text-xl transition-all"
+          class="ph-fill ph-sun text-gold-400 absolute text-xl transition-all"
         ></i>
         <i
           v-else
-          class="fas fa-moon text-navy-800 absolute text-xl transition-all"
+          class="ph-fill ph-moon text-navy-800 absolute text-xl transition-all"
         ></i>
       </Transition>
     </div>

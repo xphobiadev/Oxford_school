@@ -10,7 +10,7 @@
       <!-- Section Header -->
       <div class="text-center mb-16">
         <div class="badge-gold mx-auto mb-6">
-          <i class="fas fa-handshake"></i>
+          <i class="ph-fill ph-handshake"></i>
           Trusted Partners
         </div>
         <h2 class="font-display text-4xl md:text-5xl font-bold text-navy-900 dark:text-white mb-4 tracking-wide">
@@ -85,7 +85,7 @@
                        transition-all duration-500 cursor-pointer
                        opacity-60 hover:opacity-100"
               >
-                <i class="fas fa-certificate text-gold-500/50 group-hover:text-gold-500 text-sm"></i>
+                <i class="ph-fill ph-certificate text-gold-500/50 group-hover:text-gold-500 text-sm"></i>
                 <span class="text-navy-700 dark:text-gray-400 hover:text-gold-600 dark:hover:text-gold-400
                              font-display font-semibold text-xs tracking-wider uppercase transition-colors">
                   {{ partner.name }}
@@ -100,19 +100,19 @@
       <div class="flex flex-wrap justify-center gap-8 mt-14 text-sm">
         <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400">
           <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-500/20 flex items-center justify-center">
-            <i class="fas fa-check text-green-500 text-xs"></i>
+            <i class="ph-fill ph-check text-green-500 text-xs"></i>
           </div>
           <span>Internationally Recognized</span>
         </div>
         <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400">
           <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-500/20 flex items-center justify-center">
-            <i class="fas fa-globe text-blue-500 text-xs"></i>
+            <i class="ph-fill ph-globe text-blue-500 text-xs"></i>
           </div>
           <span>Worldwide Certifications</span>
         </div>
         <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400">
           <div class="w-8 h-8 rounded-full bg-gold-100 dark:bg-gold-500/20 flex items-center justify-center">
-            <i class="fas fa-award text-gold-500 text-xs"></i>
+            <i class="ph-fill ph-award text-gold-500 text-xs"></i>
           </div>
           <span>Excellence in Education</span>
         </div>
@@ -125,13 +125,13 @@
 const { partners } = usePartners()
 
 const partnerIcons = [
-  'fas fa-university',
-  'fas fa-flag',
-  'fas fa-globe-europe',
-  'fas fa-book-open',
-  'fas fa-crown',
-  'fas fa-certificate',
-  'fas fa-graduation-cap',
-  'fas fa-star',
+  'ph-fill ph-university',
+  'ph-fill ph-flag',
+  'ph-fill ph-globe-europe',
+  'ph-fill ph-book-open',
+  'ph-fill ph-crown',
+  'ph-fill ph-certificate',
+  'ph-fill ph-graduation-cap',
+  'ph-fill ph-star',
 ]
 </script>

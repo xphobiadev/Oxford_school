@@ -175,7 +175,7 @@
                   <div class="flex items-center justify-center gap-3 py-3.5 px-6 rounded-full bg-gray-100 dark:bg-navy-900/50 border border-gray-200 dark:border-navy-700 text-gold-600 dark:text-gold-500 font-medium text-sm group-hover:bg-gold-500 group-hover:text-white dark:group-hover:text-navy-950 group-hover:border-gold-500 transition-all duration-500 relative overflow-hidden shadow-[inset_0_1px_rgba(255,255,255,0.05)]">
                     <span class="relative z-10 flex items-center gap-2 font-bold tracking-wider uppercase text-xs">
                       Explore Programs
-                      <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform duration-500"></i>
+                      <i class="ph-fill ph-arrow-right group-hover:translate-x-2 transition-transform duration-500"></i>
                     </span>
                   </div>
                 </div>
@@ -192,7 +192,7 @@
       <div class="text-center mt-20 animate-bounce-soft">
         <div class="inline-flex flex-col items-center gap-2 text-gold-500/50">
           <span class="text-xs tracking-[0.3em] uppercase">Scroll</span>
-          <i class="fas fa-chevron-down"></i>
+          <i class="ph-fill ph-caret-down"></i>
         </div>
       </div>
     </div>

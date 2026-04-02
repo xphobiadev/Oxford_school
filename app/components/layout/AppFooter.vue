@@ -66,7 +66,7 @@
                 class="text-gray-400 hover:text-gold-500 transition-all duration-300
                        flex items-center gap-3 group text-sm py-1"
               >
-                <i class="fas fa-chevron-right text-[10px] text-gold-500/50
+                <i class="ph-fill ph-caret-right text-[10px] text-gold-500/50
                           group-hover:text-gold-500 group-hover:translate-x-1
                           transition-all"></i>
                 {{ link.label }}
@@ -87,7 +87,7 @@
                       transition-colors group text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center group-hover:bg-gold-500/20 transition-colors flex-shrink-0">
-                <i class="fas fa-phone text-gold-500 text-sm"></i>
+                <i class="ph-fill ph-phone text-gold-500 text-sm"></i>
               </div>
               +212 5XX-XXXXXX
             </a>
@@ -96,7 +96,7 @@
                       transition-colors group text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center group-hover:bg-gold-500/20 transition-colors flex-shrink-0">
-                <i class="fab fa-whatsapp text-gold-500"></i>
+                <i class="ph-fill ph-whatsapp-logo text-gold-500"></i>
               </div>
               +212 6XX-XXXXXX
             </a>
@@ -105,14 +105,14 @@
                       transition-colors group text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center group-hover:bg-gold-500/20 transition-colors flex-shrink-0">
-                <i class="fas fa-envelope text-gold-500 text-sm"></i>
+                <i class="ph-fill ph-envelope text-gold-500 text-sm"></i>
               </div>
               contact@universaloxford.com
             </a>
             <div class="flex items-center gap-4 text-gray-400 text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center flex-shrink-0">
-                <i class="fas fa-location-dot text-gold-500 text-sm"></i>
+                <i class="ph-fill ph-map-pin text-gold-500 text-sm"></i>
               </div>
               Rue Des Haddadas N°95, Oued Zem 25350
             </div>
@@ -156,11 +156,11 @@ const quickLinks = [
 ]
 
 const socialLinks = [
-  { name: 'Facebook', icon: 'fab fa-facebook-f', url: '#' },
-  { name: 'Instagram', icon: 'fab fa-instagram', url: '#' },
-  { name: 'YouTube', icon: 'fab fa-youtube', url: '#' },
-  { name: 'LinkedIn', icon: 'fab fa-linkedin-in', url: '#' },
-  { name: 'WhatsApp', icon: 'fab fa-whatsapp', url: '#' },
-  { name: 'TikTok', icon: 'fab fa-tiktok', url: '#' },
+  { name: 'Facebook', icon: 'ph-fill ph-facebook-logo', url: '#' },
+  { name: 'Instagram', icon: 'ph-fill ph-instagram-logo', url: '#' },
+  { name: 'YouTube', icon: 'ph-fill ph-youtube-logo', url: '#' },
+  { name: 'LinkedIn', icon: 'ph-fill ph-linkedin-logo', url: '#' },
+  { name: 'WhatsApp', icon: 'ph-fill ph-whatsapp-logo', url: '#' },
+  { name: 'TikTok', icon: 'ph-fill ph-tiktok-logo', url: '#' },
 ]
 </script>

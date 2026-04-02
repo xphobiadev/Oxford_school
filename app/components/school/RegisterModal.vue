@@ -12,13 +12,13 @@
         <button @click="$emit('close')"
                 class="absolute top-4 right-4 w-10 h-10 rounded-full bg-gray-100 dark:bg-navy-800
                        hover:bg-red-100 dark:hover:bg-red-500/20 flex items-center justify-center transition-colors border border-transparent dark:border-navy-700">
-          <i class="fas fa-times text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400"></i>
+          <i class="ph-fill ph-x text-gray-500 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400"></i>
         </button>
 
         <!-- Header -->
         <div class="text-center mb-8 mt-2">
           <div class="w-16 h-16 bg-indigo-50 dark:bg-navy-800 border border-indigo-100 dark:border-gold-500/20 rounded-full flex items-center justify-center mx-auto mb-4 shadow-sm">
-            <i class="fas fa-user-plus text-indigo-600 dark:text-gold-500 text-2xl"></i>
+            <i class="ph-fill ph-user-plus text-indigo-600 dark:text-gold-500 text-2xl"></i>
           </div>
           <h2 class="font-display text-3xl font-bold text-navy-900 dark:text-white">Register Now</h2>
           <p class="text-gray-500 dark:text-gray-400 mt-2">Fill in your details to get started</p>
@@ -29,7 +29,7 @@
           <!-- Full Name -->
           <div>
             <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-              <i class="fas fa-user mr-2 text-indigo-500 dark:text-gold-500"></i>Full Name *
+              <i class="ph-fill ph-user mr-2 text-indigo-500 dark:text-gold-500"></i>Full Name *
             </label>
             <input
               v-model="form.full_name"
@@ -45,7 +45,7 @@
           <!-- Phone -->
           <div>
             <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-              <i class="fas fa-phone mr-2 text-indigo-500 dark:text-gold-500"></i>Phone Number *
+              <i class="ph-fill ph-phone mr-2 text-indigo-500 dark:text-gold-500"></i>Phone Number *
             </label>
             <input
               v-model="form.phone"
@@ -61,7 +61,7 @@
           <!-- Notes -->
           <div>
             <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-              <i class="fas fa-sticky-note mr-2 text-indigo-500 dark:text-gold-500"></i>Notes (Optional)
+              <i class="ph-fill ph-sticky-note mr-2 text-indigo-500 dark:text-gold-500"></i>Notes (Optional)
             </label>
             <textarea
               v-model="form.notes"
@@ -75,7 +75,7 @@
 
           <!-- Hidden IDs Info -->
           <div class="bg-indigo-50 dark:bg-navy-800 border border-indigo-100 dark:border-navy-700 rounded-xl p-4 text-sm text-indigo-800 dark:text-gray-300 shadow-inner">
-            <p><i class="fas fa-info-circle mr-2"></i>Your registration will include:</p>
+            <p><i class="ph-fill ph-info mr-2"></i>Your registration will include:</p>
             <ul class="mt-2 space-y-1 text-xs">
               <li>• School ID: {{ schoolId }}</li>
               <li>• Language ID: {{ languageId }}</li>
@@ -89,8 +89,8 @@
             :disabled="isSubmitting"
             class="w-full bg-gradient-to-r from-navy-800 to-navy-900 dark:from-gold-500 dark:to-gold-600 hover:from-navy-900 hover:to-black dark:hover:from-gold-400 dark:hover:to-gold-500 text-white dark:text-navy-950 py-4 rounded-xl text-lg font-bold flex items-center justify-center gap-3 transition-all shadow-lg hover:shadow-xl disabled:opacity-70 disabled:cursor-not-allowed mt-2"
           >
-            <i v-if="isSubmitting" class="fas fa-spinner fa-spin"></i>
-            <i v-else class="fas fa-paper-plane"></i>
+            <i v-if="isSubmitting" class="ph-fill ph-spinner fa-spin"></i>
+            <i v-else class="ph-fill ph-paper-plane-right"></i>
             {{ isSubmitting ? 'Submitting...' : 'Submit Registration' }}
           </button>
         </form>
@@ -101,7 +101,7 @@
                class="absolute inset-0 bg-white/95 dark:bg-navy-900/95 backdrop-blur-md rounded-3xl flex items-center justify-center z-10 border border-transparent dark:border-navy-700">
             <div class="text-center p-8">
               <div class="w-20 h-20 bg-green-100 dark:bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-sm border border-green-200 dark:border-green-500/30">
-                <i class="fas fa-check text-green-500 text-4xl"></i>
+                <i class="ph-fill ph-check text-green-500 text-4xl"></i>
               </div>
               <h3 class="font-display text-3xl font-bold text-navy-900 dark:text-white mb-3">Registration Successful!</h3>
               <p class="text-gray-500 dark:text-gray-400 mb-8">We will contact you shortly.</p>

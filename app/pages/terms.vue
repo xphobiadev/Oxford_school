@@ -5,7 +5,7 @@
       <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>
       <div class="container mx-auto px-4 text-center text-white relative z-10">
         <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">
-          <i class="fas fa-file-contract text-gold-500 mr-3"></i>
+          <i class="ph-fill ph-file-text text-gold-500 mr-3"></i>
           Terms of Use
         </h1>
         <p class="text-xl text-gray-300 dark:text-gray-400">شروط الاستخدام</p>

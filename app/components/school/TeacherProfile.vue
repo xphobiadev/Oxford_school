@@ -22,7 +22,7 @@
         <!-- Experience -->
         <div class="flex items-center gap-4 mb-6">
           <div class="w-12 h-12 bg-gold-500/10 rounded-2xl flex items-center justify-center border border-gold-500/20">
-            <i class="fas fa-briefcase text-gold-600 dark:text-gold-400 text-xl"></i>
+            <i class="ph-fill ph-briefcase text-gold-600 dark:text-gold-400 text-xl"></i>
           </div>
           <div>
             <span class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-widest font-semibold block mb-1">Experience</span>
@@ -33,7 +33,7 @@
         <!-- Languages & Levels -->
         <div class="mb-4">
           <h4 class="font-semibold text-navy-800 dark:text-gray-200 mb-3 flex items-center text-sm uppercase tracking-wider">
-            <i class="fas fa-language text-xl mr-2 text-gold-500"></i> Languages
+            <i class="ph-fill ph-language text-xl mr-2 text-gold-500"></i> Languages
           </h4>
           <div class="flex flex-wrap gap-3">
             <div
