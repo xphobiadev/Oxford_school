@@ -69,6 +69,14 @@
            border border-gold-500/20 hover:border-gold-500/50;
   }
 
+  .btn-primary {
+    @apply relative bg-gradient-to-r from-navy-800 to-navy-900 dark:from-gold-500 dark:to-gold-600
+           hover:from-navy-900 hover:to-black dark:hover:from-gold-400 dark:hover:to-gold-500
+           text-white dark:text-navy-950 font-bold py-3 px-8 rounded-xl lg:rounded-full
+           transition-all duration-300 transform hover:scale-105 active:scale-95 shadow-lg hover:shadow-xl
+           focus:outline-none focus:ring-4 focus:ring-navy-400/30 dark:focus:ring-gold-500/20 text-center;
+  }
+
   .btn-outline-gold {
     @apply border-2 border-gold-500 text-gold-500 font-semibold
            py-3 px-8 rounded-full transition-all duration-300
