@@ -59,16 +59,19 @@
         </li>
       </ul>
 
-      <!-- Mobile Menu Button -->
-      <button
-        @click="isMobileMenuOpen = !isMobileMenuOpen"
-        class="lg:hidden w-12 h-12 rounded-xl flex items-center justify-center
-               transition-all duration-300 border border-gold-500/20
-               hover:border-gold-500/50 hover:bg-black/5 dark:hover:bg-white/5"
-        :class="isScrolled ? 'text-navy-900 dark:text-white' : 'text-navy-900 dark:text-white'"
-      >
-        <i :class="isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'" class="text-xl"></i>
-      </button>
+      <!-- Mobile Controls (Theme + Menu) -->
+      <div class="lg:hidden flex items-center gap-3">
+        <ThemeToggle />
+        <button
+          @click="isMobileMenuOpen = !isMobileMenuOpen"
+          class="w-12 h-12 rounded-xl flex items-center justify-center
+                 transition-all duration-300 border border-gold-500/20
+                 hover:border-gold-500/50 hover:bg-black/5 dark:hover:bg-white/5"
+          :class="isScrolled ? 'text-navy-900 dark:text-white' : 'text-navy-900 dark:text-white'"
+        >
+          <i :class="isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'" class="text-xl"></i>
+        </button>
+      </div>
     </nav>
 
     <!-- Mobile Menu -->
