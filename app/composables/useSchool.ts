@@ -174,12 +174,14 @@ export const useTestimonials = () => {
 
 export const usePartners = () => {
   const partners = ref<Partner[]>([
-    { id: 1, name: 'Partner 1', logo: '/images/partner-1.png' },
-    { id: 2, name: 'Partner 2', logo: '/images/partner-2.png' },
-    { id: 3, name: 'Partner 3', logo: '/images/partner-3.png' },
-    { id: 4, name: 'Partner 4', logo: '/images/partner-4.png' },
-    { id: 5, name: 'Partner 5', logo: '/images/partner-5.png' },
-    { id: 6, name: 'Partner 6', logo: '/images/partner-6.png' },
+    { id: 1, name: 'Cambridge English', logo: '/images/partner-1.png' },
+    { id: 2, name: 'Alliance Française', logo: '/images/partner-2.png' },
+    { id: 3, name: 'Instituto Cervantes', logo: '/images/partner-3.png' },
+    { id: 4, name: 'Goethe-Institut', logo: '/images/partner-4.png' },
+    { id: 5, name: 'British Council', logo: '/images/partner-5.png' },
+    { id: 6, name: 'DELF / DALF', logo: '/images/partner-6.png' },
+    { id: 7, name: 'TOEFL iBT', logo: '/images/partner-7.png' },
+    { id: 8, name: 'IELTS Official', logo: '/images/partner-8.png' },
   ])
 
   return { partners }
