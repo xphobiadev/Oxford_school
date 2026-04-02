@@ -21,7 +21,7 @@ export const useJobs = () => {
 - Excellent communication skills
 - Bachelor's degree in English or related field`,
       requirements: 'TEFL certified, 3+ years experience',
-      location: 'Casablanca',
+      location: 'Oued Zem',
       type: 'Full-time',
       created_at: '2024-12-01'
     },
@@ -40,7 +40,7 @@ export const useJobs = () => {
 - Teaching certification preferred
 - Minimum 2 years experience`,
       requirements: 'Native French, 2+ years experience',
-      location: 'Casablanca',
+      location: 'Oued Zem',
       type: 'Part-time',
       created_at: '2024-12-05'
     },
@@ -60,7 +60,7 @@ export const useJobs = () => {
 - Computer proficiency
 - Strong organizational skills`,
       requirements: 'Bilingual, organized',
-      location: 'Casablanca',
+      location: 'Oued Zem',
       type: 'Full-time',
       created_at: '2024-12-10'
     },
