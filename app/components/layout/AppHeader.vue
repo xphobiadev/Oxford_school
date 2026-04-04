@@ -125,7 +125,6 @@ const isMobileMenuOpen = ref(false)
 
 const menuItems = [
   { label: 'Home', path: '/', hash: '', icon: 'ph-fill ph-house' },
-  { label: 'Our Schools', path: '/', hash: '#schools', icon: 'ph-fill ph-graduation-cap' },
   { label: 'Careers', path: '/jobs', hash: '', icon: 'ph-fill ph-briefcase' },
   { label: 'Certificates', path: '/certificates', hash: '', icon: 'ph-fill ph-certificate' },
   { label: 'Student Portal', path: '/portal', hash: '', icon: 'ph-fill ph-student', highlight: true },
