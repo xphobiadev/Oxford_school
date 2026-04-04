@@ -40,7 +40,7 @@ export const useSchool = () => {
           id: 1,
           code: 'en',
           name: l('English', 'Anglais', 'الإنجليزية'),
-          logo: '/images/lang-english.png',
+          logo: '🇬🇧',
           teachers: [
             {
               id: 1,
@@ -78,7 +78,7 @@ export const useSchool = () => {
           id: 2,
           code: 'fr',
           name: l('French', 'Français', 'الفرنسية'),
-          logo: '/images/lang-french.png',
+          logo: '🇫🇷',
           teachers: [
             {
               id: 3,

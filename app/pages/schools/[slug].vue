@@ -38,7 +38,10 @@
                   <div class="absolute inset-y-0 -left-64 w-32 bg-gradient-to-r from-transparent via-gold-400/10 to-transparent skew-x-[30deg] opacity-0 group-hover:opacity-100 group-hover:animate-[sweep-across_1.5s_ease-out] pointer-events-none z-10 mix-blend-overlay"></div>
 
                   <div class="relative z-20 p-8 h-full flex flex-col items-center justify-center">
-                    <img :src="lang.logo || ('/images/lang-' + lang.code + '.png')" alt="" class="w-16 h-16 object-contain mb-4 transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-500 drop-shadow-md dark:drop-shadow-xl filter" />
+                    <img v-if="lang.logo?.startsWith('/')" :src="lang.logo" alt="" class="w-16 h-16 object-contain mb-4 transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-500 drop-shadow-md dark:drop-shadow-xl filter" />
+                    <span v-else class="text-6xl mb-4 transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-500 drop-shadow-md dark:drop-shadow-xl filter block">
+                      {{ lang.logo || '🌐' }}
+                    </span>
                     <h3 class="font-display font-semibold text-2xl text-navy-900 dark:text-white group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors drop-shadow-sm dark:drop-shadow">
                       {{ t(lang.name) }}
                     </h3>
@@ -64,7 +67,10 @@
 
               <div class="text-center mb-16">
                 <h2 class="font-display text-4xl md:text-5xl font-bold text-navy-900 dark:text-white inline-flex items-center gap-4 drop-shadow-sm dark:drop-shadow-lg">
-                  <img v-if="selectedLanguage" :src="selectedLanguage.logo || ('/images/lang-' + selectedLanguage.code + '.png')" class="w-12 h-12 object-contain filter drop-shadow-md dark:drop-shadow-xl" />
+                  <img v-if="selectedLanguage?.logo?.startsWith('/')" :src="selectedLanguage.logo" class="w-12 h-12 object-contain filter drop-shadow-md dark:drop-shadow-xl" />
+                  <span v-else-if="selectedLanguage" class="text-5xl filter drop-shadow-md dark:drop-shadow-xl -mt-2">
+                    {{ selectedLanguage.logo || '🌐' }}
+                  </span>
                   {{ selectedLanguage ? t(selectedLanguage.name) : '' }} Teachers
                 </h2>
                 <div class="mt-6 w-24 h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent mx-auto rounded-full"></div>
