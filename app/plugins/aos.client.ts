@@ -15,7 +15,8 @@ export default defineNuxtPlugin((nuxtApp) => {
     // Refresh AOS on page transitions
     nuxtApp.hook('page:finish', () => {
       setTimeout(() => {
-        AOS.refresh()
+        AOS.init()
+        AOS.refreshHard()
       }, 100)
     })
   }
