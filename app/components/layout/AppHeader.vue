@@ -40,6 +40,7 @@
         <li v-for="item in menuItems" :key="item.path">
           <NuxtLink
             :to="item.path"
+            @click="handleMenuClick($event, item.path)"
             class="relative px-5 py-2.5 rounded-full font-medium text-sm tracking-wide
                    transition-all duration-300 group flex items-center gap-2 text-navy-800 hover:bg-black/5 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10"
           >
@@ -96,7 +97,7 @@
               class="flex items-center gap-4 px-5 py-4 rounded-2xl text-navy-700 dark:text-gray-300
                      hover:text-gold-600 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all font-medium
                      border border-transparent hover:border-gold-500/10"
-              @click="isMobileMenuOpen = false"
+              @click="handleMobileMenuClick($event, item.path)"
             >
               <i :class="item.icon" class="text-gold-500 w-5 text-center"></i>
               {{ item.label }}
@@ -132,6 +133,29 @@ const menuItems = [
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 30
+}
+
+const route = useRoute()
+
+const handleMenuClick = (e: MouseEvent, path: string) => {
+  if (path.startsWith('/#')) {
+    const hash = path.substring(1)
+    if (route.path === '/') {
+      e.preventDefault()
+      const el = document.querySelector(hash)
+      if (el) {
+        window.scrollTo({
+          top: el.getBoundingClientRect().top + window.scrollY - 80,
+          behavior: 'smooth'
+        })
+      }
+    }
+  }
+}
+
+const handleMobileMenuClick = (e: MouseEvent, path: string) => {
+  isMobileMenuOpen.value = false
+  handleMenuClick(e, path)
 }
 
 onMounted(() => {
