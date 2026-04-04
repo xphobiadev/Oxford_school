@@ -6,20 +6,19 @@
     <div class="container mx-auto px-4 mt-8 mb-12 relative z-10 text-center">
       <div
         class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 font-medium text-sm mb-6 border border-gold-500/20"
-        data-aos="fade-down"
       >
         <i class="ph-fill ph-student text-lg"></i>
         <span>Student Area</span>
       </div>
-      <h1 class="text-4xl md:text-5xl font-display font-bold text-navy-900 dark:text-white mb-6" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-display font-bold text-navy-900 dark:text-white mb-6">
         Student <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-500 to-gold-400">Portal</span>
       </h1>
-      <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+      <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
         Enter your Student ID to access your profile, timetable, and exam results.
       </p>
     </div>
 
-    <div class="container mx-auto px-4 max-w-6xl relative z-10" data-aos="fade-up" data-aos-delay="200">
+    <div class="container mx-auto px-4 max-w-6xl relative z-10">
       <!-- Search Form -->
       <div class="bg-white dark:bg-navy-800 rounded-2xl shadow-xl border border-gray-100 dark:border-navy-700 p-6 md:p-8 mb-8 backdrop-blur-sm max-w-3xl mx-auto">
         <form @submit.prevent="fetchPortal" class="flex flex-col md:flex-row gap-4">
