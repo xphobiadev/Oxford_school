@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-white dark:bg-navy-950 min-h-screen transition-colors duration-500">
     <AppHeader />
     <section class="bg-gradient-to-br from-navy-900 via-navy-800 to-navy-950 dark:from-navy-950 dark:via-navy-900 dark:to-black pt-28 pb-16 relative overflow-hidden">
       <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>

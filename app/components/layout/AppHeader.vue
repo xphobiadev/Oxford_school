@@ -125,11 +125,9 @@ const isMobileMenuOpen = ref(false)
 const menuItems = [
   { label: 'Home', path: '/', icon: 'ph-fill ph-house' },
   { label: 'Our Schools', path: '/#schools', icon: 'ph-fill ph-graduation-cap' },
-  { label: 'Testimonials', path: '/#testimonials', icon: 'ph-fill ph-star' },
   { label: 'Careers', path: '/jobs', icon: 'ph-fill ph-briefcase' },
   { label: 'Certificates', path: '/certificates', icon: 'ph-fill ph-certificate' },
-  { label: 'Student Portal', path: '/portal', icon: 'ph-fill ph-student' },
-  { label: 'About Us', path: '/about', icon: 'ph-fill ph-info' },
+  { label: 'About', path: '/about', icon: 'ph-fill ph-info' },
 ]
 
 const handleScroll = () => {

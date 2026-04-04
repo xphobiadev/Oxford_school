@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen pt-24 pb-16 bg-gray-50 dark:bg-navy-900 transition-colors duration-300">
+  <div class="bg-white dark:bg-navy-950 min-h-screen transition-colors duration-500">
+    <AppHeader />
+    <div class="pt-24 pb-16 bg-gray-50 dark:bg-navy-950 transition-colors duration-300">
     <!-- Header Section -->
     <div class="container mx-auto px-4 mt-8 mb-12 relative z-10 text-center">
       <div
@@ -144,6 +146,8 @@
         </div>
       </Transition>
     </div>
+    </div>
+    <AppFooter />
   </div>
 </template>
 
