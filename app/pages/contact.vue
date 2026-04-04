@@ -1,9 +1,9 @@
 <template>
   <div>
     <AppHeader />
-    <section class="bg-gradient-to-br from-navy-900 via-navy-800 to-navy-950 dark:from-navy-950 dark:via-navy-900 dark:to-black pt-28 pb-16 relative overflow-hidden">
-      <div class="absolute inset-0 bg-pattern-dots opacity-30"></div>
-      <div class="container mx-auto px-4 text-center text-white relative z-10">
+    <section class="bg-gradient-to-br from-gray-50 via-gray-100 to-gray-200 dark:from-navy-950 dark:via-navy-900 dark:to-black pt-28 pb-16 relative overflow-hidden">
+      <div class="absolute inset-0 bg-pattern-dots dark:opacity-30 opacity-10"></div>
+      <div class="container mx-auto px-4 text-center text-navy-900 dark:text-white relative z-10">
         <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">
           <i class="ph-fill ph-envelope text-gold-500 mr-3"></i>
           Contact Us

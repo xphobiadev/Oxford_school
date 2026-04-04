@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-white dark:bg-navy-950 min-h-screen transition-colors duration-500">
+  <div class="bg-white dark:bg-navy-950 min-h-screen transition-colors duration-500 flex flex-col">
     <AppHeader />
-    <div class="pt-24 pb-16 bg-gray-50 dark:bg-navy-950 transition-colors duration-300">
+    <div class="pt-24 pb-16 bg-gray-50 dark:bg-navy-950 transition-colors duration-300 flex-grow">
     <!-- Header Section -->
     <div class="container mx-auto px-4 mt-8 mb-12 relative z-10 text-center">
       <div
