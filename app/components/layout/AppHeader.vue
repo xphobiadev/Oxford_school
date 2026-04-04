@@ -128,7 +128,7 @@ const menuItems = [
   { label: 'Testimonials', path: '/#testimonials', icon: 'ph-fill ph-star' },
   { label: 'Careers', path: '/jobs', icon: 'ph-fill ph-briefcase' },
   { label: 'Certificates', path: '/certificates', icon: 'ph-fill ph-certificate' },
-  { label: 'Timetable', path: '/timetable', icon: 'ph-fill ph-calendar' },
+  { label: 'Student Portal', path: '/portal', icon: 'ph-fill ph-student' },
   { label: 'About Us', path: '/about', icon: 'ph-fill ph-info' },
 ]
 
