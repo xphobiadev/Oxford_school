@@ -127,11 +127,7 @@ const { testimonials } = useTestimonials()
 const { t } = useLocale()
 
 const currentSlide = ref(0)
-const visibleCards = ref(3)
-
-const totalSlides = computed(() => {
-  return Math.max(1, testimonials.value.length - visibleCards.value + 1)
-})
+const visibleCards = ref(1) // Initialize with 1 to avoid hydration mismatch, updated onMount
 
 const nextSlide = () => {
   currentSlide.value = currentSlide.value < totalSlides.value - 1
@@ -147,11 +143,19 @@ const prevSlide = () => {
 
 const updateVisibleCards = () => {
   if (typeof window !== 'undefined') {
-    if (window.innerWidth < 640) visibleCards.value = 1
-    else if (window.innerWidth < 1024) visibleCards.value = 2
-    else visibleCards.value = 3
+    let base = 3
+    if (window.innerWidth < 640) base = 1
+    else if (window.innerWidth < 1024) base = 2
+    
+    // Prevent empty columns by restricting max visible cards to the number of testimonials available
+    visibleCards.value = Math.min(base, testimonials.value.length)
   }
 }
+
+// Recalculate slides dynamically so the dots don't vanish or act weirdly
+const totalSlides = computed(() => {
+  return Math.max(1, testimonials.value.length - visibleCards.value + 1)
+})
 
 let autoplay: ReturnType<typeof setInterval>
 

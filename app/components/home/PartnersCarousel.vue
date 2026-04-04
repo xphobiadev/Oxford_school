@@ -23,11 +23,11 @@
       </div>
 
       <!-- Partners Grid -->
-      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 max-w-5xl mx-auto mb-12">
+      <div class="flex flex-wrap justify-center gap-6 max-w-5xl mx-auto mb-12">
         <div
           v-for="(partner, index) in partners"
           :key="partner.id"
-          class="group relative"
+          class="group relative w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-1.5rem)] min-w-[240px] max-w-[300px]"
           :style="{ animationDelay: `${index * 100}ms` }"
         >
           <div
