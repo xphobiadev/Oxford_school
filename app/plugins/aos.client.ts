@@ -11,9 +11,8 @@ export default defineNuxtPlugin((nuxtApp) => {
         offset: 50,
       })
     })
-    
-    // Refresh AOS on page transitions
-    nuxtApp.hook('page:finish', () => {
+    // Refresh AOS exactly AFTER page transitions finish, otherwise DOM elements are hidden by Vue's <Transition> logic during the scan
+    nuxtApp.hook('page:transition:finish', () => {
       setTimeout(() => {
         AOS.init()
         AOS.refreshHard()
