@@ -1,156 +1,145 @@
-import type { School, Testimonial, Partner } from '~/types'
+import type { School, Testimonial, Partner, Teacher, Language } from '~/types'
 
 export const useSchool = () => {
   const config = useRuntimeConfig()
 
-  // بيانات تجريبية - ستُستبدل بـ API حقيقي
+  // Helper macro to generate generic localized fields
+  const l = (en: string, fr?: string, ar?: string) => ({ en, fr: fr || null, ar: ar || null })
+
+  // Mock Data
   const mainSchool = ref<School>({
     id: 1,
-    name: 'Universal Oxford Groupe',
-    slug: 'universal-oxford',
-    logo: '/images/oxford-logo.png',
-    description: 'Excellence in Education since 1990',
-    heroImage: '/images/hero-bg.jpg',
-    address: 'Rue Des Haddadas N°95, Oued Zem 25350',
-    phone: '+212 5XX-XXXXXX',
-    whatsapp: '+212 6XX-XXXXXX',
+    name: l('Universal Oxford Groupe', 'Groupe Oxford Universel', 'مجموعة أكسفورد العالمية'),
+    address: l('Rue Des Haddadas N°95, Oued Zem 25350', 'Rue Des Haddadas N°95, Oued Zem 25350', 'شارع الحدادات رقم 95، وادي زم 25350'),
+    short_description: l('Excellence in Education since 1990', 'L\'excellence dans l\'éducation depuis 1990', 'التميز في التعليم منذ 1990'),
     email: 'contact@oxfordschoolgroup.com',
+    primary_phone: '+212 5XX-XXXXXX',
+    secondary_phone: '+212 6XX-XXXXXX',
+    logo: '/images/oxford-logo.png',
+    language_ids: [],
+    languages: [],
+    slug: 'universal-oxford',
+    heroImage: '/images/hero-bg.jpg',
     mapLat: 33.5731,
     mapLng: -7.5898,
-    languages: []
   })
 
   const subSchools = ref<School[]>([
     {
       id: 2,
-      name: 'Oxford Academy',
-      slug: 'oxford-academy',
-      logo: '/images/school-1.png',
-      description: 'Leading academy for language learning',
-      heroImage: '/images/school-1-hero.jpg',
-      address: '456 Academy Blvd, City',
-      phone: '+212 5XX-XXXXXX',
-      whatsapp: '+212 6XX-XXXXXX',
+      name: l('Oxford Academy', 'Académie Oxford', 'أكاديمية أكسفورد'),
+      address: l('456 Academy Blvd, City', '456 Boulevard de l\'Académie, Ville', '456 شارع الأكاديمية، المدينة'),
+      short_description: l('Leading academy for language learning', 'Académie leader pour l\'apprentissage des langues', 'الأكاديمية الرائدة لتعلم اللغات'),
       email: 'academy@oxfordschoolgroup.com',
-      mapLat: 33.5731,
-      mapLng: -7.5898,
+      primary_phone: '+212 5XX-XXXXXX',
+      secondary_phone: '+212 6XX-XXXXXX',
+      logo: '/images/school-1.png',
+      language_ids: [1, 2],
       languages: [
         {
           id: 1,
-          name: 'English',
-          icon: '🇬🇧',
+          code: 'en',
+          name: l('English', 'Anglais', 'الإنجليزية'),
           logo: '/images/lang-english.png',
           teachers: [
             {
               id: 1,
-              name: 'Prof. Ahmed Benali',
-              photo: '/images/teacher-1.jpg',
-              bio: 'Expert English teacher with over 10 years of experience in teaching ESL students.',
-              experience_years: 10,
-              languages: [
+              first_name: l('Ahmed', 'Ahmed', 'أحمد'),
+              last_name: l('Benali', 'Benali', 'بن علي'),
+              meta: {
+                en: { experience_years: 10, bio: 'Expert English teacher', education: 'MA in TESOL', certifications: ['CELTA'] },
+                fr: { experience_years: 10, bio: 'Professeur d\'anglais expert', education: 'Master en TESOL', certifications: ['CELTA'] },
+                ar: { experience_years: 10, bio: 'مدرس لغة إنجليزية خبير', education: 'ماجستير في تدريس الإنجليزية', certifications: ['سيلتا'] },
+              },
+              galleries: [],
+              mappedLanguages: [
                 { language_name: 'English', level: 'C2' },
-                { language_name: 'French', level: 'B2' },
-              ],
-              videos: [
-                { id: 1, title: 'English Grammar Basics', thumbnail: '/images/vid-1.jpg', url: 'https://www.youtube.com/embed/xxx' },
-                { id: 2, title: 'Speaking Practice', thumbnail: '/images/vid-2.jpg', url: 'https://www.youtube.com/embed/yyy' },
-              ],
-              albums: [
-                {
-                  id: 1, title: 'Class 2024', cover: '/images/album-1.jpg', year: '2024',
-                  photos: [
-                    { id: 1, url: '/images/photo-1.jpg', caption: 'First day' },
-                    { id: 2, url: '/images/photo-2.jpg', caption: 'Group activity' },
-                  ]
-                }
+                { language_name: 'French', level: 'B2' }
               ]
             },
             {
               id: 2,
-              name: 'Prof. Sara Moussaoui',
-              photo: '/images/teacher-2.jpg',
-              bio: 'Passionate English instructor specializing in Business English.',
-              experience_years: 7,
-              languages: [
+              first_name: l('Sara', 'Sara', 'سارة'),
+              last_name: l('Moussaoui', 'Moussaoui', 'موساوي'),
+              meta: {
+                en: { experience_years: 7, bio: 'Passionate English instructor', education: 'BA in English Lit', certifications: ['TEFL'] },
+                fr: { experience_years: 7, bio: 'Instructrice d\'anglais passionnée', education: 'Licence en littérature', certifications: ['TEFL'] },
+                ar: { experience_years: 7, bio: 'مدرسة لغة إنجليزية شغوفة', education: 'إجازة في الأدب الإنجليزي', certifications: ['تيفل'] },
+              },
+              galleries: [],
+              mappedLanguages: [
                 { language_name: 'English', level: 'C1' },
-                { language_name: 'Arabic', level: 'Native' },
-              ],
-              videos: [],
-              albums: []
+                { language_name: 'Arabic', level: 'Native' }
+              ]
             }
-          ]
+          ] as Teacher[]
         },
         {
           id: 2,
-          name: 'French',
-          icon: '🇫🇷',
+          code: 'fr',
+          name: l('French', 'Français', 'الفرنسية'),
           logo: '/images/lang-french.png',
           teachers: [
             {
               id: 3,
-              name: 'Prof. Jean Dupont',
-              photo: '/images/teacher-3.jpg',
-              bio: 'Native French speaker with DALF certification and 12 years of teaching experience.',
-              experience_years: 12,
-              languages: [
+              first_name: l('Jean', 'Jean', 'جان'),
+              last_name: l('Dupont', 'Dupont', 'دوبون'),
+              meta: {
+                en: { experience_years: 12, bio: 'Native French speaker', education: 'MA in FLE', certifications: ['DALF'] },
+                fr: { experience_years: 12, bio: 'Locuteur natif français', education: 'Master en FLE', certifications: ['DALF'] },
+                ar: { experience_years: 12, bio: 'متحدث فرنسي أصلي', education: 'ماجستير في تعليم الفرنسية', certifications: ['دالف'] },
+              },
+              galleries: [],
+              mappedLanguages: [
                 { language_name: 'French', level: 'Native' },
-                { language_name: 'English', level: 'B2' },
-              ],
-              videos: [],
-              albums: []
+                { language_name: 'English', level: 'B2' }
+              ]
             }
-          ]
-        },
-        {
-          id: 3,
-          name: 'Spanish',
-          icon: '🇪🇸',
-          logo: '/images/lang-spanish.png',
-          teachers: []
+          ] as Teacher[]
         }
-      ]
+      ],
+      slug: 'oxford-academy',
+      heroImage: '/images/school-1-hero.jpg',
+      mapLat: 33.5731,
+      mapLng: -7.5898,
     },
     {
       id: 3,
-      name: 'Oxford Institute',
-      slug: 'oxford-institute',
-      logo: '/images/school-2.png',
-      description: 'Professional training and certification center',
-      heroImage: '/images/school-2-hero.jpg',
-      address: '789 Institute Ave, City',
-      phone: '+212 5XX-XXXXXX',
-      whatsapp: '+212 6XX-XXXXXX',
+      name: l('Oxford Institute', 'Institut Oxford', 'معهد أكسفورد'),
+      address: l('789 Institute Ave, City', '789 Avenue de l\'Institut, Ville', '789 شارع المعهد، المدينة'),
+      short_description: l('Professional training and certification center', 'Centre de formation professionnelle et de certification', 'مركز تدريب واعتماد مهني'),
       email: 'institute@oxfordschoolgroup.com',
+      primary_phone: '+212 5XX-XXXXXX',
+      secondary_phone: '+212 6XX-XXXXXX',
+      logo: '/images/school-2.png',
+      language_ids: [],
+      languages: [],
+      slug: 'oxford-institute',
+      heroImage: '/images/school-2-hero.jpg',
       mapLat: 33.5800,
       mapLng: -7.5900,
-      languages: []
     },
     {
       id: 4,
-      name: 'Oxford Kids',
-      slug: 'oxford-kids',
-      logo: '/images/school-3.png',
-      description: 'Early childhood language education',
-      heroImage: '/images/school-3-hero.jpg',
-      address: '321 Kids Lane, City',
-      phone: '+212 5XX-XXXXXX',
-      whatsapp: '+212 6XX-XXXXXX',
+      name: l('Oxford Kids', 'Oxford Enfants', 'أكسفورد للأطفال'),
+      address: l('321 Kids Lane, City', '321 Ruelle des Enfants, Ville', '321 حارة الأطفال، المدينة'),
+      short_description: l('Early childhood language education', 'Éducation linguistique pour la petite enfance', 'تعليم اللغات في مرحلة الطفولة المبكرة'),
       email: 'kids@oxfordschoolgroup.com',
+      primary_phone: '+212 5XX-XXXXXX',
+      secondary_phone: '+212 6XX-XXXXXX',
+      logo: '/images/school-3.png',
+      language_ids: [],
+      languages: [],
+      slug: 'oxford-kids',
+      heroImage: '/images/school-3-hero.jpg',
       mapLat: 33.5650,
       mapLng: -7.5850,
-      languages: []
     }
   ])
 
   const getSchoolBySlug = (slug: string): School | undefined => {
     return subSchools.value.find(s => s.slug === slug)
   }
-
-  // لاحقاً: استبدال بـ API
-  // const fetchSchools = async () => {
-  //   const { data } = await useFetch(`${config.public.apiBase}/schools`)
-  //   subSchools.value = data.value
-  // }
 
   return {
     mainSchool,
@@ -160,28 +149,21 @@ export const useSchool = () => {
 }
 
 export const useTestimonials = () => {
+  const l = (en: string, fr?: string, ar?: string) => ({ en, fr: fr || null, ar: ar || null })
   const testimonials = ref<Testimonial[]>([
-    { id: 1, name: 'Fatima Zahra', photo: '/images/test-1.jpg', rating: 5, message: 'An incredible learning experience! The teachers are dedicated and the curriculum is outstanding.' },
-    { id: 2, name: 'Youssef El Amrani', photo: '/images/test-2.jpg', rating: 5, message: 'Oxford School Group transformed my English skills completely. Highly recommended!' },
-    { id: 3, name: 'Amina Boutayeb', photo: '/images/test-3.jpg', rating: 4, message: 'Great environment for learning. My children love going to their language classes.' },
-    { id: 4, name: 'Karim Hassani', photo: '/images/test-4.jpg', rating: 5, message: 'Professional staff and modern teaching methods. Best language school in the city.' },
-    { id: 5, name: 'Nadia Berrada', photo: '/images/test-5.jpg', rating: 5, message: 'I achieved my B2 certification thanks to the amazing professors here.' },
-    { id: 6, name: 'Omar Tazi', photo: '/images/test-6.jpg', rating: 4, message: 'Flexible schedules and excellent course materials. Very satisfied with my progress.' },
+    { id: 1, author: l('Fatima Zahra'), photo: '/images/test-1.jpg', order: 1, website: null, content: l('An incredible learning experience! The teachers are dedicated and the curriculum is outstanding.', 'Une expérience d\'apprentissage incroyable ! Les professeurs sont dévoués.', 'تجربة تعلم مذهلة! الأساتذة متفانون والمنهج رائع.') },
+    { id: 2, author: l('Youssef El Amrani'), photo: '/images/test-2.jpg', order: 2, website: null, content: l('Oxford School Group transformed my English skills completely. Highly recommended!', 'Le groupe Oxford a complètement transformé mes compétences en anglais.', 'لقد خولپت مجموعة أكسفورد مهاراتي في الإنجليزية بالكامل.') },
   ])
 
   return { testimonials }
 }
 
 export const usePartners = () => {
+  const l = (en: string, fr?: string, ar?: string) => ({ en, fr: fr || null, ar: ar || null })
   const partners = ref<Partner[]>([
-    { id: 1, name: 'Cambridge English', logo: '/images/partner-1.png' },
-    { id: 2, name: 'Alliance Française', logo: '/images/partner-2.png' },
-    { id: 3, name: 'Instituto Cervantes', logo: '/images/partner-3.png' },
-    { id: 4, name: 'Goethe-Institut', logo: '/images/partner-4.png' },
-    { id: 5, name: 'British Council', logo: '/images/partner-5.png' },
-    { id: 6, name: 'DELF / DALF', logo: '/images/partner-6.png' },
-    { id: 7, name: 'TOEFL iBT', logo: '/images/partner-7.png' },
-    { id: 8, name: 'IELTS Official', logo: '/images/partner-8.png' },
+    { id: 1, name: l('Cambridge English'), logo: '/images/partner-1.png', website: null, order: 1 },
+    { id: 2, name: l('Alliance Française'), logo: '/images/partner-2.png', website: null, order: 2 },
+    { id: 3, name: l('Instituto Cervantes'), logo: '/images/partner-3.png', website: null, order: 3 },
   ])
 
   return { partners }

@@ -19,7 +19,7 @@
         <div class="relative w-24 h-24 md:w-32 md:h-32 rounded-[1.5rem] md:rounded-[2rem] border-[1px] border-gold-500/40 bg-gradient-to-br from-white to-gray-50 dark:from-navy-900 dark:to-navy-800 flex items-center justify-center shadow-[inset_0_0_30px_rgba(212,168,38,0.05)] dark:shadow-[inset_0_0_30px_rgba(212,168,38,0.1)] group-hover:border-gold-400/80 group-hover:shadow-[0_0_50px_rgba(212,168,38,0.2)] dark:group-hover:shadow-[0_0_50px_rgba(212,168,38,0.3)] transition-all duration-1000 rotate-45 hover:rotate-[135deg] cursor-pointer">
           <!-- Counter-rotate text -->
           <span class="font-display text-4xl md:text-5xl font-black bg-gradient-to-br from-gold-500 to-gold-700 dark:from-gold-200 dark:via-gold-400 dark:to-gold-600 bg-clip-text text-transparent transform -rotate-45 block leading-none drop-shadow-sm transition-transform duration-1000 group-hover:-rotate-[135deg]">
-            {{ getInitials(school.name) }}
+            {{ getInitials(t(school.name)) }}
           </span>
         </div>
       </div>
@@ -27,14 +27,14 @@
       <!-- School Name Title -->
       <div class="relative inline-block mb-6">
         <h1 class="font-display text-5xl md:text-7xl font-bold tracking-wider bg-gradient-to-br from-navy-900 via-navy-800 to-gold-600 dark:from-white dark:via-gold-100 dark:to-gold-500 bg-clip-text text-transparent drop-shadow-lg z-10 relative">
-          {{ school.name }}
+          {{ t(school.name) }}
         </h1>
         <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-32 h-[2px] bg-gradient-to-r from-transparent via-gold-500 to-transparent"></div>
       </div>
 
       <!-- Description -->
       <p class="text-xl md:text-2xl text-navy-700 dark:text-gold-500/80 max-w-2xl mx-auto font-light leading-relaxed mt-6">
-        {{ school.description }}
+        {{ t(school.short_description) }}
       </p>
     </div>
   </section>
@@ -43,6 +43,7 @@
 <script setup lang="ts">
 import type { School } from '~/types'
 
+const { t } = useLocale()
 defineProps<{ school: School }>()
 
 const getInitials = (name?: string) => {

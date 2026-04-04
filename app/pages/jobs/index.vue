@@ -37,16 +37,9 @@
                     ? 'border-gold-500 bg-gold-500/5 dark:bg-gold-500/10 shadow-md dark:shadow-gold-500/10'
                     : 'border-gray-200 dark:border-navy-700 bg-white dark:bg-navy-900/50 hover:border-gold-400 dark:hover:border-gold-500/50 hover:shadow-sm'"
                 >
-                  <h3 class="font-semibold text-navy-900 dark:text-white mb-2">{{ job.title }}</h3>
+                  <h3 class="font-semibold text-navy-900 dark:text-white mb-2">{{ t(job.title) }}</h3>
                   <div class="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400">
-                    <span v-if="job.location">
-                      <i class="ph-fill ph-map-pin mr-1 text-gold-500"></i>
-                      {{ job.location }}
-                    </span>
-                    <span v-if="job.type">
-                      <i class="ph-fill ph-clock mr-1 text-gold-500"></i>
-                      {{ job.type }}
-                    </span>
+                    <!-- Removed static location and type -->
                   </div>
                   <p class="text-xs text-gray-400 dark:text-gray-500 mt-2">
                     <i class="ph-fill ph-calendar mr-1"></i>
@@ -65,17 +58,9 @@
                 <!-- Job Header -->
                 <div class="mb-8">
                   <h2 class="font-display text-3xl font-bold text-navy-900 dark:text-white mb-3">
-                    {{ selectedJob.title }}
+                    {{ t(selectedJob.title) }}
                   </h2>
                   <div class="flex flex-wrap items-center gap-4 text-gray-500 dark:text-gray-400">
-                    <span v-if="selectedJob.location" class="flex items-center gap-2">
-                      <i class="ph-fill ph-map-pin text-gold-500"></i>
-                      {{ selectedJob.location }}
-                    </span>
-                    <span v-if="selectedJob.type" class="flex items-center gap-2">
-                      <i class="ph-fill ph-clock text-gold-500"></i>
-                      {{ selectedJob.type }}
-                    </span>
                     <span class="flex items-center gap-2">
                       <i class="ph-fill ph-calendar text-gold-500"></i>
                       {{ formatDate(selectedJob.created_at) }}
@@ -85,7 +70,7 @@
 
                 <!-- Job Description -->
                 <div class="prose prose-lg max-w-none mb-10 text-gray-700 dark:text-gray-300 leading-relaxed"
-                     v-html="formatDescription(selectedJob.description)">
+                     v-html="formatDescription(t(selectedJob.description))">
                 </div>
 
                 <!-- Apply Button -->
@@ -129,7 +114,7 @@
                   <i class="ph-fill ph-file-text text-indigo-600 dark:text-gold-500 text-2xl"></i>
                 </div>
                 <h2 class="font-display text-3xl font-bold text-navy-900 dark:text-white">Apply for Position</h2>
-                <p class="text-gray-500 dark:text-gray-400 mt-2">{{ selectedJob?.title }}</p>
+                <p class="text-gray-500 dark:text-gray-400 mt-2">{{ t(selectedJob?.title) }}</p>
               </div>
 
               <form @submit.prevent="submitApplication" class="space-y-5">
@@ -237,6 +222,7 @@
 
 <script setup lang="ts">
 const { jobs, selectedJob, selectJob, applyForJob } = useJobs()
+const { t } = useLocale()
 
 const showApplyModal = ref(false)
 const showApplySuccess = ref(false)

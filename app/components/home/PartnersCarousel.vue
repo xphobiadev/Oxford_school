@@ -53,7 +53,7 @@
             <!-- Partner Name -->
             <span class="text-navy-800 dark:text-gray-300 group-hover:text-gold-600 dark:group-hover:text-gold-400
                          font-display font-bold text-sm text-center transition-colors duration-300 relative z-10">
-              {{ partner.name }}
+              {{ t(partner.name) }}
             </span>
           </div>
         </div>
@@ -88,7 +88,7 @@
                 <i class="ph-fill ph-certificate text-gold-500/50 group-hover:text-gold-500 text-sm"></i>
                 <span class="text-navy-700 dark:text-gray-400 hover:text-gold-600 dark:hover:text-gold-400
                              font-display font-semibold text-xs tracking-wider uppercase transition-colors">
-                  {{ partner.name }}
+                  {{ t(partner.name) }}
                 </span>
               </div>
             </div>
@@ -123,6 +123,7 @@
 
 <script setup lang="ts">
 const { partners } = usePartners()
+const { t } = useLocale()
 
 const partnerIcons = [
   'ph-fill ph-university',

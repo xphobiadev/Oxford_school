@@ -2,12 +2,13 @@ import type { Job, JobApplication } from '~/types'
 
 export const useJobs = () => {
   const config = useRuntimeConfig()
+  const l = (en: string, fr?: string, ar?: string) => ({ en, fr: fr || null, ar: ar || null })
 
   const jobs = ref<Job[]>([
     {
       id: 1,
-      title: 'English Teacher - Full Time',
-      description: `We are looking for an experienced English teacher to join our team.
+      title: l('English Teacher - Full Time', 'Professeur d\'anglais - Temps plein', 'مدرس لغة إنجليزية - دوام كامل'),
+      description: l(`We are looking for an experienced English teacher to join our team.
 
 **Responsibilities:**
 - Teach English to students of various levels (A1-C2)
@@ -19,16 +20,14 @@ export const useJobs = () => {
 - TEFL/TESOL certification
 - Minimum 3 years of teaching experience
 - Excellent communication skills
-- Bachelor's degree in English or related field`,
-      requirements: 'TEFL certified, 3+ years experience',
-      location: 'Oued Zem',
-      type: 'Full-time',
+- Bachelor's degree in English or related field`),
+      school_id: 1,
       created_at: '2024-12-01'
     },
     {
       id: 2,
-      title: 'French Teacher - Part Time',
-      description: `Join our team as a part-time French teacher.
+      title: l('French Teacher - Part Time', 'Professeur de français - Temps partiel', 'مدرس لغة فرنسية - دوام جزئي'),
+      description: l(`Join our team as a part-time French teacher.
 
 **Responsibilities:**
 - Conduct French language classes
@@ -38,16 +37,14 @@ export const useJobs = () => {
 **Requirements:**
 - Native or near-native French proficiency
 - Teaching certification preferred
-- Minimum 2 years experience`,
-      requirements: 'Native French, 2+ years experience',
-      location: 'Oued Zem',
-      type: 'Part-time',
+- Minimum 2 years experience`),
+      school_id: 1,
       created_at: '2024-12-05'
     },
     {
       id: 3,
-      title: 'Administrative Assistant',
-      description: `We need an organized administrative assistant to support our school operations.
+      title: l('Administrative Assistant', 'Assistant Administratif', 'مساعد إداري'),
+      description: l(`We need an organized administrative assistant to support our school operations.
 
 **Responsibilities:**
 - Handle student registrations
@@ -58,10 +55,8 @@ export const useJobs = () => {
 **Requirements:**
 - Bilingual (Arabic/French)
 - Computer proficiency
-- Strong organizational skills`,
-      requirements: 'Bilingual, organized',
-      location: 'Oued Zem',
-      type: 'Full-time',
+- Strong organizational skills`),
+      school_id: 1,
       created_at: '2024-12-10'
     },
   ])
@@ -73,16 +68,7 @@ export const useJobs = () => {
   }
 
   const applyForJob = async (application: JobApplication) => {
-    // لاحقاً: إرسال إلى API
     console.log('Job application submitted:', application)
-    // const formData = new FormData()
-    // Object.entries(application).forEach(([key, value]) => {
-    //   if (value) formData.append(key, value)
-    // })
-    // await $fetch(`${config.public.apiBase}/jobs/apply`, {
-    //   method: 'POST',
-    //   body: formData
-    // })
     return { success: true, message: 'Application submitted successfully!' }
   }
 

@@ -38,12 +38,12 @@
                   <div class="absolute inset-y-0 -left-64 w-32 bg-gradient-to-r from-transparent via-gold-400/10 to-transparent skew-x-[30deg] opacity-0 group-hover:opacity-100 group-hover:animate-[sweep-across_1.5s_ease-out] pointer-events-none z-10 mix-blend-overlay"></div>
 
                   <div class="relative z-20 p-8 h-full flex flex-col items-center justify-center">
-                    <div class="text-6xl mb-4 transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-500 drop-shadow-md dark:drop-shadow-xl filter">{{ lang.icon }}</div>
+                    <img :src="lang.logo || ('/images/lang-' + lang.code + '.png')" alt="" class="w-16 h-16 object-contain mb-4 transform group-hover:scale-110 group-hover:-rotate-6 transition-all duration-500 drop-shadow-md dark:drop-shadow-xl filter" />
                     <h3 class="font-display font-semibold text-2xl text-navy-900 dark:text-white group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors drop-shadow-sm dark:drop-shadow">
-                      {{ lang.name }}
+                      {{ t(lang.name) }}
                     </h3>
                     <p class="text-sm text-navy-600 dark:text-gold-500/70 mt-2 font-medium tracking-wider uppercase">
-                      {{ lang.teachers.length }} teacher{{ lang.teachers.length !== 1 ? 's' : '' }}
+                      {{ lang.teachers?.length || 0 }} teacher{{ (lang.teachers?.length || 0) !== 1 ? 's' : '' }}
                     </p>
                   </div>
                 </button>
@@ -64,8 +64,8 @@
 
               <div class="text-center mb-16">
                 <h2 class="font-display text-4xl md:text-5xl font-bold text-navy-900 dark:text-white inline-flex items-center gap-4 drop-shadow-sm dark:drop-shadow-lg">
-                  <span class="text-5xl filter drop-shadow-md dark:drop-shadow-xl">{{ selectedLanguage?.icon }}</span>
-                  {{ selectedLanguage?.name }} Teachers
+                  <img v-if="selectedLanguage" :src="selectedLanguage.logo || ('/images/lang-' + selectedLanguage.code + '.png')" class="w-12 h-12 object-contain filter drop-shadow-md dark:drop-shadow-xl" />
+                  {{ selectedLanguage ? t(selectedLanguage.name) : '' }} Teachers
                 </h2>
                 <div class="mt-6 w-24 h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent mx-auto rounded-full"></div>
               </div>
@@ -85,20 +85,20 @@
                     <div class="absolute -bottom-12 left-1/2 -translate-x-1/2">
                       <div class="w-24 h-24 rounded-full bg-white dark:bg-navy-950 p-[3px] border border-gray-300 dark:border-gold-500/20 group-hover:border-gold-400 dark:group-hover:border-gold-500/60 transition-colors duration-500 shadow-md dark:shadow-xl shadow-black/5 dark:shadow-black/50">
                          <div class="w-full h-full rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center text-white dark:text-navy-950 text-3xl font-black font-display group-hover:scale-110 transition-transform duration-500">
-                           {{ teacher.name.charAt(0) }}
+                           {{ t(teacher.first_name).charAt(0) }}
                          </div>
                       </div>
                     </div>
                   </div>
                   
                   <div class="pt-16 pb-8 px-6 text-center">
-                    <h3 class="font-display font-semibold text-2xl text-navy-900 dark:text-white mb-2 group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors">{{ teacher.name }}</h3>
+                    <h3 class="font-display font-semibold text-2xl text-navy-900 dark:text-white mb-2 group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors">{{ t(teacher.first_name) }} {{ t(teacher.last_name) }}</h3>
                     <p class="text-navy-600 dark:text-gold-400/80 text-sm mb-5 font-semibold tracking-wide uppercase">
-                      <i class="ph-fill ph-star mr-1 text-gold-500/70"></i> {{ teacher.experience_years }} Years Excellence
+                      <i class="ph-fill ph-star mr-1 text-gold-500/70"></i> {{ teacher.meta[currentLang]?.experience_years || 0 }} Years Excellence
                     </p>
                     <div class="flex flex-wrap justify-center gap-2">
                        <span
-                        v-for="tl in teacher.languages"
+                        v-for="tl in teacher.mappedLanguages"
                         :key="tl.language_name"
                         class="text-xs font-medium bg-gray-100 dark:bg-navy-950/80 border border-gray-200 dark:border-navy-700 text-navy-700 dark:text-gray-300 px-3 py-1.5 rounded-full shadow-inner"
                       >
@@ -141,6 +141,127 @@
         </div>
       </section>
 
+      <!-- Student Services Links -->
+      <section class="py-16 bg-gold-500/5 dark:bg-navy-900/40 border-y border-gray-100 dark:border-navy-800 relative z-10">
+        <div class="container mx-auto px-6 max-w-5xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Student Portal -->
+            <NuxtLink to="/portal" class="group flex flex-col items-center justify-center p-10 bg-white dark:bg-navy-800 rounded-3xl shadow-lg border border-gray-100 dark:border-navy-700 hover:-translate-y-2 hover:shadow-xl hover:border-gold-500/50 transition-all duration-300">
+              <div class="w-20 h-20 bg-indigo-50 dark:bg-navy-900 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                <i class="ph-fill ph-student text-4xl text-indigo-500 dark:text-gold-500"></i>
+              </div>
+              <h3 class="font-display text-2xl font-bold text-navy-900 dark:text-white mb-2">Student Portal</h3>
+              <p class="text-gray-500 dark:text-gray-400 text-center">View your schedules, exams, and personal meta-information.</p>
+            </NuxtLink>
+
+            <!-- Certificate Verification -->
+            <NuxtLink to="/certificates" class="group flex flex-col items-center justify-center p-10 bg-white dark:bg-navy-800 rounded-3xl shadow-lg border border-gray-100 dark:border-navy-700 hover:-translate-y-2 hover:shadow-xl hover:border-gold-500/50 transition-all duration-300">
+              <div class="w-20 h-20 bg-gold-50 dark:bg-navy-900 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
+                <i class="ph-fill ph-certificate text-4xl text-gold-500"></i>
+              </div>
+              <h3 class="font-display text-2xl font-bold text-navy-900 dark:text-white mb-2">Verify Certificate</h3>
+              <p class="text-gray-500 dark:text-gray-400 text-center">Check the authenticity of diplomas and search official records.</p>
+            </NuxtLink>
+          </div>
+        </div>
+      </section>
+
+      <!-- Global Sections -->
+      <TestimonialsSlider />
+      <PartnersCarousel />
+
+      <!-- School Contact Section -->
+      <section class="py-20 bg-white dark:bg-navy-900/50 border-t border-gray-100 dark:border-navy-800 relative z-10">
+        <div class="container mx-auto px-6 max-w-6xl">
+          <div class="text-center mb-16">
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-navy-900 dark:text-white inline-flex items-center gap-4">
+              <i class="ph-fill ph-map-pin text-gold-500"></i>
+              Visit {{ t(school.name) }}
+            </h2>
+            <div class="mt-4 w-16 h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent mx-auto rounded-full"></div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <!-- Contact Info -->
+            <div class="space-y-8">
+              <div class="bg-gray-50 dark:bg-navy-800/50 p-8 rounded-3xl border border-gray-100 dark:border-navy-700">
+                <h3 class="text-xl font-bold font-display text-navy-900 dark:text-white mb-6">Contact Information</h3>
+                
+                <div class="space-y-6">
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-map-pin text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy-900 dark:text-white">Address</h4>
+                      <p class="text-gray-600 dark:text-gray-400 mt-1">{{ t(school.address) }}</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4" v-if="school.primary_phone">
+                    <div class="w-12 h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-phone text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy-900 dark:text-white">Phone</h4>
+                      <p class="text-gray-600 dark:text-gray-400 mt-1">{{ school.primary_phone }}</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4" v-if="school.secondary_phone">
+                    <div class="w-12 h-12 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy-900 dark:text-white">WhatsApp</h4>
+                      <p class="text-gray-600 dark:text-gray-400 mt-1">{{ school.secondary_phone }}</p>
+                    </div>
+                  </div>
+
+                  <div class="flex items-start gap-4" v-if="school.email">
+                    <div class="w-12 h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-envelope text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-navy-900 dark:text-white">Email</h4>
+                      <a :href="'mailto:' + school.email" class="text-gold-600 dark:text-gold-400 hover:underline mt-1 inline-block">{{ school.email }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="h-[400px] w-full rounded-3xl overflow-hidden bg-gray-200 dark:bg-navy-800 relative group border border-gray-100 dark:border-navy-700">
+               <!-- Temporary Map View -->
+               <div class="absolute inset-0 bg-[url('/images/map-placeholder.jpg')] bg-cover bg-center opacity-50 contrast-125 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
+               <div class="absolute inset-0 bg-navy-900/40 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-700"></div>
+               
+               <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center group-hover:-translate-y-6 transition-transform duration-500">
+                  <div class="w-16 h-16 rounded-full bg-white dark:bg-navy-900 shadow-2xl flex items-center justify-center animate-bounce">
+                    <i class="ph-fill ph-map-pin text-3xl text-gold-500"></i>
+                  </div>
+                  <div class="bg-white/90 dark:bg-navy-900/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg mt-4 text-sm font-semibold text-navy-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                    {{ t(school.name) }}
+                  </div>
+               </div>
+
+               <!-- Interactive Map Overlay (Could be an iframe) -->
+               <iframe 
+                v-if="school.mapLat && school.mapLng"
+                class="absolute inset-0 w-full h-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-auto"
+                :src="`https://maps.google.com/maps?q=${school.mapLat},${school.mapLng}&hl=es;z=14&output=embed`" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="true" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Registration Modal -->
       <RegisterModal
         v-if="showRegisterModal"
@@ -169,6 +290,7 @@ import type { Language, Teacher } from '~/types'
 
 const route = useRoute()
 const { getSchoolBySlug } = useSchool()
+const { t, currentLang } = useLocale()
 
 const slug = route.params.slug as string
 const school = computed(() => getSchoolBySlug(slug))
@@ -206,7 +328,7 @@ const openRegisterModal = () => {
 }
 
 useHead({
-  title: computed(() => school.value ? `${school.value.name} - Universal Oxford Groupe` : 'School Not Found')
+  title: computed(() => school.value ? `${t(school.value.name)} - Universal Oxford Groupe` : 'School Not Found')
 })
 </script>
 

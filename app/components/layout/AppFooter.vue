@@ -29,11 +29,7 @@
             </div>
           </div>
           <p class="text-gray-400 leading-relaxed text-sm mb-8 max-w-md">
-            Universal Oxford Groupe is a premier educational institution offering
-            world-class language courses and IT training. With expert instructors
-            and modern methods, we empower students to achieve excellence in
-            languages like English, French, Spanish, German, Italian and master
-            essential computer skills.
+            {{ t(mainSchool.short_description) }}
           </p>
           <!-- Social -->
           <div class="flex gap-3">
@@ -82,39 +78,39 @@
           </h4>
           <div class="gold-line-left"></div>
           <div class="space-y-4">
-            <a href="tel:+2125XXXXXXXX"
+            <a v-if="mainSchool.primary_phone" :href="'tel:' + mainSchool.primary_phone"
                class="flex items-center gap-4 text-gray-400 hover:text-white
                       transition-colors group text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center group-hover:bg-gold-500/20 transition-colors flex-shrink-0">
                 <i class="ph-fill ph-phone text-gold-500 text-sm"></i>
               </div>
-              +212 5XX-XXXXXX
+              {{ mainSchool.primary_phone }}
             </a>
-            <a href="https://wa.me/2126XXXXXXXX" target="_blank"
+            <a v-if="mainSchool.secondary_phone" :href="'https://wa.me/' + mainSchool.secondary_phone.replace(/[^0-9]/g, '')" target="_blank"
                class="flex items-center gap-4 text-gray-400 hover:text-white
                       transition-colors group text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center group-hover:bg-gold-500/20 transition-colors flex-shrink-0">
                 <i class="ph-fill ph-whatsapp-logo text-gold-500"></i>
               </div>
-              +212 6XX-XXXXXX
+              {{ mainSchool.secondary_phone }}
             </a>
-            <a href="mailto:contact@universaloxford.com"
+            <a v-if="mainSchool.email" :href="'mailto:' + mainSchool.email"
                class="flex items-center gap-4 text-gray-400 hover:text-white
                       transition-colors group text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center group-hover:bg-gold-500/20 transition-colors flex-shrink-0">
                 <i class="ph-fill ph-envelope text-gold-500 text-sm"></i>
               </div>
-              contact@universaloxford.com
+              {{ mainSchool.email }}
             </a>
-            <div class="flex items-center gap-4 text-gray-400 text-sm">
+            <div v-if="mainSchool.address" class="flex items-center gap-4 text-gray-400 text-sm">
               <div class="w-10 h-10 rounded-xl bg-gold-500/10 flex items-center
                           justify-center flex-shrink-0">
                 <i class="ph-fill ph-map-pin text-gold-500 text-sm"></i>
               </div>
-              Rue Des Haddadas N°95, Oued Zem 25350
+              {{ t(mainSchool.address) }}
             </div>
           </div>
         </div>
@@ -145,6 +141,9 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useLocale()
+const { mainSchool } = useSchool()
+
 const quickLinks = [
   { label: 'Home', path: '/' },
   { label: 'About Us', path: '/about' },

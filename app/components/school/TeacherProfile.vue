@@ -6,7 +6,7 @@
         <div class="w-40 h-40 bg-gradient-to-br from-indigo-100 to-indigo-200 dark:from-navy-800 dark:to-navy-900
                     rounded-3xl flex items-center justify-center shadow-lg border border-white dark:border-gold-500/20">
           <span class="text-6xl font-bold font-display bg-gradient-to-br from-indigo-600 to-indigo-800 dark:from-gold-400 dark:to-gold-600 bg-clip-text text-transparent transform">
-            {{ teacher.name.charAt(0) }}
+            {{ t(teacher.first_name).charAt(0) }}
           </span>
         </div>
       </div>
@@ -14,10 +14,10 @@
       <!-- Teacher Info -->
       <div class="flex-1">
         <h2 class="font-display text-4xl font-bold text-navy-900 dark:text-white mb-4 drop-shadow-sm dark:drop-shadow">
-          {{ teacher.name }}
+          {{ t(teacher.first_name) }} {{ t(teacher.last_name) }}
         </h2>
 
-        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">{{ teacher.bio }}</p>
+        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">{{ teacher.meta[currentLang]?.bio || '' }}</p>
 
         <!-- Experience -->
         <div class="flex items-center gap-4 mb-6">
@@ -26,7 +26,7 @@
           </div>
           <div>
             <span class="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-widest font-semibold block mb-1">Experience</span>
-            <p class="font-bold text-navy-900 dark:text-white">{{ teacher.experience_years }} years</p>
+            <p class="font-bold text-navy-900 dark:text-white">{{ teacher.meta[currentLang]?.experience_years || 0 }} years</p>
           </div>
         </div>
 
@@ -37,7 +37,7 @@
           </h4>
           <div class="flex flex-wrap gap-3">
             <div
-              v-for="lang in teacher.languages"
+              v-for="lang in teacher.mappedLanguages"
               :key="lang.language_name"
               class="bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700 rounded-xl px-4 py-2
                      flex items-center gap-3 shadow-inner"
@@ -56,6 +56,8 @@
 
 <script setup lang="ts">
 import type { Teacher } from '~/types'
+
+const { t, currentLang } = useLocale()
 
 defineProps<{
   teacher: Teacher

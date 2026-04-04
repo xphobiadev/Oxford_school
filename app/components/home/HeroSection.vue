@@ -156,18 +156,18 @@
                   <div class="relative w-20 h-20 md:w-24 md:h-24 rounded-[1.2rem] md:rounded-[1.5rem] border-[1px] border-gold-500/30 bg-gradient-to-br from-gray-50 to-white dark:from-navy-900 dark:to-navy-800 flex items-center justify-center shadow-[inset_0_0_20px_rgba(212,168,38,0.05)] group-hover:border-gold-400/80 group-hover:shadow-[0_0_40px_rgba(212,168,38,0.25)] transition-all duration-700 rotate-45 hover:rotate-[135deg] cursor-pointer">
                     <!-- Counter-rotate text -->
                     <span class="font-display text-3xl md:text-4xl font-black bg-gradient-to-br from-gold-500 to-gold-700 dark:from-gold-200 dark:via-gold-400 dark:to-gold-600 bg-clip-text text-transparent transform -rotate-45 block leading-none drop-shadow-sm transition-transform duration-700 group-hover:-rotate-[135deg]">
-                      {{ getInitials(school.name) }}
+                      {{ getInitials(t(school.name)) }}
                     </span>
                   </div>
                 </div>
 
                 <!-- School Info -->
                 <h3 class="font-display text-2xl md:text-3xl font-bold text-navy-950 dark:text-white mb-4 tracking-wide group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors duration-500 relative z-20 text-center">
-                  {{ school.name }}
+                  {{ t(school.name) }}
                 </h3>
                 
                 <p class="text-gray-600 dark:text-gray-400 leading-relaxed relative z-20 group-hover:text-gray-900 dark:group-hover:text-gray-300 transition-colors duration-500 text-sm text-center line-clamp-3">
-                  {{ school.description }}
+                  {{ t(school.short_description) }}
                 </p>
 
                 <!-- Premium CTA Button -->
@@ -201,6 +201,7 @@
 
 <script setup lang="ts">
 const { subSchools } = useSchool()
+const { t } = useLocale()
 
 const getInitials = (name: string) => {
   if (!name) return ''

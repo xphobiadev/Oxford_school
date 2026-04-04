@@ -47,11 +47,12 @@
             {{ item.label }}
           </NuxtLink>
         </li>
-        <li class="ml-4 flex items-center gap-4">
+        <li class="ml-4 flex items-center gap-2">
+          <LanguageSwitcher />
           <ThemeToggle />
           <NuxtLink
             to="/contact"
-            class="btn-gold text-sm py-2.5 px-5 flex items-center gap-2 shadow-lg hover:shadow-xl"
+            class="btn-gold text-sm py-2.5 px-5 flex items-center gap-2 shadow-lg hover:shadow-xl ml-2"
           >
             <i class="ph-fill ph-paper-plane-right"></i>
             Contact Us
@@ -126,6 +127,8 @@ const menuItems = [
   { label: 'Our Schools', path: '/#schools', icon: 'ph-fill ph-graduation-cap' },
   { label: 'Testimonials', path: '/#testimonials', icon: 'ph-fill ph-star' },
   { label: 'Careers', path: '/jobs', icon: 'ph-fill ph-briefcase' },
+  { label: 'Certificates', path: '/certificates', icon: 'ph-fill ph-certificate' },
+  { label: 'Timetable', path: '/timetable', icon: 'ph-fill ph-calendar' },
   { label: 'About Us', path: '/about', icon: 'ph-fill ph-info' },
 ]
 

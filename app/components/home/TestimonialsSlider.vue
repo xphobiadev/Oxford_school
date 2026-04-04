@@ -50,13 +50,13 @@
                     v-for="star in 5"
                     :key="star"
                     class="ph-fill ph-star text-lg"
-                    :class="star <= testimonial.rating ? 'star-gold' : 'star-empty'"
+                    :class="star <= 5 ? 'star-gold' : 'star-empty'"
                   ></i>
                 </div>
 
                 <!-- Message -->
                 <p class="text-gray-600 leading-relaxed flex-1 mb-8 text-sm md:text-base">
-                  "{{ testimonial.message }}"
+                  "{{ t(testimonial.content) }}"
                 </p>
 
                 <!-- Author -->
@@ -66,12 +66,12 @@
                            flex items-center justify-center flex-shrink-0"
                   >
                     <span class="text-navy-600 font-bold text-lg">
-                      {{ testimonial.name.charAt(0) }}
+                      {{ t(testimonial.author).charAt(0) }}
                     </span>
                   </div>
                   <div>
                     <h4 class="font-bold text-navy-800">
-                      {{ testimonial.name }}
+                      {{ t(testimonial.author) }}
                     </h4>
                     <p class="text-sm text-gold-600 font-medium">Student</p>
                   </div>
@@ -124,6 +124,7 @@
 
 <script setup lang="ts">
 const { testimonials } = useTestimonials()
+const { t } = useLocale()
 
 const currentSlide = ref(0)
 const visibleCards = ref(3)
