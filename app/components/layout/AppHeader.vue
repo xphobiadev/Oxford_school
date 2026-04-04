@@ -42,10 +42,9 @@
             :to="item.hash ? { path: item.path, hash: item.hash } : item.path"
             @click="handleMenuClick($event, item)"
             class="relative px-5 py-2.5 rounded-full font-medium text-sm tracking-wide
-                   transition-all duration-300 group flex items-center gap-2"
-            :class="item.highlight ? 'bg-gold-500/10 text-gold-600 dark:text-gold-400 hover:bg-gold-500 hover:text-navy-950 dark:hover:bg-gold-500 dark:hover:text-navy-950 border border-gold-500/30' : 'text-navy-800 hover:bg-black/5 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10'"
+                   transition-all duration-300 group flex items-center gap-2 text-navy-800 hover:bg-black/5 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10"
           >
-            <i :class="[item.icon, item.highlight ? 'text-gold-500 group-hover:text-navy-950' : 'text-gold-600 dark:text-gold-500/70 group-hover:text-gold-500']" class="text-xs"></i>
+            <i :class="item.icon" class="text-gold-600 dark:text-gold-500/70 group-hover:text-gold-500 text-xs transition-colors"></i>
             {{ item.label }}
           </NuxtLink>
         </li>
@@ -95,8 +94,9 @@
           <li v-for="item in menuItems" :key="item.label">
             <NuxtLink
               :to="item.hash ? { path: item.path, hash: item.hash } : item.path"
-              class="flex items-center gap-4 px-5 py-4 rounded-2xl transition-all font-medium border"
-              :class="item.highlight ? 'bg-gold-500/10 text-gold-600 dark:text-gold-400 border-gold-500/30' : 'text-navy-700 dark:text-gray-300 hover:text-gold-600 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 border-transparent hover:border-gold-500/10'"
+              class="flex items-center gap-4 px-5 py-4 rounded-2xl text-navy-700 dark:text-gray-300
+                     hover:text-gold-600 dark:hover:text-white hover:bg-black/5 dark:hover:bg-white/5 transition-all font-medium
+                     border border-transparent hover:border-gold-500/10"
               @click="handleMobileMenuClick($event, item)"
             >
               <i :class="item.icon" class="text-gold-500 w-5 text-center"></i>
@@ -127,7 +127,7 @@ const menuItems = [
   { label: 'Home', path: '/', hash: '', icon: 'ph-fill ph-house' },
   { label: 'Careers', path: '/jobs', hash: '', icon: 'ph-fill ph-briefcase' },
   { label: 'Certificates', path: '/certificates', hash: '', icon: 'ph-fill ph-certificate' },
-  { label: 'Student Portal', path: '/portal', hash: '', icon: 'ph-fill ph-student', highlight: true },
+  { label: 'Student Portal', path: '/portal', hash: '', icon: 'ph-fill ph-student' },
   { label: 'About', path: '/about', hash: '', icon: 'ph-fill ph-info' },
 ]
 
