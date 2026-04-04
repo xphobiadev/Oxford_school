@@ -134,13 +134,6 @@
                 </p>
               </div>
             </div>
-            
-            <div class="mt-8 pt-8 border-t border-gray-100 dark:border-navy-700 flex justify-center">
-              <button class="text-gold-600 dark:text-gold-400 hover:text-gold-700 dark:hover:text-gold-300 font-semibold text-sm flex items-center gap-2 transition-colors">
-                <i class="ph-bold ph-download-simple"></i>
-                Download Certificate Summary
-              </button>
-            </div>
           </div>
         </div>
       </Transition>
