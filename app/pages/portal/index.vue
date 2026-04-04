@@ -155,8 +155,8 @@
                   </div>
                 </div>
 
-                <!-- Calendar Grid Container -->
-                <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
+                <!-- Desktop Calendar Grid Container -->
+                <div class="hidden md:block overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
                   <div class="min-w-[800px]">
                     <!-- Grid Header (Days) -->
                     <div class="grid grid-cols-[100px_repeat(5,1fr)] border-b border-gray-200 dark:border-navy-700 bg-gray-50 dark:bg-navy-900/50">
@@ -204,6 +204,43 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                <!-- Mobile Agenda View (< md) -->
+                <div class="md:hidden space-y-6">
+                  <div v-for="(day, dayIndex) in days" :key="'mob-' + day">
+                    <!-- Only show days that have events -->
+                    <template v-if="getEventsForDay(dayIndex).length > 0">
+                      <h5 class="font-bold text-navy-900 dark:text-white mb-3 flex items-center gap-2">
+                        <div class="w-8 h-px bg-gold-500/50"></div>
+                        {{ day }}
+                        <div class="flex-1 h-px bg-gray-200 dark:bg-navy-700"></div>
+                      </h5>
+                      <div class="space-y-3 pl-2 border-l-2 border-gold-500/20">
+                        <div 
+                          v-for="event in getEventsForDay(dayIndex).sort((a,b) => a.startTime - b.startTime)" 
+                          :key="'mob-ev-' + event.id"
+                          class="p-4 rounded-xl border relative overflow-hidden"
+                          :class="event.type === 'lecture' ? 'bg-blue-50 dark:bg-blue-900/20 border-blue-100 dark:border-blue-800' : 'bg-green-50 dark:bg-green-900/20 border-green-100 dark:border-green-800'"
+                        >
+                          <!-- Color edge strip for type -->
+                          <div class="absolute left-0 top-0 bottom-0 w-1" :class="event.type === 'lecture' ? 'bg-blue-500' : 'bg-green-500'"></div>
+                          
+                          <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-navy-900 dark:text-white pr-2 text-sm leading-snug">{{ event.title }}</h4>
+                            <span class="text-xs font-bold px-2 py-1 rounded bg-white dark:bg-navy-800 border border-gray-100 dark:border-navy-600 shadow-sm shrink-0 whitespace-nowrap text-navy-900 dark:text-gray-300">
+                              {{ formatTime(event.startTime) }} - {{ formatTime(event.endTime) }}
+                            </span>
+                          </div>
+                          
+                          <div class="flex items-center flex-wrap gap-x-4 gap-y-1 text-xs font-medium text-gray-500 dark:text-gray-400">
+                            <span class="flex items-center gap-1.5"><i class="ph-fill ph-map-pin text-gold-500"></i> {{ event.room }}</span>
+                            <span class="flex items-center gap-1.5"><i class="ph-fill ph-user text-gold-500"></i> {{ event.teacher }}</span>
+                          </div>
+                        </div>
+                      </div>
+                    </template>
                   </div>
                 </div>
               </div>
