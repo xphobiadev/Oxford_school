@@ -66,17 +66,17 @@ const failedLevel = computed(() =>
         <p class="text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.2em] text-white/50 mb-1.5 sm:mb-2 font-bold">{{ lang.t.assessmentComplete }}</p>
         <h1 class="text-2xl sm:text-4xl font-extrabold mb-1 sm:mb-1.5">{{ lang.t.quizComplete }}</h1>
         <p class="text-white/60 text-xs sm:text-sm mb-5 sm:mb-8">{{ lang.t.resultsSub }}</p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10">
+        <div class="flex flex-row justify-center items-center gap-4 sm:gap-10">
           <div>
-            <div class="text-[0.6rem] sm:text-[0.65rem] uppercase tracking-[0.2em] text-white/50 mb-1 sm:mb-1.5 font-bold">{{ lang.t.totalScore }}</div>
-            <div class="text-5xl sm:text-7xl font-extrabold leading-none">
-              {{ results.totalScore }}<span class="text-2xl sm:text-3xl text-white/40">/{{ quiz.totalQuestionsCount }}</span>
+            <div class="text-[0.55rem] sm:text-[0.65rem] uppercase tracking-[0.2em] text-white/50 mb-1 sm:mb-1.5 font-bold">{{ lang.t.totalScore }}</div>
+            <div class="text-4xl sm:text-7xl font-extrabold leading-none">
+              {{ results.totalScore }}<span class="text-xl sm:text-3xl text-white/40">/{{ quiz.totalQuestionsCount }}</span>
             </div>
           </div>
-          <div class="hidden sm:block w-px h-24 bg-white/15" />
+          <div class="block w-px h-16 sm:h-24 bg-white/15" />
           <!-- Radial SVG -->
-          <div class="relative w-20 h-20 sm:w-28 sm:h-28">
-            <svg class="w-20 h-20 sm:w-28 sm:h-28" viewBox="0 0 120 120">
+          <div class="relative w-16 h-16 sm:w-28 sm:h-28 shrink-0">
+            <svg class="w-16 h-16 sm:w-28 sm:h-28" viewBox="0 0 120 120">
               <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="10" />
               <circle
                 cx="60" cy="60" r="50" fill="none" stroke="url(#rg)" stroke-width="10"
@@ -94,8 +94,8 @@ const failedLevel = computed(() =>
               </defs>
             </svg>
             <div class="absolute inset-0 flex flex-col items-center justify-center">
-              <span class="text-base sm:text-xl font-extrabold">{{ results.percentage }}%</span>
-              <span class="text-[0.55rem] uppercase tracking-[0.15em] text-white/60 font-bold">{{ lang.t.scoreLabel }}</span>
+              <span class="text-sm sm:text-xl font-extrabold">{{ results.percentage }}%</span>
+              <span class="text-[0.45rem] sm:text-[0.55rem] uppercase tracking-[0.15em] text-white/60 font-bold">{{ lang.t.scoreLabel }}</span>
             </div>
           </div>
         </div>
