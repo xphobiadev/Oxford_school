@@ -251,8 +251,9 @@
                   <i class="ph-fill ph-exam text-gold-500"></i> Examination Results
                 </h4>
                 
-                <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
-                  <table class="w-full min-w-[700px] text-left border-collapse">
+                <!-- Desktop Table View -->
+                <div class="hidden md:block overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
+                  <table class="w-full text-left border-collapse">
                     <thead>
                       <tr class="bg-gray-50 dark:bg-navy-900/50 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider font-bold">
                         <th class="p-4 border-b border-gray-200 dark:border-navy-700">Subject</th>
@@ -275,6 +276,30 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
+
+                <!-- Mobile Card View (< md) -->
+                <div class="md:hidden space-y-4">
+                  <div v-for="exam in portalData.exams" :key="'mob-exam-' + exam.id" class="bg-gray-50 dark:bg-navy-900/50 rounded-2xl p-5 border border-gray-200 dark:border-navy-700 relative overflow-hidden">
+                    <div class="absolute left-0 top-0 bottom-0 w-1" :class="exam.score >= 50 ? 'bg-green-500' : 'bg-red-500'"></div>
+                    <div class="flex justify-between items-start mb-3">
+                      <div class="pr-3">
+                        <h4 class="font-bold text-navy-900 dark:text-white leading-tight">{{ exam.subject }}</h4>
+                        <div class="text-xs text-gray-500 dark:text-gray-400 mt-1.5 flex items-center gap-1.5 font-medium">
+                          <i class="ph ph-calendar text-gold-500"></i> {{ exam.date }}
+                        </div>
+                      </div>
+                      <div class="text-right shrink-0">
+                        <div class="font-bold font-display text-xl text-navy-900 dark:text-white">{{ exam.score }}/100</div>
+                        <span v-if="exam.score >= 50" class="inline-block mt-1 px-2.5 py-1 bg-green-100 dark:bg-green-500/20 text-green-700 dark:text-green-400 text-[10px] font-bold uppercase rounded-md">Passed</span>
+                        <span v-else class="inline-block mt-1 px-2.5 py-1 bg-red-100 dark:bg-red-500/20 text-red-700 dark:text-red-400 text-[10px] font-bold uppercase rounded-md">Failed</span>
+                      </div>
+                    </div>
+                    <div class="mt-3 pt-3 border-t border-gray-200 dark:border-navy-700/50">
+                      <div class="text-[10px] font-bold text-gray-400 uppercase tracking-wider mb-1">Feedback</div>
+                      <p class="text-sm text-gray-600 dark:text-gray-300 leading-relaxed">{{ exam.feedback }}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </Transition>
