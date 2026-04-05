@@ -414,9 +414,17 @@ const mockData: Record<string, StudentPortalData> = {
     schedules: [
       { id: 1, dayIndex: 0, startTime: 9, endTime: 11, title: 'Grammar & Writing', room: 'Room 304', teacher: 'Sarah Jenkins', type: 'lecture' },
       { id: 2, dayIndex: 0, startTime: 11.5, endTime: 13, title: 'Speaking Practice', room: 'Language Lab A', teacher: 'Mark Dubois', type: 'lab' },
+      { id: 6, dayIndex: 1, startTime: 9, endTime: 10.5, title: 'Advanced Grammar', room: 'Room 305', teacher: 'Sarah Jenkins', type: 'lecture' },
+      { id: 7, dayIndex: 1, startTime: 14, endTime: 15.5, title: 'Coding Workshop', room: 'Computer Lab 2', teacher: 'Ali Karim', type: 'lab' },
       { id: 3, dayIndex: 2, startTime: 10, endTime: 12, title: 'Reading Comprehension', room: 'Room 304', teacher: 'Sarah Jenkins', type: 'lecture' },
+      { id: 8, dayIndex: 2, startTime: 12.5, endTime: 14, title: 'English Conversation', room: 'Cafeteria Lounge', teacher: 'Mark Dubois', type: 'lab' },
+      { id: 9, dayIndex: 3, startTime: 10, endTime: 12, title: 'Database Basics', room: 'Computer Lab 1', teacher: 'Ali Karim', type: 'lecture' },
       { id: 4, dayIndex: 3, startTime: 14, endTime: 16, title: 'IT Fundamentals', room: 'Computer Lab 1', teacher: 'Ali Karim', type: 'lab' },
       { id: 5, dayIndex: 4, startTime: 9, endTime: 10.5, title: 'Listening Exercises', room: 'Language Lab B', teacher: 'Emily Chen', type: 'lab' },
+      { id: 10, dayIndex: 4, startTime: 11, endTime: 12.5, title: 'Pronunciation Clinic', room: 'Room 205', teacher: 'Emily Chen', type: 'lecture' },
+      { id: 11, dayIndex: 5, startTime: 10, endTime: 12, title: 'Weekend Writing Lab', room: 'Room 201', teacher: 'Sarah Jenkins', type: 'lab' },
+      { id: 12, dayIndex: 5, startTime: 12.5, endTime: 14, title: 'TOEFL Preparation', room: 'Room 202', teacher: 'Mark Dubois', type: 'lecture' },
+      { id: 13, dayIndex: 6, startTime: 9, endTime: 11, title: 'Open IT Lab Time', room: 'Computer Lab 1', teacher: 'Lab Assistant', type: 'lab' },
     ],
     exams: [
       { id: 1, subject: 'English B1 - Midterm', date: 'Oct 15, 2023', score: 85, feedback: 'Excellent writing skills.' },
