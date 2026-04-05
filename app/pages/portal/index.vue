@@ -167,22 +167,22 @@
 
                 <!-- Desktop Calendar Grid Container -->
                 <div class="hidden md:block overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
-                  <div class="min-w-[1050px]">
+                  <div class="min-w-[1200px]">
                     <!-- Grid Header (Days) -->
-                    <div class="grid grid-cols-[100px_repeat(7,1fr)] border-b border-gray-200 dark:border-navy-700 bg-gray-50 dark:bg-navy-900/50">
-                      <div class="py-3 px-2 text-center text-xs font-bold text-gray-400 uppercase tracking-widest border-r border-gray-200 dark:border-navy-700">Time</div>
-                      <div v-for="day in days" :key="day" class="py-3 px-2 text-center text-sm font-bold text-navy-900 dark:text-gray-200 uppercase tracking-wide border-r border-gray-200 dark:border-navy-700 last:border-0">
-                        {{ day }}
+                    <div class="grid grid-cols-[80px_repeat(7,1fr)] border-b border-gray-200 dark:border-navy-700 bg-gray-50 dark:bg-navy-900/50">
+                      <div class="py-3 px-2 text-center text-[10px] font-bold text-gray-400 uppercase tracking-widest border-r border-gray-200 dark:border-navy-700">Time</div>
+                      <div v-for="(day, i) in days" :key="day" class="py-3 px-1 text-center text-xs font-bold text-navy-900 dark:text-gray-200 uppercase tracking-wide border-r border-gray-200 dark:border-navy-700 last:border-0">
+                        {{ dayAbbrevs[i] }}
                       </div>
                     </div>
 
                     <!-- Grid Body -->
                     <div class="relative bg-white dark:bg-navy-800 w-full" :style="{ height: (timeSlots.length * 60) + 'px' }">
                       <!-- Background Grid Lines & Times -->
-                      <div class="absolute inset-0 grid grid-cols-[100px_1fr] pointer-events-none">
+                      <div class="absolute inset-0 grid grid-cols-[80px_1fr] pointer-events-none">
                         <div class="border-r border-gray-200 dark:border-navy-700 bg-gray-50/50 dark:bg-navy-900/20 h-full">
                           <div v-for="time in timeSlots" :key="time" class="h-[60px] border-b border-gray-100 dark:border-navy-700/50 flex justify-center py-2">
-                             <span class="text-xs font-medium text-gray-500 dark:text-gray-400">{{ formatTime(time) }}</span>
+                             <span class="text-[10px] font-medium text-gray-500 dark:text-gray-400">{{ formatTime(time) }}</span>
                           </div>
                         </div>
                         <div class="grid grid-cols-7 h-full">
@@ -193,21 +193,21 @@
                       </div>
 
                       <!-- Events Layer -->
-                      <div class="absolute inset-0 grid grid-cols-[100px_repeat(7,1fr)] pointer-events-none">
+                      <div class="absolute inset-0 grid grid-cols-[80px_repeat(7,1fr)] pointer-events-none">
                         <div></div>
-                        <div v-for="(day, dayIndex) in days" :key="'events-' + day" class="relative group">
+                        <div v-for="(day, dayIndex) in days" :key="'events-' + day" class="relative">
                           <template v-for="event in getEventsForDay(dayIndex)" :key="event.id">
                             <div 
-                              class="absolute inset-x-1 rounded-lg p-2.5 shadow-sm border pointer-events-auto transition-transform hover:-translate-y-1 hover:shadow-md cursor-pointer z-10"
+                              class="absolute inset-x-0.5 rounded-md p-1.5 shadow-sm border pointer-events-auto cursor-pointer z-10 overflow-hidden"
                               :class="getEventColorClasses(event.type)"
                               :style="{ top: getEventTopLimit(event.startTime) + 'px', height: getEventHeight(event.startTime, event.endTime) + 'px' }"
                             >
-                               <h4 class="font-bold text-xs md:text-sm leading-tight mb-1 text-slate-800 dark:text-white line-clamp-2">{{ event.title }}</h4>
-                               <div class="flex items-center gap-1.5 text-[10px] md:text-xs opacity-80 mb-0.5">
-                                 <i class="ph-fill ph-map-pin"></i> {{ event.room }}
+                               <h4 class="font-bold text-[10px] leading-tight mb-0.5 text-slate-800 dark:text-white line-clamp-2">{{ event.title }}</h4>
+                               <div class="flex items-center gap-1 text-[9px] opacity-80 mb-0.5 truncate">
+                                 <i class="ph-fill ph-map-pin shrink-0"></i> <span class="truncate">{{ event.room }}</span>
                                </div>
-                               <div class="flex items-center gap-1.5 text-[10px] md:text-xs opacity-80">
-                                 <i class="ph-fill ph-clock"></i> {{ formatTime(event.startTime) }} - {{ formatTime(event.endTime) }}
+                               <div class="flex items-center gap-1 text-[9px] opacity-80 truncate">
+                                 <i class="ph-fill ph-clock shrink-0"></i> {{ formatTime(event.startTime) }}-{{ formatTime(event.endTime) }}
                                </div>
                             </div>
                           </template>
@@ -336,6 +336,7 @@ const errorMsg = ref('')
 const activeTab = ref<'meta'|'schedules'|'exams'>('meta')
 
 const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+const dayAbbrevs = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
 const timeSlots = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 
 const formatTime = (time: number) => {
