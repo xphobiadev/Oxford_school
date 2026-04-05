@@ -323,9 +323,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 useHead({ title: 'Student Portal - Universal Oxford Groupe' })
+
+const route = useRoute()
+const router = useRouter()
 
 const searchCode = ref('')
 const isLoading = ref(false)
@@ -426,6 +429,10 @@ const mockData: Record<string, StudentPortalData> = {
 const fetchPortal = () => {
   if (!searchCode.value.trim()) return
 
+  // Store in URL
+  const code = searchCode.value.trim().toUpperCase()
+  router.push({ query: { ...route.query, code } })
+
   isLoading.value = true
   errorMsg.value = ''
   portalData.value = null
@@ -439,10 +446,17 @@ const fetchPortal = () => {
       portalData.value = mockData[code]
       activeTab.value = 'meta'
     } else {
-      errorMsg.value = `No records found for Student ID "${searchCode.value}". Please try "STU-101".`
+      errorMsg.value = `No records found for Student ID "${code}". Please try "STU-101".`
     }
   }, 1000)
 }
+
+onMounted(() => {
+  if (route.query.code) {
+    searchCode.value = route.query.code as string
+    fetchPortal()
+  }
+})
 </script>
 
 <style scoped>
