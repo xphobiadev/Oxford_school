@@ -177,60 +177,60 @@
       <PartnersCarousel />
 
       <!-- School Contact Section -->
-      <section class="py-20 bg-white dark:bg-navy-900/50 border-t border-gray-100 dark:border-navy-800 relative z-10">
-        <div class="container mx-auto px-6 max-w-6xl">
-          <div class="text-center mb-16">
-            <h2 class="font-display text-3xl md:text-4xl font-bold text-navy-900 dark:text-white inline-flex items-center gap-4">
+      <section class="py-16 md:py-20 bg-white dark:bg-navy-900/50 border-t border-gray-100 dark:border-navy-800 relative z-10">
+        <div class="container mx-auto px-4 sm:px-6 max-w-6xl">
+          <div class="text-center mb-10 md:mb-16">
+            <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-bold text-navy-900 dark:text-white inline-flex items-center gap-3 md:gap-4">
               <i class="ph-fill ph-map-pin text-gold-500"></i>
               Visit {{ t(school.name) }}
             </h2>
             <div class="mt-4 w-16 h-1 bg-gradient-to-r from-transparent via-gold-500/50 to-transparent mx-auto rounded-full"></div>
           </div>
 
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-start">
             <!-- Contact Info -->
-            <div class="space-y-8">
-              <div class="bg-gray-50 dark:bg-navy-800/50 p-8 rounded-3xl border border-gray-100 dark:border-navy-700">
-                <h3 class="text-xl font-bold font-display text-navy-900 dark:text-white mb-6">Contact Information</h3>
+            <div class="space-y-6 md:space-y-8">
+              <div class="bg-gray-50 dark:bg-navy-800/50 p-6 md:p-8 rounded-2xl md:rounded-3xl border border-gray-100 dark:border-navy-700">
+                <h3 class="text-lg md:text-xl font-bold font-display text-navy-900 dark:text-white mb-6">Contact Information</h3>
                 
-                <div class="space-y-6">
+                <div class="space-y-5 md:space-y-6">
                   <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
-                      <i class="ph-fill ph-map-pin text-xl"></i>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-map-pin text-lg sm:text-xl"></i>
                     </div>
-                    <div>
-                      <h4 class="font-semibold text-navy-900 dark:text-white">Address</h4>
-                      <p class="text-gray-600 dark:text-gray-400 mt-1">{{ t(school.address) }}</p>
+                    <div class="min-w-0">
+                      <h4 class="font-semibold text-sm sm:text-base text-navy-900 dark:text-white">Address</h4>
+                      <p class="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1 break-words">{{ t(school.address) }}</p>
                     </div>
                   </div>
 
                   <div class="flex items-start gap-4" v-if="school.primary_phone">
-                    <div class="w-12 h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
-                      <i class="ph-fill ph-phone text-xl"></i>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-phone text-lg sm:text-xl"></i>
                     </div>
-                    <div>
-                      <h4 class="font-semibold text-navy-900 dark:text-white">Phone</h4>
-                      <p class="text-gray-600 dark:text-gray-400 mt-1">{{ school.primary_phone }}</p>
+                    <div class="min-w-0">
+                      <h4 class="font-semibold text-sm sm:text-base text-navy-900 dark:text-white">Phone</h4>
+                      <p class="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1 truncate">{{ school.primary_phone }}</p>
                     </div>
                   </div>
 
                   <div class="flex items-start gap-4" v-if="school.secondary_phone">
-                    <div class="w-12 h-12 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 flex items-center justify-center shrink-0">
-                      <i class="ph-fill ph-whatsapp-logo text-xl"></i>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-green-500/10 text-green-600 dark:text-green-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-whatsapp-logo text-lg sm:text-xl"></i>
                     </div>
-                    <div>
-                      <h4 class="font-semibold text-navy-900 dark:text-white">WhatsApp</h4>
-                      <p class="text-gray-600 dark:text-gray-400 mt-1">{{ school.secondary_phone }}</p>
+                    <div class="min-w-0">
+                      <h4 class="font-semibold text-sm sm:text-base text-navy-900 dark:text-white">WhatsApp</h4>
+                      <p class="text-xs sm:text-sm md:text-base text-gray-600 dark:text-gray-400 mt-1 truncate">{{ school.secondary_phone }}</p>
                     </div>
                   </div>
 
                   <div class="flex items-start gap-4" v-if="school.email">
-                    <div class="w-12 h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
-                      <i class="ph-fill ph-envelope text-xl"></i>
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gold-500/10 text-gold-600 dark:text-gold-400 flex items-center justify-center shrink-0">
+                      <i class="ph-fill ph-envelope text-lg sm:text-xl"></i>
                     </div>
-                    <div>
-                      <h4 class="font-semibold text-navy-900 dark:text-white">Email</h4>
-                      <a :href="'mailto:' + school.email" class="text-gold-600 dark:text-gold-400 hover:underline mt-1 inline-block">{{ school.email }}</a>
+                    <div class="min-w-0 w-full">
+                      <h4 class="font-semibold text-sm sm:text-base text-navy-900 dark:text-white">Email</h4>
+                      <a :href="'mailto:' + school.email" class="text-xs sm:text-sm md:text-base text-gold-600 dark:text-gold-400 hover:underline mt-1 inline-block truncate w-full">{{ school.email }}</a>
                     </div>
                   </div>
                 </div>
@@ -238,16 +238,16 @@
             </div>
 
             <!-- Map Placeholder -->
-            <div class="h-[400px] w-full rounded-3xl overflow-hidden bg-gray-200 dark:bg-navy-800 relative group border border-gray-100 dark:border-navy-700">
+            <div class="h-[250px] sm:h-[300px] md:h-[400px] w-full rounded-2xl md:rounded-3xl overflow-hidden bg-gray-200 dark:bg-navy-800 relative group border border-gray-100 dark:border-navy-700">
                <!-- Temporary Map View -->
                <div class="absolute inset-0 bg-[url('/images/map-placeholder.jpg')] bg-cover bg-center opacity-50 contrast-125 grayscale group-hover:grayscale-0 transition-all duration-700"></div>
                <div class="absolute inset-0 bg-navy-900/40 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-700"></div>
                
                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col items-center group-hover:-translate-y-6 transition-transform duration-500">
-                  <div class="w-16 h-16 rounded-full bg-white dark:bg-navy-900 shadow-2xl flex items-center justify-center animate-bounce">
-                    <i class="ph-fill ph-map-pin text-3xl text-gold-500"></i>
+                  <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white dark:bg-navy-900 shadow-2xl flex items-center justify-center animate-bounce">
+                    <i class="ph-fill ph-map-pin text-2xl sm:text-3xl text-gold-500"></i>
                   </div>
-                  <div class="bg-white/90 dark:bg-navy-900/90 backdrop-blur-sm px-4 py-2 rounded-xl shadow-lg mt-4 text-sm font-semibold text-navy-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
+                  <div class="bg-white/90 dark:bg-navy-900/90 backdrop-blur-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl shadow-lg mt-3 sm:mt-4 text-xs sm:text-sm font-semibold text-navy-900 dark:text-white opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 text-center">
                     {{ t(school.name) }}
                   </div>
                </div>
