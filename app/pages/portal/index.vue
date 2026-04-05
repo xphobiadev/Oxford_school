@@ -275,7 +275,7 @@
                     <tbody class="divide-y divide-gray-50 dark:divide-navy-700/50">
                       <tr v-for="exam in portalData.exams" :key="exam.id" 
                           class="group hover:bg-gold-500/[0.02] transition-all cursor-pointer"
-                          @click="exam.examFile && window.open(exam.examFile, '_blank')">
+                          @click="openExam(exam.examFile)">
                         <td class="p-5">
                           <div class="font-bold text-navy-900 dark:text-white group-hover:text-gold-600 dark:group-hover:text-gold-400 transition-colors">{{ exam.subject }}</div>
                         </td>
@@ -323,7 +323,7 @@
                   <div
                     v-for="exam in portalData.exams"
                     :key="'mob-exam-' + exam.id"
-                    @click="exam.examFile && window.open(exam.examFile, '_blank')"
+                    @click="openExam(exam.examFile)"
                     class="bg-white dark:bg-navy-900 rounded-2xl p-6 border border-gray-100 dark:border-navy-700 shadow-sm relative overflow-hidden active:scale-[0.98] transition-transform"
                   >
                     <div class="absolute left-0 top-0 bottom-0 w-1.5" :class="exam.score >= 50 ? 'bg-green-500' : 'bg-red-500'"></div>
@@ -456,6 +456,12 @@ const mockData: Record<string, StudentPortalData> = {
       { id: 2, subject: 'French A2 - Quiz 1', date: 'Oct 20, 2023', score: 92, examFile: '/exams/french-a2-quiz1.pdf' },
       { id: 3, subject: 'English B1 - Speaking', date: 'Nov 02, 2023', score: 78, examFile: null }
     ]
+  }
+}
+
+const openExam = (file: string | null) => {
+  if (file) {
+    window.open(file, '_blank')
   }
 }
 
