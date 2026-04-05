@@ -129,6 +129,7 @@ const menuItems = [
   { label: 'Certificates', path: '/certificates', hash: '', icon: 'ph-fill ph-certificate' },
   { label: 'Student Portal', path: '/portal', hash: '', icon: 'ph-fill ph-student' },
   { label: 'About', path: '/about', hash: '', icon: 'ph-fill ph-info' },
+  { label: 'Proficiency Test', path: '/proficiency-test', hash: '', icon: 'ph-fill ph-translate' },
 ]
 
 const handleScroll = () => {

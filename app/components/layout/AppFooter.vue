@@ -151,6 +151,7 @@ const quickLinks = [
   { label: 'Testimonials', path: '/#testimonials' },
   { label: 'Our Partners', path: '/#partners' },
   { label: 'Careers', path: '/jobs' },
+  { label: 'Proficiency Test', path: '/proficiency-test' },
   { label: 'Contact Us', path: '/contact' },
 ]
 

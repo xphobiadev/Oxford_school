@@ -1,0 +1,3386 @@
+{
+    "english": {
+        "A1": [
+            {
+                "id": "A1-1",
+                "question": "She ___ a teacher.",
+                "options": [
+                    "am",
+                    "is",
+                    "are",
+                    "be"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-2",
+                "question": "They ___ from London.",
+                "options": [
+                    "is",
+                    "am",
+                    "are",
+                    "be"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-3",
+                "question": "I ___ coffee every morning.",
+                "options": [
+                    "drink",
+                    "drinks",
+                    "drinking",
+                    "drank"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-4",
+                "question": "We ___ TV now.",
+                "options": [
+                    "watch",
+                    "watched",
+                    "are watching",
+                    "watches"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-5",
+                "question": "There ___ a book on the table.",
+                "options": [
+                    "are",
+                    "is",
+                    "be",
+                    "were"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-6",
+                "question": "This is ___ apple.",
+                "options": [
+                    "a",
+                    "an",
+                    "the",
+                    "some"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-7",
+                "question": "He has ___ car.",
+                "options": [
+                    "a",
+                    "an",
+                    "the",
+                    "—"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-8",
+                "question": "My sister is ___ than me.",
+                "options": [
+                    "tall",
+                    "taller",
+                    "tallest",
+                    "more tall"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-9",
+                "question": "I don’t have ___ money.",
+                "options": [
+                    "some",
+                    "any",
+                    "many",
+                    "much"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "A2": [
+            {
+                "id": "A2-10",
+                "question": "___ you like pizza?",
+                "options": [
+                    "Are",
+                    "Do",
+                    "Is",
+                    "Does"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-11",
+                "question": "I have lived here ___ 2020.",
+                "options": [
+                    "since",
+                    "for",
+                    "from",
+                    "during"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-12",
+                "question": "She ___ to Paris last year.",
+                "options": [
+                    "goes",
+                    "went",
+                    "gone",
+                    "going"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-13",
+                "question": "We were tired, ___ we went home.",
+                "options": [
+                    "but",
+                    "because",
+                    "so",
+                    "although"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-14",
+                "question": "There are ___ people in the room.",
+                "options": [
+                    "much",
+                    "a lot",
+                    "a lot of",
+                    "many of"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-15",
+                "question": "He is interested ___ music.",
+                "options": [
+                    "on",
+                    "in",
+                    "at",
+                    "for"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-16",
+                "question": "If it rains, we ___ stay home.",
+                "options": [
+                    "will",
+                    "would",
+                    "would have",
+                    "had"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-17",
+                "question": "She is the ___ student in the class.",
+                "options": [
+                    "better",
+                    "best",
+                    "good",
+                    "more good"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-18",
+                "question": "I forgot ___ the door.",
+                "options": [
+                    "locking",
+                    "lock",
+                    "to lock",
+                    "locked"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-19",
+                "question": "There isn’t ___ milk left.",
+                "options": [
+                    "many",
+                    "much",
+                    "a few",
+                    "several"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B1": [
+            {
+                "id": "B1-20",
+                "question": "He speaks English very ___.",
+                "options": [
+                    "good",
+                    "well",
+                    "better",
+                    "best"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-21",
+                "question": "If I ___ more time, I would learn Japanese.",
+                "options": [
+                    "have",
+                    "had",
+                    "will have",
+                    "would have"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-22",
+                "question": "She asked me where I ___ from.",
+                "options": [
+                    "am",
+                    "was",
+                    "were",
+                    "be"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-23",
+                "question": "The movie was so boring that I ___ asleep.",
+                "options": [
+                    "fall",
+                    "fell",
+                    "fallen",
+                    "falling"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-24",
+                "question": "I’m looking forward to ___ you soon.",
+                "options": [
+                    "see",
+                    "seeing",
+                    "saw",
+                    "seen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-25",
+                "question": "He denied ___ the money.",
+                "options": [
+                    "steal",
+                    "to steal",
+                    "stealing",
+                    "stole"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-26",
+                "question": "Neither of them ___ ready.",
+                "options": [
+                    "are",
+                    "were",
+                    "is",
+                    "be"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-27",
+                "question": "That’s the woman ___ son won the prize.",
+                "options": [
+                    "who",
+                    "whose",
+                    "which",
+                    "whom"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-28",
+                "question": "I didn’t have enough time, ___ I finished it.",
+                "options": [
+                    "although",
+                    "despite",
+                    "but",
+                    "yet"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-29",
+                "question": "She has worked here ___ five years.",
+                "options": [
+                    "since",
+                    "for",
+                    "during",
+                    "while"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B2": [
+            {
+                "id": "B2-30",
+                "question": "The house ___ in 1990.",
+                "options": [
+                    "built",
+                    "was built",
+                    "has built",
+                    "builds"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-31",
+                "question": "By the time we arrived, they ___ already left.",
+                "options": [
+                    "have",
+                    "had",
+                    "were",
+                    "are"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-32",
+                "question": "He insisted that she ___ immediately.",
+                "options": [
+                    "leaves",
+                    "leave",
+                    "left",
+                    "leaving"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-33",
+                "question": "Hardly ___ when the phone rang.",
+                "options": [
+                    "had I arrived",
+                    "I had arrived",
+                    "arrived I",
+                    "did I arrive"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-34",
+                "question": "She speaks as if she ___ everything.",
+                "options": [
+                    "knows",
+                    "knew",
+                    "had known",
+                    "knowing"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-35",
+                "question": "The project ___ by next month.",
+                "options": [
+                    "will complete",
+                    "will be completed",
+                    "completes",
+                    "completed"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-36",
+                "question": "No sooner ___ than it started raining.",
+                "options": [
+                    "we arrived",
+                    "had we arrived",
+                    "we had arrived",
+                    "arrived we"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-37",
+                "question": "He would rather you ___ tomorrow.",
+                "options": [
+                    "come",
+                    "came",
+                    "coming",
+                    "to come"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-38",
+                "question": "The more you practice, the ___ you become.",
+                "options": [
+                    "good",
+                    "better",
+                    "best",
+                    "well"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-39",
+                "question": "Not only ___ late, but he also forgot the documents.",
+                "options": [
+                    "he was",
+                    "was he",
+                    "he is",
+                    "is he"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C1": [
+            {
+                "id": "C1-40",
+                "question": "She is capable ___ solving complex problems.",
+                "options": [
+                    "to",
+                    "of",
+                    "for",
+                    "in"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-41",
+                "question": "Had I known, I ___ differently.",
+                "options": [
+                    "act",
+                    "would act",
+                    "would have acted",
+                    "acted"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-42",
+                "question": "It is imperative that he ___ informed immediately.",
+                "options": [
+                    "is",
+                    "be",
+                    "was",
+                    "being"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-43",
+                "question": "Rarely ___ such dedication.",
+                "options": [
+                    "we see",
+                    "do we see",
+                    "we saw",
+                    "did see we"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-44",
+                "question": "She succeeded ___ all expectations.",
+                "options": [
+                    "despite",
+                    "although",
+                    "whereas",
+                    "otherwise"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-45",
+                "question": "His speech was ___ and thought-provoking.",
+                "options": [
+                    "coherent",
+                    "coherence",
+                    "coherently",
+                    "cohere"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C2": [
+            {
+                "id": "C2-46",
+                "question": "The findings, ___ were unexpected, changed the theory.",
+                "options": [
+                    "who",
+                    "which",
+                    "whose",
+                    "what"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-47",
+                "question": "Were he to resign, the company ___ collapse.",
+                "options": [
+                    "may",
+                    "might",
+                    "must",
+                    "shall"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-48",
+                "question": "Such ___ the complexity of the issue that few understood it.",
+                "options": [
+                    "was",
+                    "is",
+                    "were",
+                    "be"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-49",
+                "question": "She prides herself ___ her independence.",
+                "options": [
+                    "in",
+                    "on",
+                    "at",
+                    "of"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-50",
+                "question": "Little ___ about the consequences at the time.",
+                "options": [
+                    "he knew",
+                    "did he know",
+                    "he did know",
+                    "knew he"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    "spanish": {
+        "A1": [
+            {
+                "id": "A1-1",
+                "question": "Ella ___ profesora.",
+                "options": [
+                    "soy",
+                    "es",
+                    "eres",
+                    "somos"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-2",
+                "question": "Nosotros ___ de Madrid.",
+                "options": [
+                    "soy",
+                    "es",
+                    "somos",
+                    "son"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-3",
+                "question": "Yo ___ café cada mañana.",
+                "options": [
+                    "bebo",
+                    "bebe",
+                    "bebemos",
+                    "beben"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-4",
+                "question": "¿Tú ___ inglés?",
+                "options": [
+                    "hablas",
+                    "habla",
+                    "hablo",
+                    "hablan"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-5",
+                "question": "Hay ___ libro en la mesa.",
+                "options": [
+                    "un",
+                    "una",
+                    "unos",
+                    "unas"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-6",
+                "question": "Ella tiene ___ hermano.",
+                "options": [
+                    "un",
+                    "una",
+                    "el",
+                    "la"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-7",
+                "question": "Ellos ___ en casa ahora.",
+                "options": [
+                    "está",
+                    "estoy",
+                    "están",
+                    "estamos"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-8",
+                "question": "Mi hermano es ___ que yo.",
+                "options": [
+                    "alto",
+                    "más alto",
+                    "el más alto",
+                    "tan alto"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-9",
+                "question": "No tengo ___ dinero.",
+                "options": [
+                    "algunos",
+                    "nada",
+                    "ningún",
+                    "mucho"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "A2": [
+            {
+                "id": "A2-10",
+                "question": "¿___ te llamas?",
+                "options": [
+                    "Qué",
+                    "Cómo",
+                    "Quién",
+                    "Dónde"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-11",
+                "question": "Vivo aquí ___ 2020.",
+                "options": [
+                    "desde",
+                    "hace",
+                    "por",
+                    "durante"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-12",
+                "question": "Ella ___ a París el año pasado.",
+                "options": [
+                    "va",
+                    "fue",
+                    "iba",
+                    "irá"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-13",
+                "question": "Estábamos cansados, ___ nos fuimos a casa.",
+                "options": [
+                    "pero",
+                    "porque",
+                    "así que",
+                    "aunque"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-14",
+                "question": "Hay ___ personas en la sala.",
+                "options": [
+                    "mucho",
+                    "mucha",
+                    "muchos",
+                    "muchas"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-15",
+                "question": "Él está interesado ___ la música.",
+                "options": [
+                    "en",
+                    "de",
+                    "a",
+                    "por"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-16",
+                "question": "Si llueve, ___ en casa.",
+                "options": [
+                    "nos quedamos",
+                    "nos quedaremos",
+                    "nos quedábamos",
+                    "nos quedemos"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-17",
+                "question": "Ella es la ___ estudiante de la clase.",
+                "options": [
+                    "mejor",
+                    "buena",
+                    "más buena",
+                    "bien"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-18",
+                "question": "Olvidé ___ la puerta.",
+                "options": [
+                    "cerrar",
+                    "cerrando",
+                    "cerré",
+                    "cerrada"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-19",
+                "question": "No queda ___ leche.",
+                "options": [
+                    "muchos",
+                    "mucha",
+                    "pocos",
+                    "varios"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B1": [
+            {
+                "id": "B1-20",
+                "question": "Él habla inglés muy ___.",
+                "options": [
+                    "bueno",
+                    "bien",
+                    "mejor",
+                    "buen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-21",
+                "question": "Si ___ más tiempo, aprendería japonés.",
+                "options": [
+                    "tengo",
+                    "tuviera",
+                    "tendría",
+                    "tuve"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-22",
+                "question": "Ella me preguntó de dónde ___.",
+                "options": [
+                    "soy",
+                    "era",
+                    "fuera",
+                    "sea"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-23",
+                "question": "La película era tan aburrida que me ___ dormido.",
+                "options": [
+                    "quedo",
+                    "quedé",
+                    "quedaré",
+                    "quedaría"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-24",
+                "question": "Espero ___ pronto.",
+                "options": [
+                    "verte",
+                    "viéndote",
+                    "verte a",
+                    "que veo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-25",
+                "question": "Él negó ___ el dinero.",
+                "options": [
+                    "robar",
+                    "robando",
+                    "haber robado",
+                    "robado"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-26",
+                "question": "Ninguno de ellos ___ listo.",
+                "options": [
+                    "están",
+                    "estoy",
+                    "está",
+                    "estamos"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-27",
+                "question": "Esa es la mujer ___ hijo ganó el premio.",
+                "options": [
+                    "que",
+                    "cuyo",
+                    "quien",
+                    "cual"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-28",
+                "question": "No tenía suficiente tiempo, ___ lo terminé.",
+                "options": [
+                    "aunque",
+                    "pero",
+                    "sin embargo",
+                    "porque"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-29",
+                "question": "Ella ha trabajado aquí ___ cinco años.",
+                "options": [
+                    "desde",
+                    "durante",
+                    "hace",
+                    "por"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B2": [
+            {
+                "id": "B2-30",
+                "question": "La casa ___ en 1990.",
+                "options": [
+                    "construyó",
+                    "fue construida",
+                    "ha construido",
+                    "construye"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-31",
+                "question": "Cuando llegamos, ellos ya ___ salido.",
+                "options": [
+                    "han",
+                    "habían",
+                    "hayan",
+                    "hubieran"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-32",
+                "question": "Insistió en que ella ___ de inmediato.",
+                "options": [
+                    "sale",
+                    "salga",
+                    "saliera",
+                    "saldría"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-33",
+                "question": "Apenas ___ cuando sonó el teléfono.",
+                "options": [
+                    "llegué",
+                    "había llegado",
+                    "llegaba",
+                    "he llegado"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-34",
+                "question": "Habla como si lo ___ todo.",
+                "options": [
+                    "sabe",
+                    "supiera",
+                    "sepa",
+                    "sabría"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-35",
+                "question": "El proyecto ___ para el próximo mes.",
+                "options": [
+                    "completará",
+                    "habrá sido completado",
+                    "completa",
+                    "se completó"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-36",
+                "question": "No bien ___ cuando empezó a llover.",
+                "options": [
+                    "llegamos",
+                    "habíamos llegado",
+                    "llegáramos",
+                    "llegamos a"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-37",
+                "question": "Preferiría que ___ mañana.",
+                "options": [
+                    "vengas",
+                    "vinieras",
+                    "vendrías",
+                    "vengas a"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-38",
+                "question": "Cuanto más practicas, ___ te vuelves.",
+                "options": [
+                    "bueno",
+                    "mejor",
+                    "el mejor",
+                    "tan bien"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-39",
+                "question": "No solo llegó tarde, sino que también ___ los documentos.",
+                "options": [
+                    "olvida",
+                    "olvidó",
+                    "olvidaba",
+                    "olvidaría"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C1": [
+            {
+                "id": "C1-40",
+                "question": "Ella es capaz ___ resolver problemas complejos.",
+                "options": [
+                    "a",
+                    "de",
+                    "para",
+                    "en"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-41",
+                "question": "De haberlo sabido, ___ de otra manera.",
+                "options": [
+                    "actuaré",
+                    "actuaría",
+                    "habría actuado",
+                    "actué"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-42",
+                "question": "Es imprescindible que él ___ informado de inmediato.",
+                "options": [
+                    "es",
+                    "sea",
+                    "fue",
+                    "siendo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-43",
+                "question": "Rara vez ___ tanta dedicación.",
+                "options": [
+                    "vemos",
+                    "veamos",
+                    "vimos",
+                    "veíamos"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-44",
+                "question": "Logró el éxito ___ todas las expectativas.",
+                "options": [
+                    "a pesar de",
+                    "aunque",
+                    "mientras que",
+                    "sino"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-45",
+                "question": "Su discurso fue ___ y estimulante.",
+                "options": [
+                    "coherente",
+                    "coherencia",
+                    "coherentemente",
+                    "incoherente"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C2": [
+            {
+                "id": "C2-46",
+                "question": "Los hallazgos, ___ eran inesperados, cambiaron la teoría.",
+                "options": [
+                    "quienes",
+                    "que",
+                    "cuyo",
+                    "lo que"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-47",
+                "question": "Si él dimitiera, la empresa ___ hundirse.",
+                "options": [
+                    "puede",
+                    "podría",
+                    "debe",
+                    "tendrá"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-48",
+                "question": "Tal ___ la complejidad del asunto que pocos lo entendieron.",
+                "options": [
+                    "era",
+                    "es",
+                    "fue",
+                    "sea"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-49",
+                "question": "Ella se enorgullece ___ su independencia.",
+                "options": [
+                    "en",
+                    "de",
+                    "a",
+                    "con"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-50",
+                "question": "Poco ___ sobre las consecuencias en ese momento.",
+                "options": [
+                    "sabía",
+                    "sabe",
+                    "supo",
+                    "supiera"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    "arabic": {
+        "A1": [
+            {
+                "id": "A1-1",
+                "question": "هي ___ مُعلِّمة.",
+                "options": [
+                    "أنا",
+                    "هي",
+                    "هو",
+                    "أنتِ"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-2",
+                "question": "نحن ___ من القاهرة.",
+                "options": [
+                    "هو",
+                    "هي",
+                    "نحن",
+                    "أنتم"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-3",
+                "question": "أنا ___ القهوة كلَّ صباح.",
+                "options": [
+                    "تشرب",
+                    "يشرب",
+                    "أشرب",
+                    "نشرب"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-4",
+                "question": "هم ___ الآن.",
+                "options": [
+                    "يذهب",
+                    "تذهب",
+                    "يذهبون",
+                    "أذهب"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-5",
+                "question": "___ كتابٌ على الطاولة.",
+                "options": [
+                    "هم",
+                    "هناك",
+                    "أين",
+                    "كيف"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-6",
+                "question": "هذا ___ تفاحة.",
+                "options": [
+                    "كتاب",
+                    "بيت",
+                    "سيارة",
+                    "قلم"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-7",
+                "question": "عنده ___ سيارة.",
+                "options": [
+                    "لا",
+                    "ليس",
+                    "سيارة",
+                    "بيت"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-8",
+                "question": "أختي ___ مني.",
+                "options": [
+                    "طويلة",
+                    "أطول",
+                    "الأطول",
+                    "طول"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-9",
+                "question": "ليس عندي ___ مال.",
+                "options": [
+                    "بعض",
+                    "أي",
+                    "كثير من",
+                    "قليل"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "A2": [
+            {
+                "id": "A2-10",
+                "question": "___ تحبُّ البيتزا؟",
+                "options": [
+                    "هل أنت",
+                    "هل هو",
+                    "كيف",
+                    "أين"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-11",
+                "question": "أسكن هنا ___ عام 2020.",
+                "options": [
+                    "منذ",
+                    "لمدة",
+                    "خلال",
+                    "في"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-12",
+                "question": "هي ___ إلى باريس العام الماضي.",
+                "options": [
+                    "تذهب",
+                    "ذهبت",
+                    "ستذهب",
+                    "تذهبين"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-13",
+                "question": "كنا متعبين، ___ ذهبنا إلى البيت.",
+                "options": [
+                    "لكن",
+                    "لأن",
+                    "لذلك",
+                    "رغم أن"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-14",
+                "question": "هناك ___ ناس في الغرفة.",
+                "options": [
+                    "كثير من",
+                    "قليل",
+                    "أي",
+                    "بعض من"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-15",
+                "question": "هو مهتمٌّ ___ الموسيقى.",
+                "options": [
+                    "على",
+                    "في",
+                    "بـ",
+                    "لـ"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-16",
+                "question": "إذا أمطرت، ___ في البيت.",
+                "options": [
+                    "نبقى",
+                    "بقينا",
+                    "سنبقى",
+                    "نبقين"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-17",
+                "question": "هي ___ طالبة في الفصل.",
+                "options": [
+                    "أحسن",
+                    "الأحسن",
+                    "حسنة",
+                    "أكثر حسنًا"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-18",
+                "question": "نسيت ___ الباب.",
+                "options": [
+                    "إغلاق",
+                    "أغلق",
+                    "تغلق",
+                    "غلق"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-19",
+                "question": "لم يتبقَّ ___ حليب.",
+                "options": [
+                    "كثير من",
+                    "أي",
+                    "قليلًا من",
+                    "بعض"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B1": [
+            {
+                "id": "B1-20",
+                "question": "يتحدث الإنجليزية ___ جيدًا.",
+                "options": [
+                    "جيد",
+                    "بشكل جيد",
+                    "أحسن",
+                    "الأحسن"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-21",
+                "question": "لو كان عندي وقت أكثر، ___ اليابانية.",
+                "options": [
+                    "أتعلم",
+                    "لتعلمت",
+                    "سأتعلم",
+                    "تعلمت"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-22",
+                "question": "سألتني من أين ___.",
+                "options": [
+                    "أنا",
+                    "كنت",
+                    "أكون",
+                    "كان"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-23",
+                "question": "الفيلم كان مملًّا جدًّا حتى ___ نومًا.",
+                "options": [
+                    "أنام",
+                    "نمت",
+                    "سأنام",
+                    "أنامت"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-24",
+                "question": "أتطلع إلى ___ قريبًا.",
+                "options": [
+                    "رؤيتك",
+                    "أراك",
+                    "رأيتك",
+                    "ترى"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-25",
+                "question": "أنكر ___ المال.",
+                "options": [
+                    "سرقة",
+                    "أن يسرق",
+                    "سرق",
+                    "سارق"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-26",
+                "question": "لا أحد منهم ___ مستعدًّا.",
+                "options": [
+                    "كانوا",
+                    "كان",
+                    "يكون",
+                    "تكون"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-27",
+                "question": "تلك هي المرأة ___ ابنها فاز بالجائزة.",
+                "options": [
+                    "التي",
+                    "الذي",
+                    "التي",
+                    "الذين"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-28",
+                "question": "لم يكن عندي وقت كافٍ، ___ أنهيته.",
+                "options": [
+                    "لكن",
+                    "لأن",
+                    "رغم ذلك",
+                    "لذلك"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-29",
+                "question": "عملت هنا ___ خمس سنوات.",
+                "options": [
+                    "منذ",
+                    "لمدة",
+                    "خلال",
+                    "في"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B2": [
+            {
+                "id": "B2-30",
+                "question": "البيت ___ عام 1990.",
+                "options": [
+                    "بنى",
+                    "بُني",
+                    "يُبنى",
+                    "يبني"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-31",
+                "question": "عندما وصلنا، كانوا قد ___ بالفعل.",
+                "options": [
+                    "يغادرون",
+                    "غادروا",
+                    "سيغادرون",
+                    "يغادرون"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-32",
+                "question": "أصرَّ على أن تغادر ___.",
+                "options": [
+                    "فورًا",
+                    "كانت",
+                    "تغادر",
+                    "مغادرة"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-33",
+                "question": "بمجرد ___ رنَّ الهاتف.",
+                "options": [
+                    "وصولي",
+                    "وصلت",
+                    "أن أصل",
+                    "وصول"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-34",
+                "question": "تتحدث كأنها ___ كل شيء.",
+                "options": [
+                    "تعرف",
+                    "تعرف كل",
+                    "كانت تعرف",
+                    "عارفة"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-35",
+                "question": "سيتم إنهاء المشروع ___ الشهر القادم.",
+                "options": [
+                    "بحلول",
+                    "منذ",
+                    "خلال",
+                    "قبل"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-36",
+                "question": "ما إن ___ حتى بدأت الأمطار.",
+                "options": [
+                    "وصلنا",
+                    "وصلت",
+                    "وصل",
+                    "نصل"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-37",
+                "question": "يفضّل لو ___ غدًا.",
+                "options": [
+                    "تأتي",
+                    "جئت",
+                    "ستأتي",
+                    "أتيت"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-38",
+                "question": "كلما مارست أكثر، ___ أصبحت.",
+                "options": [
+                    "أفضل",
+                    "جيدًا",
+                    "الأفضل",
+                    "أحسن ما"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-39",
+                "question": "ليس فقط تأخر، بل ___ أيضًا نسي الوثائق.",
+                "options": [
+                    "هو",
+                    "لكن",
+                    "بل",
+                    "وأيضًا"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C1": [
+            {
+                "id": "C1-40",
+                "question": "إنها قادرة ___ حل المسائل المعقدة.",
+                "options": [
+                    "إلى",
+                    "على",
+                    "في",
+                    "من"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-41",
+                "question": "لو كنت عرفت، ___ بشكل مختلف.",
+                "options": [
+                    "سأتصرف",
+                    "تصرفت",
+                    "كنت تصرفت",
+                    "لتصرفت"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-42",
+                "question": "من الضروري أن ___ مُبلَّغًا على الفور.",
+                "options": [
+                    "يكون",
+                    "كان",
+                    "يكن",
+                    "كون"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-43",
+                "question": "نادرًا ما ___ مثل هذا التفاني.",
+                "options": [
+                    "نرى",
+                    "رأينا",
+                    "نراه",
+                    "ترى"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-44",
+                "question": "نجحت ___ كل التوقعات.",
+                "options": [
+                    "رغم",
+                    "بسبب",
+                    "خلال",
+                    "نحو"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-45",
+                "question": "كان خطابه ___ ومثيرًا للتفكير.",
+                "options": [
+                    "متماسكًا",
+                    "تماسك",
+                    "بتماسك",
+                    "متماسك"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C2": [
+            {
+                "id": "C2-46",
+                "question": "النتائج، ___ كانت غير متوقعة، غيَّرت النظرية.",
+                "options": [
+                    "الذين",
+                    "التي",
+                    "الذي",
+                    "ما"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-47",
+                "question": "لو استقال، ___ الشركة تنهار.",
+                "options": [
+                    "قد",
+                    "ستكاد",
+                    "ربما",
+                    "يمكن أن"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-48",
+                "question": "كانت تعقيداتُ الأمر ___ درجةً أن قلةً فهمته.",
+                "options": [
+                    "من",
+                    "لدرجة",
+                    "على",
+                    "بدرجة"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-49",
+                "question": "تفتخر ___ استقلاليتها.",
+                "options": [
+                    "في",
+                    "بـ",
+                    "على",
+                    "من"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-50",
+                "question": "قليلٌ ___ كان يعرف عن العواقب في ذلك الوقت.",
+                "options": [
+                    "منه",
+                    "ما",
+                    "ممن",
+                    "عما"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    "italian": {
+        "A1": [
+            {
+                "id": "A1-1",
+                "question": "Lei ___ un'insegnante.",
+                "options": [
+                    "sono",
+                    "è",
+                    "sei",
+                    "siamo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-2",
+                "question": "Noi ___ di Roma.",
+                "options": [
+                    "è",
+                    "sono",
+                    "siamo",
+                    "sei"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-3",
+                "question": "Io ___ il caffè ogni mattina.",
+                "options": [
+                    "bevi",
+                    "bevo",
+                    "beviamo",
+                    "bevono"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-4",
+                "question": "Noi ___ la TV adesso.",
+                "options": [
+                    "guarda",
+                    "guardi",
+                    "guardiamo",
+                    "guardano"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-5",
+                "question": "C'è ___ libro sul tavolo.",
+                "options": [
+                    "una",
+                    "un",
+                    "uno",
+                    "dei"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-6",
+                "question": "Questo è ___ ufficio.",
+                "options": [
+                    "un",
+                    "una",
+                    "uno",
+                    "degli"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-7",
+                "question": "Lui ha ___ macchina.",
+                "options": [
+                    "un",
+                    "una",
+                    "uno",
+                    "dei"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-8",
+                "question": "Mia sorella è ___ di me.",
+                "options": [
+                    "alta",
+                    "più alta",
+                    "la più alta",
+                    "altissima"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-9",
+                "question": "Non ho ___ soldi.",
+                "options": [
+                    "alcuni",
+                    "nessun",
+                    "molto",
+                    "qualche"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "A2": [
+            {
+                "id": "A2-10",
+                "question": "___ ti chiami?",
+                "options": [
+                    "Cosa",
+                    "Come",
+                    "Chi",
+                    "Dove"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-11",
+                "question": "Vivo qui ___ il 2020.",
+                "options": [
+                    "dal",
+                    "per",
+                    "da",
+                    "durante"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-12",
+                "question": "Lei ___ a Parigi l'anno scorso.",
+                "options": [
+                    "va",
+                    "andò",
+                    "andrà",
+                    "andava"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-13",
+                "question": "Eravamo stanchi, ___ siamo andati a casa.",
+                "options": [
+                    "ma",
+                    "perché",
+                    "quindi",
+                    "sebbene"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-14",
+                "question": "Ci sono ___ persone nella stanza.",
+                "options": [
+                    "molto",
+                    "molta",
+                    "molti",
+                    "molte"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-15",
+                "question": "Lui è interessato ___ musica.",
+                "options": [
+                    "a",
+                    "di",
+                    "in",
+                    "per"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-16",
+                "question": "Se piove, ___ a casa.",
+                "options": [
+                    "rimaniamo",
+                    "rimarremmo",
+                    "rimarremo",
+                    "rimanga"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-17",
+                "question": "Lei è la ___ studentessa della classe.",
+                "options": [
+                    "migliore",
+                    "buona",
+                    "più buona",
+                    "bene"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-18",
+                "question": "Ho dimenticato ___ la porta.",
+                "options": [
+                    "chiudere",
+                    "chiudendo",
+                    "chiuso",
+                    "di chiudere"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-19",
+                "question": "Non è rimasto ___ latte.",
+                "options": [
+                    "molti",
+                    "molto",
+                    "pochi",
+                    "parecchi"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B1": [
+            {
+                "id": "B1-20",
+                "question": "Lui parla inglese molto ___.",
+                "options": [
+                    "buono",
+                    "bene",
+                    "meglio",
+                    "buon"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-21",
+                "question": "Se ___ più tempo, imparerei il giapponese.",
+                "options": [
+                    "ho",
+                    "avessi",
+                    "avrei",
+                    "avevo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-22",
+                "question": "Mi chiese da dove ___.",
+                "options": [
+                    "vengo",
+                    "venissi",
+                    "venivo",
+                    "vengo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-23",
+                "question": "Il film era così noioso che ___ addormentato.",
+                "options": [
+                    "mi sono",
+                    "mi sono",
+                    "mi ero",
+                    "mi sarò"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-24",
+                "question": "Non vedo l'ora di ___ presto.",
+                "options": [
+                    "vederti",
+                    "vedere ti",
+                    "vedendoti",
+                    "visto"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-25",
+                "question": "Negò di ___ il denaro.",
+                "options": [
+                    "rubare",
+                    "rubando",
+                    "aver rubato",
+                    "rubato"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-26",
+                "question": "Nessuno di loro ___ pronto.",
+                "options": [
+                    "sono",
+                    "siamo",
+                    "era",
+                    "erano"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-27",
+                "question": "Quella è la donna ___ figlio ha vinto il premio.",
+                "options": [
+                    "che",
+                    "il cui",
+                    "cui",
+                    "la quale"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-28",
+                "question": "Non avevo abbastanza tempo, ___ l'ho finito.",
+                "options": [
+                    "sebbene",
+                    "però",
+                    "eppure",
+                    "perché"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-29",
+                "question": "Lei ha lavorato qui ___ cinque anni.",
+                "options": [
+                    "dal",
+                    "da",
+                    "per",
+                    "durante"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B2": [
+            {
+                "id": "B2-30",
+                "question": "La casa ___ nel 1990.",
+                "options": [
+                    "costruì",
+                    "fu costruita",
+                    "ha costruito",
+                    "costruisce"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-31",
+                "question": "Quando siamo arrivati, erano già ___.",
+                "options": [
+                    "andati",
+                    "andato",
+                    "andava",
+                    "andranno"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-32",
+                "question": "Insistette che lei ___ subito.",
+                "options": [
+                    "parta",
+                    "partisse",
+                    "partirà",
+                    "partendo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-33",
+                "question": "Non appena ___, squillò il telefono.",
+                "options": [
+                    "arrivai",
+                    "ero arrivato",
+                    "arrivassi",
+                    "sono arrivato"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-34",
+                "question": "Parla come se ___ tutto.",
+                "options": [
+                    "sa",
+                    "sapesse",
+                    "sappia",
+                    "sapendo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-35",
+                "question": "Il progetto ___ entro il mese prossimo.",
+                "options": [
+                    "completerà",
+                    "sarà completato",
+                    "si completa",
+                    "completò"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-36",
+                "question": "Appena ___, iniziò a piovere.",
+                "options": [
+                    "arrivammo",
+                    "fossimo arrivati",
+                    "eravamo arrivati",
+                    "arrivavamo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-37",
+                "question": "Preferirebbe che tu ___ domani.",
+                "options": [
+                    "vieni",
+                    "venissi",
+                    "verresti",
+                    "venendo"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-38",
+                "question": "Più pratichi, ___ diventi.",
+                "options": [
+                    "buono",
+                    "migliore",
+                    "il migliore",
+                    "bene"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-39",
+                "question": "Non solo era in ritardo, ma ___ anche dimenticato i documenti.",
+                "options": [
+                    "aveva",
+                    "ha",
+                    "avrebbe",
+                    "avendo"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C1": [
+            {
+                "id": "C1-40",
+                "question": "Lei è capace ___ risolvere problemi complessi.",
+                "options": [
+                    "a",
+                    "di",
+                    "per",
+                    "in"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-41",
+                "question": "Se l'avessi saputo, ___ diversamente.",
+                "options": [
+                    "agirò",
+                    "agirei",
+                    "avrei agito",
+                    "agii"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-42",
+                "question": "È imperativo che lui ___ informato immediatamente.",
+                "options": [
+                    "è",
+                    "sia",
+                    "era",
+                    "fosse"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-43",
+                "question": "Raramente ___ tale dedizione.",
+                "options": [
+                    "vediamo",
+                    "vediamo mai",
+                    "si vede",
+                    "si vedeva"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-44",
+                "question": "È riuscita ___ tutte le aspettative.",
+                "options": [
+                    "nonostante",
+                    "sebbene",
+                    "mentre",
+                    "altrimenti"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-45",
+                "question": "Il suo discorso era ___ e stimolante.",
+                "options": [
+                    "coerente",
+                    "coerenza",
+                    "coerentemente",
+                    "incoerente"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C2": [
+            {
+                "id": "C2-46",
+                "question": "I risultati, ___ erano inaspettati, cambiarono la teoria.",
+                "options": [
+                    "chi",
+                    "che",
+                    "il cui",
+                    "quale"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-47",
+                "question": "Se si dimettesse, l'azienda ___ crollare.",
+                "options": [
+                    "può",
+                    "potrebbe",
+                    "deve",
+                    "dovrà"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-48",
+                "question": "Tale ___ la complessità del problema che in pochi lo capirono.",
+                "options": [
+                    "era",
+                    "è",
+                    "fu",
+                    "fosse"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-49",
+                "question": "Lei si vanta ___ la propria indipendenza.",
+                "options": [
+                    "in",
+                    "di",
+                    "a",
+                    "con"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-50",
+                "question": "Poco ___ sapeva delle conseguenze all'epoca.",
+                "options": [
+                    "lui",
+                    "si",
+                    "ne",
+                    "lo"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    "german": {
+        "A1": [
+            {
+                "id": "A1-1",
+                "question": "Sie ___ Lehrerin.",
+                "options": [
+                    "bin",
+                    "ist",
+                    "sind",
+                    "bist"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-2",
+                "question": "Wir ___ aus Berlin.",
+                "options": [
+                    "ist",
+                    "bin",
+                    "seid",
+                    "sind"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-3",
+                "question": "Ich ___ jeden Morgen Kaffee.",
+                "options": [
+                    "trinkst",
+                    "trinkt",
+                    "trinke",
+                    "trinken"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-4",
+                "question": "Wir ___ gerade fern.",
+                "options": [
+                    "schaut",
+                    "schauen",
+                    "schaust",
+                    "schaue"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-5",
+                "question": "Es gibt ___ Buch auf dem Tisch.",
+                "options": [
+                    "ein",
+                    "eine",
+                    "einen",
+                    "einer"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-6",
+                "question": "Das ist ___ Apfel.",
+                "options": [
+                    "ein",
+                    "eine",
+                    "einer",
+                    "einem"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-7",
+                "question": "Er hat ___ Auto.",
+                "options": [
+                    "ein",
+                    "eine",
+                    "einer",
+                    "eines"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-8",
+                "question": "Meine Schwester ist ___ als ich.",
+                "options": [
+                    "groß",
+                    "größer",
+                    "am größten",
+                    "sehr groß"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-9",
+                "question": "Ich habe ___ Geld.",
+                "options": [
+                    "einige",
+                    "kein",
+                    "viele",
+                    "wenige"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "A2": [
+            {
+                "id": "A2-10",
+                "question": "___ du Pizza?",
+                "options": [
+                    "Bist",
+                    "Magst",
+                    "Ist",
+                    "Mag"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-11",
+                "question": "Ich wohne hier ___ 2020.",
+                "options": [
+                    "seit",
+                    "für",
+                    "von",
+                    "während"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-12",
+                "question": "Sie ___ letztes Jahr nach Paris.",
+                "options": [
+                    "geht",
+                    "fuhr",
+                    "fährt",
+                    "gefahren"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-13",
+                "question": "Wir waren müde, ___ gingen wir nach Hause.",
+                "options": [
+                    "aber",
+                    "weil",
+                    "also",
+                    "obwohl"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-14",
+                "question": "Es sind ___ Leute im Zimmer.",
+                "options": [
+                    "viel",
+                    "vieles",
+                    "viele",
+                    "vielen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-15",
+                "question": "Er interessiert sich ___ Musik.",
+                "options": [
+                    "auf",
+                    "an",
+                    "für",
+                    "in"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-16",
+                "question": "Wenn es regnet, ___ wir zu Hause bleiben.",
+                "options": [
+                    "werden",
+                    "würden",
+                    "wären",
+                    "hätten"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-17",
+                "question": "Sie ist die ___ Schülerin in der Klasse.",
+                "options": [
+                    "besser",
+                    "beste",
+                    "gute",
+                    "mehr gute"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-18",
+                "question": "Ich habe vergessen, die Tür ___.",
+                "options": [
+                    "schließen",
+                    "schloss",
+                    "zu schließen",
+                    "geschlossen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-19",
+                "question": "Es ist keine ___ Milch mehr da.",
+                "options": [
+                    "viele",
+                    "viel",
+                    "wenige",
+                    "einige"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B1": [
+            {
+                "id": "B1-20",
+                "question": "Er spricht Englisch sehr ___.",
+                "options": [
+                    "gut",
+                    "gute",
+                    "besser",
+                    "am besten"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-21",
+                "question": "Wenn ich mehr Zeit ___, würde ich Japanisch lernen.",
+                "options": [
+                    "habe",
+                    "hätte",
+                    "werde haben",
+                    "würde haben"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-22",
+                "question": "Sie fragte mich, woher ich ___.",
+                "options": [
+                    "komme",
+                    "käme",
+                    "kommen",
+                    "sei"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-23",
+                "question": "Der Film war so langweilig, dass ich ___.",
+                "options": [
+                    "einschlafe",
+                    "einschlief",
+                    "eingeschlafen bin",
+                    "einschliefen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-24",
+                "question": "Ich freue mich darauf, dich bald ___.",
+                "options": [
+                    "sehen",
+                    "zu sehen",
+                    "gesehen",
+                    "sah"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-25",
+                "question": "Er bestritt, das Geld ___ zu haben.",
+                "options": [
+                    "stehlen",
+                    "stahl",
+                    "gestohlen",
+                    "stehlend"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-26",
+                "question": "Keiner von ihnen ___ bereit.",
+                "options": [
+                    "sind",
+                    "war",
+                    "wäre",
+                    "sein"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-27",
+                "question": "Das ist die Frau, ___ Sohn den Preis gewann.",
+                "options": [
+                    "die",
+                    "deren",
+                    "der",
+                    "das"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-28",
+                "question": "Ich hatte nicht genug Zeit, ___ habe ich es geschafft.",
+                "options": [
+                    "obwohl",
+                    "trotzdem",
+                    "aber",
+                    "dennoch"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-29",
+                "question": "Sie hat hier ___ fünf Jahren gearbeitet.",
+                "options": [
+                    "seit",
+                    "für",
+                    "während",
+                    "von"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B2": [
+            {
+                "id": "B2-30",
+                "question": "Das Haus ___ 1990 gebaut.",
+                "options": [
+                    "baute",
+                    "wurde",
+                    "hat gebaut",
+                    "wird"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-31",
+                "question": "Als wir ankamen, waren sie schon ___.",
+                "options": [
+                    "gegangen",
+                    "gehen",
+                    "gingen",
+                    "gegangen sein"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-32",
+                "question": "Er bestand darauf, dass sie sofort ___.",
+                "options": [
+                    "geht",
+                    "gehe",
+                    "gegangen",
+                    "gehen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-33",
+                "question": "Kaum ___, klingelte das Telefon.",
+                "options": [
+                    "ich ankam",
+                    "war ich angekommen",
+                    "ankam ich",
+                    "ich war angekommen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-34",
+                "question": "Sie spricht, als ob sie alles ___.",
+                "options": [
+                    "weiß",
+                    "wisse",
+                    "würde wissen",
+                    "wusste"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-35",
+                "question": "Das Projekt ___ bis nächsten Monat abgeschlossen sein.",
+                "options": [
+                    "wird",
+                    "hat",
+                    "ist",
+                    "war"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-36",
+                "question": "Kaum ___ wir angekommen, als es anfing zu regnen.",
+                "options": [
+                    "sind",
+                    "waren",
+                    "wären",
+                    "haben"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-37",
+                "question": "Er würde es vorziehen, wenn du morgen ___.",
+                "options": [
+                    "kommst",
+                    "kämst",
+                    "kommen",
+                    "käme"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-38",
+                "question": "Je mehr du übst, desto ___ wirst du.",
+                "options": [
+                    "gut",
+                    "besser",
+                    "am besten",
+                    "wohl"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B2-39",
+                "question": "Nicht nur kam er zu spät, sondern ___ auch die Unterlagen vergessen.",
+                "options": [
+                    "er hatte",
+                    "hatte er",
+                    "er hat",
+                    "hat er"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C1": [
+            {
+                "id": "C1-40",
+                "question": "Sie ist in der Lage, komplexe Probleme ___.",
+                "options": [
+                    "zu lösen",
+                    "lösen",
+                    "gelöst",
+                    "lösend"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-41",
+                "question": "Hätte ich es gewusst, ___ ich anders gehandelt.",
+                "options": [
+                    "werde",
+                    "würde",
+                    "hätte",
+                    "hätte ich"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-42",
+                "question": "Es ist unbedingt erforderlich, dass er sofort informiert ___.",
+                "options": [
+                    "ist",
+                    "wird",
+                    "werde",
+                    "sei"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-43",
+                "question": "Selten ___ man eine solche Hingabe.",
+                "options": [
+                    "sieht",
+                    "sahen wir",
+                    "sehen wir",
+                    "gesehen"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-44",
+                "question": "Sie hat es ___ aller Erwartungen geschafft.",
+                "options": [
+                    "trotz",
+                    "obwohl",
+                    "wenngleich",
+                    "sonst"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C1-45",
+                "question": "Seine Rede war ___ und anregend.",
+                "options": [
+                    "kohärent",
+                    "Kohärenz",
+                    "kohärenterweise",
+                    "inkohärent"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C2": [
+            {
+                "id": "C2-46",
+                "question": "Die Ergebnisse, ___ unerwartet waren, veränderten die Theorie.",
+                "options": [
+                    "die",
+                    "das",
+                    "wer",
+                    "welche"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-47",
+                "question": "Würde er zurücktreten, ___ das Unternehmen zusammenbrechen.",
+                "options": [
+                    "kann",
+                    "könnte",
+                    "muss",
+                    "soll"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-48",
+                "question": "___ war die Komplexität des Problems, dass wenige es verstanden.",
+                "options": [
+                    "So",
+                    "Solch",
+                    "Solche",
+                    "Solches"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-49",
+                "question": "Sie ist stolz ___ ihre Unabhängigkeit.",
+                "options": [
+                    "in",
+                    "auf",
+                    "an",
+                    "von"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-50",
+                "question": "___ wusste er damals über die Konsequenzen.",
+                "options": [
+                    "Wenig",
+                    "Kaum",
+                    "Wenigstens",
+                    "Nichts"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ]
+    },
+    "french": {
+        "A1": [
+            {
+                "id": "A1-1",
+                "question": "Je ___ étudiant.",
+                "options": [
+                    "suis",
+                    "es",
+                    "est",
+                    "être"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-2",
+                "question": "Elle ___ à Paris.",
+                "options": [
+                    "habite",
+                    "habites",
+                    "habitons",
+                    "habitez"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-3",
+                "question": "Nous ___ français.",
+                "options": [
+                    "parle",
+                    "parlons",
+                    "parlent",
+                    "parlez"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A1-4",
+                "question": "J'ai ___ sœur.",
+                "options": [
+                    "un",
+                    "une",
+                    "des",
+                    "le"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A1-5",
+                "question": "Il ___ 8 heures.",
+                "options": [
+                    "est",
+                    "sont",
+                    "a",
+                    "fait"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-6",
+                "question": "Ils ___ contents.",
+                "options": [
+                    "est",
+                    "sont",
+                    "es",
+                    "être"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A1-7",
+                "question": "جمع كلمة \"animal\" هو:",
+                "options": [
+                    "animals",
+                    "animales",
+                    "animaux",
+                    "animau"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "A1-8",
+                "question": "Je vais ___ école.",
+                "options": [
+                    "à",
+                    "au",
+                    "à l'",
+                    "en"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "A1-9",
+                "question": "الصيغة النفيّة الصحيحة:",
+                "options": [
+                    "Je ne mange pas.",
+                    "Je pas mange.",
+                    "Je ne pas mange.",
+                    "Je mange ne pas."
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A1-10",
+                "question": "مؤنث كلمة \"grand\" هو:",
+                "options": [
+                    "grande",
+                    "grandee",
+                    "grands",
+                    "grand"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "A2": [
+            {
+                "id": "A2-1",
+                "question": "Hier, nous ___ au cinéma.",
+                "options": [
+                    "allons",
+                    "sommes allés",
+                    "irions",
+                    "allons aller"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A2-2",
+                "question": "Elle a acheté ___ pommes.",
+                "options": [
+                    "du",
+                    "de la",
+                    "des",
+                    "le"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "A2-3",
+                "question": "Je cherche quelqu'un ___ parle espagnol.",
+                "options": [
+                    "que",
+                    "qui",
+                    "dont",
+                    "où"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A2-4",
+                "question": "Si j'ai le temps, je ___ te voir.",
+                "options": [
+                    "vais",
+                    "irai",
+                    "allais",
+                    "irais"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A2-5",
+                "question": "Mets ___ veste.",
+                "options": [
+                    "ton",
+                    "ta",
+                    "tes",
+                    "mon"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A2-6",
+                "question": "Nous habitons ici ___ 3 ans.",
+                "options": [
+                    "pendant",
+                    "pour",
+                    "depuis",
+                    "dans"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "A2-7",
+                "question": "Elle est plus ___ que sa sœur.",
+                "options": [
+                    "petit",
+                    "petite",
+                    "petits",
+                    "petites"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "A2-8",
+                "question": "Il est ___ train de travailler.",
+                "options": [
+                    "en",
+                    "à",
+                    "de",
+                    "pour"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-9",
+                "question": "عكس كلمة \"rapide\" هو:",
+                "options": [
+                    "lent",
+                    "long",
+                    "court",
+                    "vite"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "A2-10",
+                "question": "Vous ___ finir vos devoirs.",
+                "options": [
+                    "devez",
+                    "doit",
+                    "devons",
+                    "doivent"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B1": [
+            {
+                "id": "B1-1",
+                "question": "Je pense qu'il ___ raison.",
+                "options": [
+                    "a",
+                    "ait",
+                    "aura",
+                    "avait"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-2",
+                "question": "Il faut que tu ___ tes devoirs.",
+                "options": [
+                    "fais",
+                    "fasses",
+                    "fera",
+                    "feras"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B1-3",
+                "question": "S'il avait su, il ___ venu.",
+                "options": [
+                    "sera",
+                    "serait",
+                    "était",
+                    "est"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B1-4",
+                "question": "Elle m'a dit qu'elle ___ le lendemain.",
+                "options": [
+                    "vient",
+                    "viendra",
+                    "viendrait",
+                    "venait"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B1-5",
+                "question": "اسم المفعول للفعل \"prendre\" هو:",
+                "options": [
+                    "prend",
+                    "pris",
+                    "prenne",
+                    "prendra"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B1-6",
+                "question": "C'est le film ___ je t'ai parlé.",
+                "options": [
+                    "que",
+                    "qui",
+                    "dont",
+                    "où"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B1-7",
+                "question": "Ils se sont ___ les mains.",
+                "options": [
+                    "lavé",
+                    "lavés",
+                    "lavées",
+                    "laver"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "B1-8",
+                "question": "Cela dépend ___ toi.",
+                "options": [
+                    "à",
+                    "de",
+                    "pour",
+                    "sur"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B1-9",
+                "question": "كلمة \"cependant\" تعني:",
+                "options": [
+                    "donc",
+                    "pourtant",
+                    "ensuite",
+                    "car"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B1-10",
+                "question": "Nous sommes arrivés ___ retard.",
+                "options": [
+                    "en",
+                    "à",
+                    "par",
+                    "avec"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "B2": [
+            {
+                "id": "B2-1",
+                "question": "Il est essentiel que vous ___ présents.",
+                "options": [
+                    "êtes",
+                    "serez",
+                    "soyez",
+                    "étiez"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B2-2",
+                "question": "Quoique fatigué, il ___ continué.",
+                "options": [
+                    "ait",
+                    "a",
+                    "avait",
+                    "aurait"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B2-3",
+                "question": "Plus il travaille, plus il ___.",
+                "options": [
+                    "réussir",
+                    "réussit",
+                    "réussira",
+                    "réussi"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B2-4",
+                "question": "Elle parle comme si elle ___ tout.",
+                "options": [
+                    "sait",
+                    "saura",
+                    "savait",
+                    "su"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B2-5",
+                "question": "الصيغة المبنية للمجهول الصحيحة لـ:\n\"On a construit ce pont.\"",
+                "options": [
+                    "Ce pont est construit.",
+                    "Ce pont a construit.",
+                    "Ce pont a été construit.",
+                    "Ce pont construit."
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B2-6",
+                "question": "Il s'agit ___ problème sérieux.",
+                "options": [
+                    "de",
+                    "du",
+                    "d'un",
+                    "des"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B2-7",
+                "question": "Je me suis rendu compte ___ mon erreur.",
+                "options": [
+                    "que",
+                    "à",
+                    "de",
+                    "pour"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "B2-8",
+                "question": "Il aurait préféré que tu ___ plus tôt.",
+                "options": [
+                    "viens",
+                    "viennes",
+                    "es venu",
+                    "viendras"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B2-9",
+                "question": "Malgré ___ difficultés, ils ont réussi.",
+                "options": [
+                    "des",
+                    "les",
+                    "de",
+                    "aux"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "B2-10",
+                "question": "كلمة \"Néanmoins\" تعبّر عن:",
+                "options": [
+                    "السبب",
+                    "المعارضة",
+                    "النتيجة",
+                    "الهدف"
+                ],
+                "correctAnswerIndex": 1
+            }
+        ],
+        "C1": [
+            {
+                "id": "C1-1",
+                "question": "À supposer qu'il ___ demain, que ferions-nous ?",
+                "options": [
+                    "vient",
+                    "viendra",
+                    "vienne",
+                    "venait"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "C1-2",
+                "question": "Il est parti sans que personne ne ___.",
+                "options": [
+                    "s'en aperçoit",
+                    "s'en aperçoive",
+                    "s'en apercevait",
+                    "s'en aperçut"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "C1-3",
+                "question": "Non seulement il a échoué, mais encore il ___.",
+                "options": [
+                    "insiste",
+                    "insister",
+                    "a insisté",
+                    "insistait"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "C1-4",
+                "question": "Si tant est que cela ___ possible.",
+                "options": [
+                    "est",
+                    "sera",
+                    "soit",
+                    "était"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "C1-5",
+                "question": "Il convient que chacun ___ ses responsabilités.",
+                "options": [
+                    "assume",
+                    "assumera",
+                    "assumait",
+                    "a assumé"
+                ],
+                "correctAnswerIndex": 0
+            }
+        ],
+        "C2": [
+            {
+                "id": "C2-1",
+                "question": "Les décisions qu'elle a ___ prendre.",
+                "options": [
+                    "dû",
+                    "dues",
+                    "du",
+                    "devoir"
+                ],
+                "correctAnswerIndex": 0
+            },
+            {
+                "id": "C2-2",
+                "question": "إعادة صياغة صحيحة لـ:\n\"Il arrive rarement en retard.\"",
+                "options": [
+                    "Il est souvent en retard.",
+                    "Il n'arrive presque jamais en retard.",
+                    "Il arrive toujours en retard.",
+                    "Il arrive parfois en retard."
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "C2-3",
+                "question": "المسجل الرفيع لكلمة \"beaucoup\":",
+                "options": [
+                    "trop",
+                    "énormément",
+                    "moult",
+                    "très"
+                ],
+                "correctAnswerIndex": 2
+            },
+            {
+                "id": "C2-4",
+                "question": "\"Cette obscure clarté\" هي:",
+                "options": [
+                    "Métaphore",
+                    "Oxymore",
+                    "Allitération",
+                    "Comparaison"
+                ],
+                "correctAnswerIndex": 1
+            },
+            {
+                "id": "C2-5",
+                "question": "\"Eût-il su la vérité, il se fût tu.\" تقابل:",
+                "options": [
+                    "Conditionnel passé",
+                    "Subjonctif présent",
+                    "Conditionnel passé 2e forme",
+                    "Futur antérieur"
+                ],
+                "correctAnswerIndex": 2
+            }
+        ]
+    }
+}
