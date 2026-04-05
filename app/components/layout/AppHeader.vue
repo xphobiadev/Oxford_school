@@ -15,8 +15,8 @@
           <img
             src="/images/logo.png"
             alt="Universal Oxford Groupe"
-            class="h-10 sm:h-12 w-auto object-contain
-                   group-hover:scale-105 transition-transform duration-500"
+            class="w-12 sm:w-14 h-12 sm:h-14 object-contain p-1.5 rounded-full bg-white shadow-sm ring-2 ring-gold-500/20 group-hover:ring-gold-500/50
+                   group-hover:scale-105 transition-all duration-500"
           />
         </div>
         <div class="hidden sm:block">

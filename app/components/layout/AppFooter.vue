@@ -16,7 +16,7 @@
             <img
               src="/images/logo.png"
               alt="Universal Oxford Groupe"
-              class="w-20 h-20 object-contain drop-shadow-md"
+              class="w-20 h-20 object-contain p-2 rounded-full bg-white shadow-lg ring-2 ring-gold-500/30"
             />
             <div>
               <h3 class="font-display font-bold text-2xl text-white">
