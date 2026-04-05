@@ -36,24 +36,24 @@
       </NuxtLink>
 
       <!-- Desktop Menu -->
-      <ul class="hidden lg:flex items-center gap-1">
+      <ul class="hidden lg:flex items-center gap-0.5 xl:gap-1">
         <li v-for="item in menuItems" :key="item.label">
           <NuxtLink
             :to="item.hash ? { path: item.path, hash: item.hash } : item.path"
             @click="handleMenuClick($event, item)"
-            class="relative px-5 py-2.5 rounded-full font-medium text-sm tracking-wide
-                   transition-all duration-300 group flex items-center gap-2 text-navy-800 hover:bg-black/5 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10"
+            class="relative px-3 xl:px-4 py-2 rounded-full font-medium text-[13px] xl:text-sm tracking-wide whitespace-nowrap
+                   transition-all duration-300 group flex items-center gap-1.5 text-navy-800 hover:bg-black/5 dark:text-gray-300 dark:hover:text-white dark:hover:bg-white/10"
           >
-            <i :class="item.icon" class="text-gold-600 dark:text-gold-500/70 group-hover:text-gold-500 text-xs transition-colors"></i>
+            <i :class="item.icon" class="text-gold-600 dark:text-gold-500/70 group-hover:text-gold-500 text-[13px] xl:text-sm transition-colors"></i>
             {{ item.label }}
           </NuxtLink>
         </li>
-        <li class="ml-4 flex items-center gap-2">
+        <li class="ml-2 xl:ml-4 flex items-center gap-1.5 xl:gap-2">
           <LanguageSwitcher />
           <ThemeToggle />
           <NuxtLink
             to="/contact"
-            class="btn-gold text-sm py-2.5 px-5 flex items-center gap-2 shadow-lg hover:shadow-xl ml-2"
+            class="btn-gold text-[13px] xl:text-sm py-2 px-4 xl:px-5 flex items-center gap-2 shadow-lg hover:shadow-xl ml-1 xl:ml-2 whitespace-nowrap"
           >
             <i class="ph-fill ph-paper-plane-right"></i>
             Contact Us
