@@ -251,8 +251,8 @@
                   <i class="ph-fill ph-exam text-gold-500"></i> Examination Results
                 </h4>
                 
-                <div class="overflow-hidden rounded-2xl border border-gray-200 dark:border-navy-700">
-                  <table class="w-full text-left border-collapse">
+                <div class="overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
+                  <table class="w-full min-w-[700px] text-left border-collapse">
                     <thead>
                       <tr class="bg-gray-50 dark:bg-navy-900/50 text-gray-500 dark:text-gray-400 text-xs uppercase tracking-wider font-bold">
                         <th class="p-4 border-b border-gray-200 dark:border-navy-700">Subject</th>
