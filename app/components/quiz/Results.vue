@@ -159,7 +159,7 @@ const failedLevel = computed(() =>
               />
             </div>
             <div
-              class="text-[0.6rem] font-extrabold"
+              class="text-[0.7rem] sm:text-xs font-extrabold mt-0.5"
               :style="{ color: results.levelResults[lvl]?.passed ? 'var(--success)' : 'var(--danger)' }"
             >{{ results.levelResults[lvl]?.passed ? lang.t.pass : lang.t.fail }}</div>
           </div>
