@@ -13,16 +13,11 @@
       <NuxtLink to="/" class="flex items-center gap-4 group">
         <div class="relative">
           <img
-            :src="'/images/logo.png'"
+            src="/images/logo.png"
             alt="Universal Oxford Groupe"
-            class="w-14 h-14 object-contain rounded-full
-                   group-hover:scale-110 transition-transform duration-500
-                   ring-2 ring-gold-500/30 group-hover:ring-gold-500/60"
+            class="h-10 sm:h-12 w-auto object-contain
+                   group-hover:scale-105 transition-transform duration-500"
           />
-          <div
-            class="absolute inset-0 rounded-full bg-gold-500/0
-                   group-hover:bg-gold-500/10 transition-colors duration-500"
-          ></div>
         </div>
         <div class="hidden sm:block">
           <span class="font-display font-bold text-lg leading-tight block transition-colors duration-300"

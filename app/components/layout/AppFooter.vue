@@ -14,10 +14,9 @@
         <div class="md:col-span-5">
           <div class="flex items-center gap-4 mb-8">
             <img
-              :src="'/images/logo.png'"
+              src="/images/logo.png"
               alt="Universal Oxford Groupe"
-              class="w-20 h-20 object-contain rounded-full
-                     ring-2 ring-gold-500/30"
+              class="w-20 h-20 object-contain drop-shadow-md"
             />
             <div>
               <h3 class="font-display font-bold text-2xl text-white">
