@@ -44,16 +44,6 @@
                   <i class="ph-fill ph-quotes text-4xl"></i>
                 </div>
 
-                <!-- Stars -->
-                <div class="flex gap-1.5 mb-5">
-                  <i
-                    v-for="star in 5"
-                    :key="star"
-                    class="ph-fill ph-star text-lg"
-                    :class="star <= 5 ? 'star-gold' : 'star-empty'"
-                  ></i>
-                </div>
-
                 <!-- Message -->
                 <p class="text-gray-600 dark:text-gray-300 leading-relaxed flex-1 mb-8 text-sm md:text-base">
                   "{{ t(testimonial.content) }}"

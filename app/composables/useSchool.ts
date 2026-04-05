@@ -47,11 +47,33 @@ export const useSchool = () => {
               first_name: l('Ahmed', 'Ahmed', 'أحمد'),
               last_name: l('Benali', 'Benali', 'بن علي'),
               meta: {
-                en: { experience_years: 10, bio: 'Expert English teacher', education: 'MA in TESOL', certifications: ['CELTA'] },
-                fr: { experience_years: 10, bio: 'Professeur d\'anglais expert', education: 'Master en TESOL', certifications: ['CELTA'] },
-                ar: { experience_years: 10, bio: 'مدرس لغة إنجليزية خبير', education: 'ماجستير في تدريس الإنجليزية', certifications: ['سيلتا'] },
+                en: { experience_years: 10, bio: 'Expert English teacher with a decade of experience in communicative language teaching.', education: 'MA in Applied Linguistics', certifications: ['CELTA', 'DELTA', 'IELTS Examiner'] },
+                fr: { experience_years: 10, bio: 'Professeur d\'anglais expert avec une décennie d\'enseignement communicatif.', education: 'Master en Linguistique Appliquée', certifications: ['CELTA', 'DELTA', 'Examinateur IELTS'] },
+                ar: { experience_years: 10, bio: 'مدرس لغة إنجليزية خبير مع عقد من الخبرة في تدريس اللغة التواصلية.', education: 'ماجستير في اللسانيات التطبيقية', certifications: ['سيلتا', 'دلتا', 'ممتحن آيلتس'] },
               },
-              galleries: [],
+              galleries: [
+                {
+                  id: 1,
+                  title: l('English Speaking Workshop 2024', 'Atelier de conversation anglaise 2024', 'ورشة المحادثة الإنجليزية 2024'),
+                  activity_date: '2024-11-15',
+                  media: [
+                    { id: 1, url: 'https://picsum.photos/seed/workshop1/600/400', mime_type: 'image/jpeg' },
+                    { id: 2, url: 'https://picsum.photos/seed/workshop2/600/400', mime_type: 'image/jpeg' },
+                    { id: 3, url: 'https://picsum.photos/seed/workshop3/600/400', mime_type: 'image/jpeg' },
+                    { id: 10, url: 'https://picsum.photos/seed/workshop4/600/400', mime_type: 'image/jpeg' },
+                  ]
+                },
+                {
+                  id: 2,
+                  title: l('End of Year Celebration', 'Célébration de fin d\'année', 'حفل نهاية السنة'),
+                  activity_date: '2024-06-20',
+                  media: [
+                    { id: 4, url: 'https://picsum.photos/seed/celebration1/600/400', mime_type: 'image/jpeg' },
+                    { id: 5, url: 'https://picsum.photos/seed/celebration2/600/400', mime_type: 'image/jpeg' },
+                    { id: 11, url: 'https://picsum.photos/seed/celebration3/600/400', mime_type: 'image/jpeg' },
+                  ]
+                }
+              ],
               mappedLanguages: [
                 { language_name: 'English', level: 'C2' },
                 { language_name: 'French', level: 'B2' }
@@ -62,11 +84,21 @@ export const useSchool = () => {
               first_name: l('Sara', 'Sara', 'سارة'),
               last_name: l('Moussaoui', 'Moussaoui', 'موساوي'),
               meta: {
-                en: { experience_years: 7, bio: 'Passionate English instructor', education: 'BA in English Lit', certifications: ['TEFL'] },
-                fr: { experience_years: 7, bio: 'Instructrice d\'anglais passionnée', education: 'Licence en littérature', certifications: ['TEFL'] },
-                ar: { experience_years: 7, bio: 'مدرسة لغة إنجليزية شغوفة', education: 'إجازة في الأدب الإنجليزي', certifications: ['تيفل'] },
+                en: { experience_years: 7, bio: 'Passionate English instructor specializing in exam preparation and academic writing.', education: 'BA in English Literature', certifications: ['TEFL', 'TKT'] },
+                fr: { experience_years: 7, bio: 'Instructrice d\'anglais passionnée spécialisée dans la préparation aux examens.', education: 'Licence en Littérature Anglaise', certifications: ['TEFL', 'TKT'] },
+                ar: { experience_years: 7, bio: 'مدرسة لغة إنجليزية شغوفة متخصصة في التحضير للامتحانات والكتابة الأكاديمية.', education: 'إجازة في الأدب الإنجليزي', certifications: ['تيفل', 'تي كي تي'] },
               },
-              galleries: [],
+              galleries: [
+                {
+                  id: 3,
+                  title: l('Reading Club Session', 'Session du Club de Lecture', 'جلسة نادي القراءة'),
+                  activity_date: '2024-10-05',
+                  media: [
+                    { id: 6, url: 'https://picsum.photos/seed/reading1/600/400', mime_type: 'image/jpeg' },
+                    { id: 7, url: 'https://picsum.photos/seed/reading2/600/400', mime_type: 'image/jpeg' },
+                  ]
+                }
+              ],
               mappedLanguages: [
                 { language_name: 'English', level: 'C1' },
                 { language_name: 'Arabic', level: 'Native' }
@@ -85,9 +117,9 @@ export const useSchool = () => {
               first_name: l('Jean', 'Jean', 'جان'),
               last_name: l('Dupont', 'Dupont', 'دوبون'),
               meta: {
-                en: { experience_years: 12, bio: 'Native French speaker', education: 'MA in FLE', certifications: ['DALF'] },
-                fr: { experience_years: 12, bio: 'Locuteur natif français', education: 'Master en FLE', certifications: ['DALF'] },
-                ar: { experience_years: 12, bio: 'متحدث فرنسي أصلي', education: 'ماجستير في تعليم الفرنسية', certifications: ['دالف'] },
+                en: { experience_years: 12, bio: 'Native French speaker with expertise in DELF/DALF preparation.', education: 'MA in French as a Foreign Language (FLE)', certifications: ['DALF C2', 'FLE Certified'] },
+                fr: { experience_years: 12, bio: 'Locuteur natif français expert dans la préparation DELF/DALF.', education: 'Master en Français Langue Étrangère (FLE)', certifications: ['DALF C2', 'Certifié FLE'] },
+                ar: { experience_years: 12, bio: 'متحدث فرنسي أصلي خبير في تحضير DELF/DALF.', education: 'ماجستير في تعليم الفرنسية كلغة أجنبية', certifications: ['دالف C2', 'معتمد FLE'] },
               },
               galleries: [],
               mappedLanguages: [

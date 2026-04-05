@@ -6,82 +6,25 @@
       <div class="container mx-auto px-4 text-center text-navy-900 dark:text-white relative z-10">
         <h1 class="font-display text-4xl md:text-5xl font-bold mb-4">
           <i class="ph-fill ph-info text-gold-500 mr-3"></i>
-          About Us
+          {{ t(pageData.title) }}
         </h1>
-        <p class="text-xl text-gray-300 dark:text-gray-400">من نحن</p>
         <div class="gold-line mt-6"></div>
       </div>
     </section>
     <section class="py-20 bg-white dark:bg-navy-950 transition-colors duration-500">
-      <div class="container mx-auto px-6 max-w-7xl">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-          
-          <!-- Image/Logo Side -->
-          <div class="lg:col-span-5 relative flex justify-center">
-            <div class="absolute inset-0 bg-gold-500/10 dark:bg-gold-500/5 rounded-full blur-3xl max-w-md mx-auto aspect-square"></div>
-            <img 
-              src="/images/logo.png" 
-              alt="Universal Oxford Formations Logo" 
-              class="relative z-10 w-64 md:w-80 lg:w-96 h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700
-                     ring-4 ring-white/50 dark:ring-navy-800/50 rounded-full p-4 bg-white/10 backdrop-blur-sm" 
-            />
-          </div>
-
-          <!-- Content Side -->
-          <div class="lg:col-span-7">
-            <h2 class="text-navy-900 dark:text-white text-4xl lg:text-5xl font-display font-bold mb-4">Universal Oxford Formations</h2>
-            <div class="w-16 h-1 bg-gradient-to-r from-gold-500 to-gold-400 mb-8 rounded-full"></div>
-            
-            <div class="space-y-6">
-              <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-                <strong class="text-navy-800 dark:text-white font-semibold">Universal Oxford Formations</strong> is a premier educational institution dedicated to cultivating global communicators and tech-savvy professionals. We offer world-class language courses and comprehensive IT training designed to bridge educational paths with modern career demands.
-              </p>
-              
-              <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-                Our expansive language center provides expert-led programs in English, French, Spanish, German, and Italian. Whether you are aiming to study abroad, integrate into a new cultural environment, or boost your corporate profile, our tailored linguistic approaches ensure rapid and profound mastery.
-              </p>
-
-              <h3 class="text-navy-900 dark:text-white text-2xl font-display font-bold pt-4">Our Vision & Mission</h3>
-              <p class="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-                We envision a world interconnected through seamless communication and digital literacy. Our mission is to dismantle language and technological barriers by providing high-quality, engaging, and dynamic education. We view ourselves not just as a school, but as a catalyst for profound professional and personal growth.
-              </p>
-
-              <h3 class="text-navy-900 dark:text-white text-2xl font-display font-bold pt-4">Why Choose Us?</h3>
-              <ul class="space-y-4 text-gray-600 dark:text-gray-300 text-lg">
-                <li class="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-navy-900/50 border border-gray-100 dark:border-navy-800/50 hover:border-gold-500/30 transition-colors">
-                  <div class="w-10 h-10 rounded-full bg-gold-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <i class="ph-fill ph-chalkboard-teacher text-gold-500"></i>
-                  </div>
-                  <div>
-                    <strong class="block text-navy-900 dark:text-white mb-1">Expert Instructors</strong>
-                    <span class="text-base text-gray-500 dark:text-gray-400">Learn from highly qualified, passionate professionals with years of industry and academic experience.</span>
-                  </div>
-                </li>
-                
-                <li class="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-navy-900/50 border border-gray-100 dark:border-navy-800/50 hover:border-gold-500/30 transition-colors">
-                  <div class="w-10 h-10 rounded-full bg-gold-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <i class="ph-fill ph-book-open text-gold-500"></i>
-                  </div>
-                  <div>
-                    <strong class="block text-navy-900 dark:text-white mb-1">Modern Curriculum</strong>
-                    <span class="text-base text-gray-500 dark:text-gray-400">Engage in interactive learning combining theoretical foundations with robust, active practice.</span>
-                  </div>
-                </li>
-                
-                <li class="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-navy-900/50 border border-gray-100 dark:border-navy-800/50 hover:border-gold-500/30 transition-colors">
-                  <div class="w-10 h-10 rounded-full bg-gold-500/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <i class="ph-fill ph-laptop text-gold-500"></i>
-                  </div>
-                  <div>
-                    <strong class="block text-navy-900 dark:text-white mb-1">Holistic Development</strong>
-                    <span class="text-base text-gray-500 dark:text-gray-400">Beyond languages, we prepare you with vital software and essential IT competencies for the modern world.</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
+      <div class="container mx-auto px-6 max-w-4xl">
+        <div
+          class="prose prose-lg max-w-none dark:prose-invert
+                 prose-headings:font-display prose-headings:text-navy-900 dark:prose-headings:text-white
+                 prose-p:text-gray-600 dark:prose-p:text-gray-300 prose-p:leading-relaxed
+                 prose-a:text-gold-600 dark:prose-a:text-gold-400 prose-a:no-underline hover:prose-a:underline
+                 prose-strong:text-navy-800 dark:prose-strong:text-white
+                 prose-ul:text-gray-600 dark:prose-ul:text-gray-300
+                 prose-ol:text-gray-600 dark:prose-ol:text-gray-300
+                 prose-li:text-gray-600 dark:prose-li:text-gray-300
+                 prose-img:rounded-2xl prose-img:shadow-lg"
+          v-html="t(pageData.content)"
+        ></div>
       </div>
     </section>
     <AppFooter />
@@ -89,6 +32,45 @@
 </template>
 
 <script setup lang="ts">
+import type { LocalizedField } from '~/types'
+
+const { t } = useLocale()
+
+const l = (en: string, fr?: string, ar?: string): LocalizedField => ({ en, fr: fr || null, ar: ar || null })
+
+// This data will come from the API — mock for now
+const pageData = reactive({
+  title: l('About Us', 'À Propos', 'من نحن'),
+  content: l(
+    `<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 3rem;">
+      <div>
+        <h2>Universal Oxford Formations</h2>
+        <p><strong>Universal Oxford Formations</strong> is a premier educational institution dedicated to cultivating global communicators and tech-savvy professionals. We offer world-class language courses and comprehensive IT training designed to bridge educational paths with modern career demands.</p>
+        <p>Our expansive language center provides expert-led programs in English, French, Spanish, German, and Italian. Whether you are aiming to study abroad, integrate into a new cultural environment, or boost your corporate profile, our tailored linguistic approaches ensure rapid and profound mastery.</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="/images/logo.png" alt="Universal Oxford Formations Logo" style="max-width: 300px; margin: 0 auto;" />
+      </div>
+    </div>
+    <h2>Our Vision &amp; Mission</h2>
+    <p>We envision a world interconnected through seamless communication and digital literacy. Our mission is to dismantle language and technological barriers by providing high-quality, engaging, and dynamic education. We view ourselves not just as a school, but as a catalyst for profound professional and personal growth.</p>
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li><strong>Expert Instructors</strong> — Learn from highly qualified, passionate professionals with years of industry and academic experience.</li>
+      <li><strong>Modern Curriculum</strong> — Engage in interactive learning combining theoretical foundations with robust, active practice.</li>
+      <li><strong>Holistic Development</strong> — Beyond languages, we prepare you with vital software and essential IT competencies for the modern world.</li>
+    </ul>`,
+    `<h2>Universal Oxford Formations</h2>
+    <p><strong>Universal Oxford Formations</strong> est une institution éducative de premier plan dédiée à la formation de communicateurs internationaux et de professionnels technologiques.</p>
+    <h2>Notre Vision et Mission</h2>
+    <p>Nous envisageons un monde interconnecté grâce à une communication fluide et à la maîtrise numérique.</p>`,
+    `<h2>Universal Oxford Formations</h2>
+    <p><strong>Universal Oxford Formations</strong> هي مؤسسة تعليمية رائدة مكرسة لتكوين متواصلين عالميين ومتخصصين في التكنولوجيا.</p>
+    <h2>رؤيتنا ومهمتنا</h2>
+    <p>نتصور عالماً مترابطاً من خلال التواصل السلس ومحو الأمية الرقمية.</p>`
+  )
+})
+
 useHead({
   title: 'About Us - Universal Oxford Formations'
 })

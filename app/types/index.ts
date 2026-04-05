@@ -169,20 +169,19 @@ export interface Student {
 }
 
 export interface RegistrationData {
-  full_name: string;
+  first_name: string;
+  last_name: string;
+  email: string;
   phone: string;
-  notes?: string;
+  birthday: string;
   school_id: number;
   language_id: number;
   teacher_id: number;
 }
 
 export interface JobApplication {
-  first_name: string;
-  last_name: string;
-  phone: string;
-  email: string;
+  full_name: string;
   cv: File | null;
-  notes?: string;
+  cover_letter?: string;
   job_id: number;
 }

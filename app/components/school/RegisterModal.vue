@@ -26,16 +26,48 @@
 
         <!-- Form -->
         <form @submit.prevent="submitRegistration" class="space-y-5">
-          <!-- Full Name -->
+          <!-- First Name & Last Name -->
+          <div class="grid grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
+                <i class="ph-fill ph-user mr-2 text-indigo-500 dark:text-gold-500"></i>First Name *
+              </label>
+              <input
+                v-model="form.first_name"
+                type="text"
+                required
+                placeholder="First name"
+                class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                       focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
+                       transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"
+              />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
+                <i class="ph-fill ph-user mr-2 text-indigo-500 dark:text-gold-500"></i>Last Name *
+              </label>
+              <input
+                v-model="form.last_name"
+                type="text"
+                required
+                placeholder="Last name"
+                class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                       focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
+                       transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"
+              />
+            </div>
+          </div>
+
+          <!-- Email -->
           <div>
             <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-              <i class="ph-fill ph-user mr-2 text-indigo-500 dark:text-gold-500"></i>Full Name *
+              <i class="ph-fill ph-envelope mr-2 text-indigo-500 dark:text-gold-500"></i>Email *
             </label>
             <input
-              v-model="form.full_name"
-              type="text"
+              v-model="form.email"
+              type="email"
               required
-              placeholder="Enter your full name"
+              placeholder="your@email.com"
               class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
                      focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
                      transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"
@@ -58,29 +90,19 @@
             />
           </div>
 
-          <!-- Notes -->
+          <!-- Birthday -->
           <div>
             <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-              <i class="ph-fill ph-sticky-note mr-2 text-indigo-500 dark:text-gold-500"></i>Notes (Optional)
+              <i class="ph-fill ph-calendar mr-2 text-indigo-500 dark:text-gold-500"></i>Birthday *
             </label>
-            <textarea
-              v-model="form.notes"
-              rows="3"
-              placeholder="Any additional information..."
+            <input
+              v-model="form.birthday"
+              type="date"
+              required
               class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
                      focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
-                     transition-all outline-none resize-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"
-            ></textarea>
-          </div>
-
-          <!-- Hidden IDs Info -->
-          <div class="bg-indigo-50 dark:bg-navy-800 border border-indigo-100 dark:border-navy-700 rounded-xl p-4 text-sm text-indigo-800 dark:text-gray-300 shadow-inner">
-            <p><i class="ph-fill ph-info mr-2"></i>Your registration will include:</p>
-            <ul class="mt-2 space-y-1 text-xs">
-              <li>• School ID: {{ schoolId }}</li>
-              <li>• Language ID: {{ languageId }}</li>
-              <li>• Teacher ID: {{ teacherId }}</li>
-            </ul>
+                     transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"
+            />
           </div>
 
           <!-- Submit Button -->
@@ -130,29 +152,30 @@ const isSubmitting = ref(false)
 const showSuccess = ref(false)
 
 const form = reactive({
-  full_name: '',
+  first_name: '',
+  last_name: '',
+  email: '',
   phone: '',
-  notes: '',
+  birthday: '',
 })
 
 const submitRegistration = async () => {
   isSubmitting.value = true
 
   const registrationData: RegistrationData = {
-    full_name: form.full_name,
+    first_name: form.first_name,
+    last_name: form.last_name,
+    email: form.email,
     phone: form.phone,
-    notes: form.notes,
+    birthday: form.birthday,
     school_id: props.schoolId,
     language_id: props.languageId,
     teacher_id: props.teacherId,
   }
 
   try {
-    // لاحقاً: إرسال إلى API
     console.log('Registration data:', registrationData)
-    // await $fetch('/api/register', { method: 'POST', body: registrationData })
-
-    await new Promise(resolve => setTimeout(resolve, 1500)) // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500))
     showSuccess.value = true
   } catch (error) {
     console.error('Registration failed:', error)

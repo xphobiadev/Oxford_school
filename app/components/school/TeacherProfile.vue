@@ -49,6 +49,34 @@
             </div>
           </div>
         </div>
+
+        <!-- Education -->
+        <div v-if="teacher.meta[currentLang]?.education" class="mb-4">
+          <h4 class="font-semibold text-navy-800 dark:text-gray-200 mb-3 flex items-center text-sm uppercase tracking-wider">
+            <i class="ph-fill ph-graduation-cap text-xl mr-2 text-gold-500"></i> Education
+          </h4>
+          <div class="bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700 rounded-xl px-5 py-3 shadow-inner inline-block">
+            <span class="font-medium text-navy-700 dark:text-gray-200">{{ teacher.meta[currentLang]?.education }}</span>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div v-if="teacher.meta[currentLang]?.certifications?.length" class="mb-4">
+          <h4 class="font-semibold text-navy-800 dark:text-gray-200 mb-3 flex items-center text-sm uppercase tracking-wider">
+            <i class="ph-fill ph-medal text-xl mr-2 text-gold-500"></i> Certifications
+          </h4>
+          <div class="flex flex-wrap gap-3">
+            <span
+              v-for="cert in teacher.meta[currentLang]?.certifications"
+              :key="cert"
+              class="bg-gold-500/10 border border-gold-500/20 text-gold-700 dark:text-gold-400 rounded-full px-4 py-2
+                     text-sm font-semibold flex items-center gap-2 shadow-sm"
+            >
+              <i class="ph-fill ph-seal-check text-gold-500"></i>
+              {{ cert }}
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

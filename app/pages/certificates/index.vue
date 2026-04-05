@@ -101,12 +101,6 @@
                 <p class="text-lg font-semibold text-navy-900 dark:text-white">{{ certificateData.holder_label }}</p>
               </div>
 
-              <!-- Certificate Language / Title -->
-              <div class="space-y-1">
-                <p class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider">Course / Title</p>
-                <p class="text-lg font-semibold text-navy-900 dark:text-white">{{ t(certificateData.description) }}</p>
-              </div>
-
               <!-- Language and Level -->
               <div class="space-y-1">
                 <p class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider">Language & Level</p>
@@ -125,13 +119,10 @@
                 </p>
               </div>
 
-               <!-- Duration -->
-               <div class="space-y-1">
-                <p class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider">Duration</p>
-                <p class="text-lg font-semibold text-navy-900 dark:text-white flex items-center gap-2">
-                  <i class="ph ph-clock text-gray-400 dark:text-gray-500"></i>
-                  {{ certificateData.duration }}
-                </p>
+              <!-- Description -->
+              <div class="space-y-1">
+                <p class="text-xs text-gray-500 dark:text-gray-400 font-medium uppercase tracking-wider">Description</p>
+                <p class="text-lg font-semibold text-navy-900 dark:text-white">{{ t(certificateData.description) }}</p>
               </div>
             </div>
           </div>
@@ -158,7 +149,6 @@ const l = (en: string, fr?: string, ar?: string) => ({ en, fr: fr || null, ar: a
 interface DisplayCertificate extends Certificate {
   language_name: ReturnType<typeof l>;
   code: string;
-  duration: string;
 }
 
 const certificateData = ref<DisplayCertificate | null>(null)
@@ -172,8 +162,7 @@ const mockCertificates: Record<string, DisplayCertificate> = {
     description: l('General English Proficiency', 'Compétence générale en anglais', 'كفاءة في اللغة الإنجليزية'),
     language_name: l('English', 'Anglais', 'الإنجليزية'),
     level: 'B1',
-    issued_at: 'March 15, 2024',
-    duration: '3 Months'
+    issued_at: 'March 15, 2024'
   } as any,
   'OXF-2024-002': {
     id: 2,
@@ -183,8 +172,7 @@ const mockCertificates: Record<string, DisplayCertificate> = {
     description: l('French Language Foundation', 'Fondation de la langue française', 'أساسيات اللغة الفرنسية'),
     language_name: l('French', 'Français', 'الفرنسية'),
     level: 'A2',
-    issued_at: 'January 20, 2024',
-    duration: '6 Months'
+    issued_at: 'January 20, 2024'
   } as any
 }
 

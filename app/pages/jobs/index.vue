@@ -118,69 +118,40 @@
               </div>
 
               <form @submit.prevent="submitApplication" class="space-y-5">
-                <!-- First & Last Name -->
-                <div class="grid grid-cols-2 gap-4">
-                  <div>
-                    <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">First Name *</label>
-                    <input v-model="applyForm.first_name" type="text" required
-                           class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
-                                  focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
-                                  transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
-                  </div>
-                  <div>
-                    <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">Last Name *</label>
-                    <input v-model="applyForm.last_name" type="text" required
-                           class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
-                                  focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
-                                  transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
-                  </div>
-                </div>
-
-                <!-- Phone -->
+                <!-- Full Name -->
                 <div>
                   <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-                    <i class="ph-fill ph-phone mr-2 text-indigo-500 dark:text-gold-500"></i>Phone *
+                    <i class="ph-fill ph-user mr-2 text-indigo-500 dark:text-gold-500"></i>Full Name *
                   </label>
-                  <input v-model="applyForm.phone" type="tel" required
+                  <input v-model="applyForm.full_name" type="text" required placeholder="Enter your full name"
                          class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
                                 focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
                                 transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
                 </div>
 
-                <!-- Email -->
+                <!-- CV Upload (PDF only) -->
                 <div>
                   <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-                    <i class="ph-fill ph-envelope mr-2 text-indigo-500 dark:text-gold-500"></i>Email *
-                  </label>
-                  <input v-model="applyForm.email" type="email" required
-                         class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
-                                focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
-                                transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
-                </div>
-
-                <!-- CV Upload -->
-                <div>
-                  <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-                    <i class="ph-fill ph-file-pdf mr-2 text-indigo-500 dark:text-gold-500"></i>Upload CV *
+                    <i class="ph-fill ph-file-pdf mr-2 text-indigo-500 dark:text-gold-500"></i>Upload CV (PDF) *
                   </label>
                   <div class="border-2 border-dashed border-gray-300 dark:border-navy-700 rounded-xl p-6 text-center
                               hover:border-gold-400 dark:hover:border-gold-500 transition-colors cursor-pointer bg-gray-50 dark:bg-navy-950/30"
                        @click="cvInput?.click()">
-                    <input ref="cvInput" type="file" accept=".pdf,.doc,.docx"
+                    <input ref="cvInput" type="file" accept=".pdf"
                            @change="handleCvUpload" class="hidden" />
                     <i class="ph-fill ph-cloud-arrow-up text-3xl text-gray-400 dark:text-navy-600 mb-2"></i>
                     <p class="text-sm text-gray-500 dark:text-gray-400">
-                      {{ applyCv ? applyCv.name : 'Click to upload your CV (PDF, DOC)' }}
+                      {{ applyCv ? applyCv.name : 'Click to upload your CV (PDF only)' }}
                     </p>
                   </div>
                 </div>
 
-                <!-- Notes -->
+                <!-- Cover Letter -->
                 <div>
                   <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
-                    <i class="ph-fill ph-chat-circle mr-2 text-indigo-500 dark:text-gold-500"></i>Additional Notes
+                    <i class="ph-fill ph-article mr-2 text-indigo-500 dark:text-gold-500"></i>Cover Letter
                   </label>
-                  <textarea v-model="applyForm.notes" rows="3"
+                  <textarea v-model="applyForm.cover_letter" rows="4" placeholder="Write a brief cover letter..."
                             class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
                                    focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
                                    transition-all outline-none resize-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"></textarea>
@@ -229,11 +200,8 @@ const showApplySuccess = ref(false)
 const isSubmitting = ref(false)
 
 const applyForm = reactive({
-  first_name: '',
-  last_name: '',
-  phone: '',
-  email: '',
-  notes: '',
+  full_name: '',
+  cover_letter: '',
 })
 
 const applyCv = shallowRef<File | null>(null)
@@ -261,12 +229,9 @@ const submitApplication = async () => {
   isSubmitting.value = true
   try {
     await applyForJob({
-      first_name: applyForm.first_name,
-      last_name: applyForm.last_name,
-      phone: applyForm.phone,
-      email: applyForm.email,
+      full_name: applyForm.full_name,
       cv: applyCv.value || null,
-      notes: applyForm.notes,
+      cover_letter: applyForm.cover_letter,
       job_id: selectedJob.value.id,
     })
     showApplySuccess.value = true

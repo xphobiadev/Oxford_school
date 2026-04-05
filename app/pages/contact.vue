@@ -88,6 +88,20 @@
                               text-navy-900 dark:text-white placeholder-gray-400" placeholder="Your email address" />
               </div>
               <div>
+                <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">Phone</label>
+                <input type="tel"
+                       class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                              focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 transition-all outline-none 
+                              text-navy-900 dark:text-white placeholder-gray-400" placeholder="Your phone number" />
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">Subject</label>
+                <input type="text" required
+                       class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                              focus:border-gold-500 focus:ring-4 focus:ring-gold-500/10 transition-all outline-none 
+                              text-navy-900 dark:text-white placeholder-gray-400" placeholder="Message subject" />
+              </div>
+              <div>
                 <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">Message</label>
                 <textarea rows="4" required
                           class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
