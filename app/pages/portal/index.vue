@@ -167,9 +167,9 @@
 
                 <!-- Desktop Calendar Grid Container -->
                 <div class="hidden md:block overflow-x-auto rounded-2xl border border-gray-200 dark:border-navy-700">
-                  <div class="min-w-[800px]">
+                  <div class="min-w-[1050px]">
                     <!-- Grid Header (Days) -->
-                    <div class="grid grid-cols-[100px_repeat(5,1fr)] border-b border-gray-200 dark:border-navy-700 bg-gray-50 dark:bg-navy-900/50">
+                    <div class="grid grid-cols-[100px_repeat(7,1fr)] border-b border-gray-200 dark:border-navy-700 bg-gray-50 dark:bg-navy-900/50">
                       <div class="py-3 px-2 text-center text-xs font-bold text-gray-400 uppercase tracking-widest border-r border-gray-200 dark:border-navy-700">Time</div>
                       <div v-for="day in days" :key="day" class="py-3 px-2 text-center text-sm font-bold text-navy-900 dark:text-gray-200 uppercase tracking-wide border-r border-gray-200 dark:border-navy-700 last:border-0">
                         {{ day }}
@@ -185,7 +185,7 @@
                              <span class="text-xs font-medium text-gray-500 dark:text-gray-400">{{ formatTime(time) }}</span>
                           </div>
                         </div>
-                        <div class="grid grid-cols-5 h-full">
+                        <div class="grid grid-cols-7 h-full">
                           <div v-for="day in days" :key="'col-' + day" class="border-r border-gray-100 dark:border-navy-700/50 last:border-0 h-full relative">
                              <div v-for="time in timeSlots" :key="time + day" class="h-[60px] border-b border-gray-50 dark:border-navy-700/30"></div>
                           </div>
@@ -193,7 +193,7 @@
                       </div>
 
                       <!-- Events Layer -->
-                      <div class="absolute inset-0 grid grid-cols-[100px_repeat(5,1fr)] pointer-events-none">
+                      <div class="absolute inset-0 grid grid-cols-[100px_repeat(7,1fr)] pointer-events-none">
                         <div></div>
                         <div v-for="(day, dayIndex) in days" :key="'events-' + day" class="relative group">
                           <template v-for="event in getEventsForDay(dayIndex)" :key="event.id">
@@ -335,7 +335,7 @@ const isLoading = ref(false)
 const errorMsg = ref('')
 const activeTab = ref<'meta'|'schedules'|'exams'>('meta')
 
-const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday']
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 const timeSlots = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
 
 const formatTime = (time: number) => {
