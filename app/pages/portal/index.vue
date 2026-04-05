@@ -87,16 +87,26 @@
               </div>
             </div>
             
-            <!-- Tabs Navigation -->
-            <div class="flex p-1 bg-gray-100 dark:bg-navy-950 rounded-xl space-x-1">
-              <button
-                v-for="tab in ['meta', 'schedules', 'exams']" :key="tab"
-                @click="activeTab = tab as any"
-                class="px-5 py-2.5 rounded-lg text-sm font-semibold capitalize transition-all duration-300"
-                :class="activeTab === tab ? 'bg-white dark:bg-navy-800 text-gold-600 dark:text-gold-400 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-navy-900 dark:hover:text-white'"
-              >
-                {{ tab }}
-              </button>
+            <!-- Actions & Tabs -->
+            <div class="flex flex-col sm:flex-row items-center gap-4">
+              <NuxtLink to="/proficiency-test" class="btn-gold hidden md:flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold shadow-md hover:shadow-lg transition-shadow">
+                <i class="ph-fill ph-translate"></i>
+                Proficiency Test
+              </NuxtLink>
+              <div class="flex p-1 bg-gray-100 dark:bg-navy-950 rounded-xl space-x-1 w-full sm:w-auto">
+                <button
+                  v-for="tab in ['meta', 'schedules', 'exams']" :key="tab"
+                  @click="activeTab = tab as any"
+                  class="px-4 md:px-5 py-2.5 rounded-lg text-sm font-semibold capitalize transition-all duration-300 flex-1 sm:flex-none text-center"
+                  :class="activeTab === tab ? 'bg-white dark:bg-navy-800 text-gold-600 dark:text-gold-400 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-navy-900 dark:hover:text-white'"
+                >
+                  {{ tab }}
+                </button>
+              </div>
+              <NuxtLink to="/proficiency-test" class="btn-gold md:hidden w-full flex justify-center items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold shadow-md">
+                <i class="ph-fill ph-translate"></i>
+                Take Proficiency Test
+              </NuxtLink>
             </div>
           </div>
 
