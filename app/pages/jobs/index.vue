@@ -129,6 +129,39 @@
                                 transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
                 </div>
 
+                <!-- Email -->
+                <div>
+                  <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
+                    <i class="ph-fill ph-envelope mr-2 text-indigo-500 dark:text-gold-500"></i>Email *
+                  </label>
+                  <input v-model="applyForm.email" type="email" required placeholder="Enter your email"
+                         class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                                focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
+                                transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
+                </div>
+
+                <!-- Phone -->
+                <div>
+                  <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
+                    <i class="ph-fill ph-phone mr-2 text-indigo-500 dark:text-gold-500"></i>Phone *
+                  </label>
+                  <input v-model="applyForm.phone" type="tel" required placeholder="Enter your phone number"
+                         class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                                focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
+                                transition-all outline-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600" />
+                </div>
+
+                <!-- Description -->
+                <div>
+                  <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
+                    <i class="ph-fill ph-text-align-left mr-2 text-indigo-500 dark:text-gold-500"></i>Description
+                  </label>
+                  <textarea v-model="applyForm.description" rows="2" placeholder="Tell us briefly about yourself..."
+                            class="w-full px-4 py-3 rounded-xl bg-gray-50 dark:bg-navy-950/50 border border-gray-200 dark:border-navy-700
+                                   focus:border-indigo-500 dark:focus:border-gold-500 focus:ring-4 focus:ring-indigo-500/10 dark:focus:ring-gold-500/10
+                                   transition-all outline-none resize-none text-navy-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-600"></textarea>
+                </div>
+
                 <!-- CV Upload (PDF only) -->
                 <div>
                   <label class="block text-sm font-medium text-navy-800 dark:text-gray-300 mb-2">
@@ -201,6 +234,9 @@ const isSubmitting = ref(false)
 
 const applyForm = reactive({
   full_name: '',
+  description: '',
+  email: '',
+  phone: '',
   cover_letter: '',
 })
 
@@ -230,6 +266,9 @@ const submitApplication = async () => {
   try {
     await applyForJob({
       full_name: applyForm.full_name,
+      description: applyForm.description,
+      email: applyForm.email,
+      phone: applyForm.phone,
       cv: applyCv.value || null,
       cover_letter: applyForm.cover_letter,
       job_id: selectedJob.value.id,

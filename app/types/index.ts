@@ -181,6 +181,9 @@ export interface RegistrationData {
 
 export interface JobApplication {
   full_name: string;
+  description?: string;
+  email: string;
+  phone: string;
   cv: File | null;
   cover_letter?: string;
   job_id: number;

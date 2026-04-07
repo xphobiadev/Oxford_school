@@ -189,9 +189,9 @@ const hasVideos = (gallery: Gallery) => {
   return gallery.media.some(m => m.mime_type.startsWith('video/'))
 }
 
-const getFirstImage = (gallery: Gallery): string | null => {
+const getFirstImage = (gallery: Gallery): string | undefined => {
   const img = gallery.media.find(m => m.mime_type.startsWith('image/'))
-  return img ? img.url : null
+  return img ? img.url : undefined
 }
 
 // Lightbox
